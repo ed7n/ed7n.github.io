@@ -1,0 +1,22 @@
+---
+key: "home_news"
+---
+{% include variables.html %}
+<section>
+  <div class="italic">
+    <span>Sorted descendingly by date, grouped by year.</span>
+  </div>
+  <div>
+    <ul>
+      {% for key in page.keys %}
+        {% assign href = key | slice: 5, 8 %}
+        {% assign year = site.data.news[key].date | date: "%Y" %}
+        {% if lastYear and year != lastYear %}
+          </ul></div><div><h5>{{ year }}</h5><ul>
+        {% endif %}
+        <li>{{ site.data.news[key].date | date: "%m/%d/%Y" }}: [<a href="{{ href }}">{{ site.data.news[key].body.title | date: "%m/%d/%Y" }}</a>]</li>
+        {% assign lastYear = year %}
+      {% endfor %}
+      </ul>
+  </div>
+</section>

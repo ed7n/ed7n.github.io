@@ -1,0 +1,10 @@
+path: "mjpegfplay/reconstruction"
+date: "2021-01-10"
+head:
+  title: "Reconstruction | mJPEGfPlay"
+body:
+  title: "Reconstruction"
+  subtitle: "Follow us as we (slowly) build our ultimate media fiddler."
+menu:
+  - label: "^mJPEGfPlay"
+    href: ".."

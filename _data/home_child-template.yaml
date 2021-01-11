@@ -1,0 +1,22 @@
+path: "pages/child-template"
+date: "2021-01-10"
+head:
+  title: "Child Template"
+body:
+  title: "Child Template"
+  subtitle: "A preview of the look-and-feel on children pages."
+menu:
+  - label: "Lorem Ipsum"
+    href: "#lorem-ipsum"
+    title: "Lorem Ipsum"
+    subtitle: "\"Industry's standard dummy text ever since the 1500s\""
+  - label: "Pangrams"
+    href: "#pangrams"
+    title: "Pangrams"
+    subtitle: "\"Sentences using every letter of a given alphabet.\""
+  - label: "CDDA"
+    href: "#cdda"
+    title: "Compact Disc Digital Audio (CDDA)"
+    subtitle: ""
+  - label: "^Home"
+    href: "/"

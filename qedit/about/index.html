@@ -1,0 +1,15 @@
+---
+key: "qedit_about"
+---
+{% include variables.html %}
+<section>
+  <p>QEdit is a command-line cuesheet editor. It parses the given input file
+into its own representation stored in memory, then performs your given actions,
+like <code>--adjust-time</code>, which adjusts INDEX time codes by an offset to
+correct global timing errors. You can preview your edited cuesheet with
+<code>--print</code>, then use <code>--write</code> to write it into the given
+output file.</p>
+  <p>Program usage, as well as the complete list of actions can be found back in
+the [<a href="/{{ site.data["qedit"].path }}#usage">landing page</a>].</p>
+</section>
+{% include sections.html %}

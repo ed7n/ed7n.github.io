@@ -1,0 +1,391 @@
+@media screen {
+  #mq-screen {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media print {
+  #mq-print {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media speech {
+  #mq-speech {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (color) {
+  #mq-color {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (color: 0) {
+  #mq-color-0 {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (color-gamut: rec2020) {
+  #mq-color-gamut-rec2020 {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (color-gamut: p3) {
+  #mq-color-gamut-p3 {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (color-gamut: srgb) {
+  #mq-color-gamut-srgb {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (display-mode: fullscreen) {
+  #mq-display-mode-fullscreen {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (display-mode: standalone) {
+  #mq-display-mode-standalone {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (display-mode: minimal-ui) {
+  #mq-display-mode-minimal-ui {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (display-mode: browser) {
+  #mq-display-mode-browser {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (forced-colors: active) {
+  #mq-forced-colors-active {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (forced-colors: none) {
+  #mq-forced-colors-none {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (grid: 1) {
+  #mq-grid-1 {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (grid: 0) {
+  #mq-grid-0 {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (hover: hover) {
+  #mq-hover-hover {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (hover: none) {
+  #mq-hover-none {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (any-hover: hover) {
+  #mq-any-hover-hover {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (any-hover: none) {
+  #mq-any-hover-none {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (inverted-colors: inverted) {
+  #mq-inverted-colors-inverted {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (inverted-colors: none) {
+  #mq-inverted-colors-none {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (monochrome) {
+  #mq-monochrome {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (monochrome: 0) {
+  #mq-monochrome-0 {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (orientation: portrait) {
+  #mq-orientation-portrait {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (orientation: landscape) {
+  #mq-orientation-landscape {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (overflow-block: paged) {
+  #mq-overflow-block-paged {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (overflow-block: scroll) {
+  #mq-overflow-block-scroll {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (overflow-block: optional-paged) {
+  #mq-overflow-block-optional-paged {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (overflow-block: none) {
+  #mq-overflow-block-none {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (overflow-inline: scroll) {
+  #mq-overflow-inline-scroll {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (overflow-inline: none) {
+  #mq-overflow-inline-none {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (pointer: fine) {
+  #mq-pointer-fine {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (pointer: coarse) {
+  #mq-pointer-coarse {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (pointer: none) {
+  #mq-pointer-none {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (any-pointer: fine) {
+  #mq-any-pointer-fine {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (any-pointer: coarse) {
+  #mq-any-pointer-coarse {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (any-pointer: none) {
+  #mq-any-pointer-none {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #mq-prefers-color-scheme-light {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #mq-prefers-color-scheme-dark {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-contrast: less) {
+  #mq-prefers-contrast-less {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-contrast: more) {
+  #mq-prefers-contrast-dark {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-contrast: forced) {
+  #mq-prefers-contrast-forced {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-contrast: no-preference) {
+  #mq-prefers-contrast-no-preference {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #mq-prefers-reduced-motion-reduce {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-reduced-motion-no-preference) {
+  #mq-prefers-reduced-motion-no-preference {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  #mq-prefers-reduced-transparency-reduce {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (prefers-reduced-transparency-no-preference) {
+  #mq-prefers-reduced-transparency-no-preference {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (scan: progressive) {
+  #mq-scan-progressive {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (scan: interlace) {
+  #mq-scan-interlace {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (scripting: enabled) {
+  #mq-scripting-enabled {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (scripting: initial-only) {
+  #mq-scripting-initial-only {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (scripting: none) {
+  #mq-scripting-none {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (update: fast) {
+  #mq-update-fast {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (update: slow) {
+  #mq-update-slow {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (update: none) {
+  #mq-update-none {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}

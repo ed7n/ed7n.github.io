@@ -1,0 +1,25 @@
+---
+key: "home_media-queries"
+---
+{% include variables.html %}
+<link rel="stylesheet" href="res/mq.css" />
+<section>
+  <p>Many websites use media queries in adapting to different media contexts,
+such as screen sizes. There is a catch to them, however:</p>
+  <blockquote>
+    <p>Because media queries provide insights into the capabilities--and by
+extension, the features and design--of the device the user is working with,
+there is the potential that they could be abused to construct a fingerprint
+which identifies the device, or at least categorizes it to some degree of detail
+that may be undesirable to users.</p>
+    <p>Because of this potential, a browser may opt to fudge the returned values
+in some manner in order to prevent them from being used to precisely identify a
+computer.</p>
+  </blockquote>
+  <p>This page lists the available enumerated or enumerable queries, their
+return values, and what your user agent (browser) returns for each. Your user
+agent may not support some of them.</p>
+  <p>The set of queries shown here adheres to [<{{ htmlAOut }}
+"https://www.w3.org/TR/mediaqueries-5">Media Queries Level 5</a>].</p>
+</section>
+{% include sections.html %}

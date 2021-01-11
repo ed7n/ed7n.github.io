@@ -1,0 +1,22 @@
+path: "pages/media-queries"
+date: "2021-01-10"
+head:
+  title: "Media Queries"
+body:
+  title: "Media Queries"
+  subtitle: "Used by websites to adapt to your media context."
+menu:
+  - label: "Media Type"
+    href: "#media-type"
+    title: "Media Type"
+    subtitle: ""
+  - label: "Media Features"
+    href: "#media-features"
+    title: "Media Features"
+    subtitle: ""
+  - label: "Credits"
+    href: "#credits"
+    title: "Credits"
+    subtitle: ""
+  - label: "^Home"
+    href: "/"

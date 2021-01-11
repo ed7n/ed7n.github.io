@@ -1,0 +1,10 @@
+path: "mjpegfplay/about"
+date: "2021-01-10"
+head:
+  title: "About mJPEGfPlay"
+body:
+  title: "About mJPEGfPlay"
+  subtitle: "Some information about this application."
+menu:
+  - label: "^mJPEGfPlay"
+    href: ".."

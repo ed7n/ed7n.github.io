@@ -1,0 +1,10 @@
+path: "qedit/license"
+date: "2021-01-10"
+head:
+  title: "License | QEdit"
+body:
+  title: "License"
+  subtitle: "QEdit is licensed under the MIT."
+menu:
+  - label: "^QEdit"
+    href: ".."

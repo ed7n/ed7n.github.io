@@ -1,0 +1,14 @@
+<p>REM or remark statements do not make part of the layout metadata, but are
+used for annotations. They can be placed anywhere in a cuesheet.</p>
+<p>However, when parsed into QEdit, they will be placed together into their
+respective groups in the same order as they are found. Specifically:</p>
+<ul>
+  <li
+>REMs before the first TRACK will be placed at the top of the cuesheet.</li>
+  <li
+>REMs after TRACK and before INDEX will be placed after FLAGS and before CD-Text statements and PREGAP, in that order.</li>
+  <li
+>REMs after INDEX and before another INDEX will be placed as they are found.</li>
+  <li
+>REMs after INDEX and before TRACK will be placed after POSTGAP and before FILE.</li>
+</ul>

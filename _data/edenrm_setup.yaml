@@ -1,0 +1,18 @@
+path: "edenrm/setup"
+date: "2021-01-10"
+head:
+  title: "Setup | EDENrm"
+body:
+  title: "Setup"
+  subtitle: "Setting up EDENrm."
+menu:
+  - label: "Installation"
+    href: "#installation"
+    title: "Installation"
+    subtitle: ""
+  - label: "Fallback"
+    href: "#fallback"
+    title: "Fallback"
+    subtitle: "For Windows XP and Vista users."
+  - label: "^EDENrm"
+    href: ".."

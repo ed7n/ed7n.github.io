@@ -1,0 +1,18 @@
+path: "edenshdos/about"
+date: "2021-01-10"
+head:
+  title: "About EDENsh/dos"
+body:
+  title: "About EDENsh/dos"
+  subtitle: "Some information about this package."
+menu:
+  - label: "Scripts"
+    href: "#scripts"
+    title: "Scripts"
+    subtitle: ""
+  - label: "Parallel Development"
+    href: "#parallel-development"
+    title: "Parallel Development"
+    subtitle: ""
+  - label: "^EDENsh/dos"
+    href: ".."

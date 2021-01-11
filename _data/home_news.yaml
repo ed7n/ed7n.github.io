@@ -1,0 +1,13 @@
+path: "pages/news"
+date: "2021-01-10"
+head:
+  title: "News"
+body:
+  title: "News"
+  subtitle: "What's new?"
+menu:
+  - label: "^Home"
+    href: "/"
+keys:
+  - "news_20200818"
+  - "news_20191002"

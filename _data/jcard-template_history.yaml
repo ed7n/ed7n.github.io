@@ -1,0 +1,10 @@
+path: "net/jcard-template/history"
+date: "2021-01-10"
+head:
+  title: "History | J-Card Template"
+body:
+  title: "History"
+  subtitle: "This is a fork of Blaine Murphy's."
+menu:
+  - label: "^J-Card Template"
+    href: ".."

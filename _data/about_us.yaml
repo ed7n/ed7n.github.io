@@ -1,0 +1,18 @@
+path: "pages/about/eden"
+date: "2021-01-10"
+head:
+  title: "About Us"
+body:
+  title: "About Us"
+  subtitle: "Who and what we are."
+menu:
+  - label: "Names"
+    href: "#names"
+    title: "Names"
+    subtitle: "What is <span class=\"eden\">ED7</span>? What about <span class=\"eden\">EDEN</span>?"
+  - label: "History"
+    href: "#history"
+    title: History
+    subtitle: "Established in 2008…"
+  - label: "^Home"
+    href: "/"

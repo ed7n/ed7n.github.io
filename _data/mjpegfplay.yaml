@@ -1,0 +1,22 @@
+path: "mjpegfplay"
+date: "2021-01-10"
+head:
+  title: "mJPEGfPlay"
+body:
+  title: "mJPEGfPlay"
+  subtitle: "Currently an image file sequence player."
+menu:
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release packages and supplements."
+  - label: "About"
+    href: "#about"
+    title: "About"
+    subtitle: ""
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+    subtitle: ""
+  - label: "^Home"
+    href: "/"

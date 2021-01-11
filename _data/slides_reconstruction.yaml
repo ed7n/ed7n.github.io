@@ -1,0 +1,10 @@
+path: "net/slides/reconstruction"
+date: "2021-01-10"
+head:
+  title: "Reconstruction | NET-Slides"
+body:
+  title: "Reconstruction"
+  subtitle: "Follow us as we (slowly) build our ultimate web application."
+menu:
+  - label: "^NET-Slides"
+    href: ".."

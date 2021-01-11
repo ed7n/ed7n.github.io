@@ -1,0 +1,20 @@
+path: "pages"
+date: "2021-01-10"
+head:
+  title: "Pages"
+body:
+  title: "Pages"
+  subtitle: "Where uncategorized pages are categorized to."
+menu:
+  - label: "^Home"
+    href: "/"
+keys:
+  - "home_2019-portal"
+  - "home_child-template"
+  - "home_contact"
+  - "home_keyboard-navigation"
+  - "home_http-404"
+  - "home_media-queries"
+  - "home_news"
+  - "home_projects"
+  - "home_weebly-gateway"

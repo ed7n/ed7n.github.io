@@ -1,0 +1,32 @@
+<div>
+  <p>The <code>--check</code> action inspects your cuesheet for adherence to the
+original specification based from GoldenHawk Technology's [<{{ htmlAOut }}
+"https://web.archive.org/web/20070221154246/http://www.goldenhawk.com/download/cdrwin.pdf"
+>CDRWIN User's Guide</a>] but with a few significant differences:</p>
+  <ul>
+    <li
+>FILE statements may reside anywhere.</li>
+    <li
+>PERFORMER, SONGWRITER, and TITLE arguments may have zero or over 80 characters.</li>
+    <li
+>The first track number must be 1 <i>for now</i> (<code>TRACK 01</code>).</li>
+  </ul>
+  <p>However, it does not catch duplication or misplacement errors, such as:</p>
+  <ul>
+    <li
+>Multiple PERFORMERs in a TRACK, in which case QEdit keeps only the bottommost one.</li>
+    <li
+>A TITLE after an INDEX, which will be parsed and correctly placed on output.</li>
+  </ul>
+  <p>It also checks for missing or invalid FILEs, such as directories, though it
+does not look into their contents.</p>
+</div>
+<div>
+  <span>The following shows the <code>--check</code> action in practice:</span>
+  <pre>
+$ java -jar qedit.jar --check jcroot.cue
+TRACK 01 INDEX 01: Time code is less than INDEX 00
+TRACK 01 INDEX 00: FILE "jcroot.wav" does not exist
+TRACK 03 INDEX 00: Time code is less than or equal to TRACK 02 INDEX 01
+  </pre>
+</div>

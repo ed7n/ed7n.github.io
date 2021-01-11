@@ -1,0 +1,51 @@
+<div>
+  <pre>
+$ java -jar qedit.jar
+
+QEdit devE by Brendon, 09/23/2020.
+--A cuesheet editor. Still under construction.
+
+Usage: (&lt;action&gt; [&lt;action-options&gt;])... &lt;input-path&gt;
+Actions:
+  --adj-time &lt;offset&gt;, --adjust-time &lt;offset&gt;
+                Adjust INDEX time codes by a given offset in frames.
+  --check       Check for errors and prints them to stderr.
+  --index-to-pregap
+                Convert INDEX 00 to PREGAP.
+  --pregap-to-index
+                Convert PREGAP to INDEX 00.
+  --no-catalog  Omit CATALOG.
+  --no-cdtext   Omit CD-TEXT commands.
+  --no-isrc     Omit ISRCs.
+  --no-performer
+                Omit PERFORMERs.
+  --no-postgap  Omit POSTGAPs.
+  --no-pregap   Omit PREGAPs.
+  --no-rems     Omit REMs.
+  --no-songwriter
+                Omit SONGWRITERs.
+  --no-title    Omit TITLEs.
+  --print       Print to stdout.
+  --quote {auto|force}
+                Enclose fields in quotation marks. "auto" removes them
+                as allowed.
+  --set-eol {CRLF|LF|CR}
+                Set text document line ending.
+  --swap-authors
+                Swap SONGWRITERs and PERFORMERs.
+  --write &lt;path&gt;
+                Write to a given output path.
+
+Actions are case-insensitive. Any failed action halts the program.
+
+Program Arguments:
+  -h, --help
+                Display this help message.
+  --
+                Stop parsing arguments.
+  </pre>
+  <h5>Example</h5>
+  <code>$ java -jar qedit.jar --adj-time 32 --index-to-pregap --set-eol crlf
+--write Drive.cue Drive.cue</code><br />
+<span class="italic">Note that this overwrites the input file.</span>
+</div>

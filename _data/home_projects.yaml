@@ -1,0 +1,19 @@
+path: "pages/projects"
+date: "2021-01-10"
+head:
+  title: "Projects"
+body:
+  title: "Projects"
+  subtitle: "What we are and were up to."
+menu:
+  - label: "^Home"
+    href: "/"
+keys:
+  - "doc-lib"
+  - "edenrm"
+  - "edenshdos"
+  - "jcard-template"
+  - "maeng-mini"
+  - "mjpegfplay"
+  - "slides"
+  - "qedit"

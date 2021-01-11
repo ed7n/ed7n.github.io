@@ -1,0 +1,22 @@
+path: "net/jcard-template/about"
+date: "2021-01-10"
+head:
+  title: "About J-Card Template"
+body:
+  title: "About J-Card Template"
+  subtitle: "Some information about this application."
+menu:
+  - label: "Images"
+    href: "#images"
+    title: "Images"
+    subtitle: "For use on the front cover."
+  - label: "Fonts"
+    href: "#fonts"
+    title: "Fonts"
+    subtitle: "Dynamicize your J-cards by changing its typography."
+  - label: "Serialization"
+    href: "#serialization"
+    title: "Serialization"
+    subtitle: "Preserve your J-card into a file!"
+  - label: "^J-Card Template"
+    href: ".."

@@ -1,0 +1,10 @@
+path: "edenshdos/license"
+date: "2021-01-10"
+head:
+  title: "License | EDENshdos"
+body:
+  title: "License"
+  subtitle: "EDENsh/dos is licensed under the MIT."
+menu:
+  - label: "^EDENsh/dos"
+    href: ".."
