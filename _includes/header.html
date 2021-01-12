@@ -5,7 +5,9 @@
 {% if page.head.title %}
   <header>
     <h1>{{ page.body.title }}</h1>
-    <span class="subtitle">{{ page.body.subtitle }}</span>
+    {% if page.body.subtitle %}
+      <span class="subtitle">{{ page.body.subtitle }}</span>
+    {% endif %}
   </header>
 {% else %} {% include banner.html %} {% endif %}
 <hr />

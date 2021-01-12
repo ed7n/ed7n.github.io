@@ -1,0 +1,13 @@
+path: ""
+date: "2021-01-12"
+head:
+  title: "NET"
+body:
+  title: "NET"
+menu:
+  - label: "Services"
+    href: "#services"
+    title: "Services"
+    subtitle: "Self-serve web applications."
+  - label: "^Home"
+    href: "/"
