@@ -1,10 +1,18 @@
 path: "qedit/history"
-date: "2021-01-10"
+date: "2021-01-12"
 head:
   title: "History | QEdit"
 body:
   title: "History"
   subtitle: "From CDEx to QEdit and beyond."
 menu:
+  - label: "Background"
+    href: "#background"
+    title: "Background"
+    subtitle: ""
+  - label: "Developmental Versions"
+    href: "#developmental-versions"
+    title: "Developmental Versions"
+    subtitle: ""
   - label: "^QEdit"
     href: ".."
