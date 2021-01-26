@@ -4,23 +4,23 @@ key: "home_projects"
 {% include variables.html %}
 <section>
   <div class="italic">
-    <span>The following projects have a corresponding section in the Online
-Portal. The most complete list can be found in our [<{{ htmlAOut }}
+    <p>The following projects have a corresponding section in the Online Portal.
+The most complete list can be found in our [<{{ htmlAOut }}
 "{{ gitHome }}?tab=repositories">list of repositories</a>]. Sorted ascendingly
 by name.</span>
   </div>
   <div>
-    <ul class="anchor">
+    <dl class="anchor">
       {% for key in page.keys %}
       <li>{% include li-page.html key=key %}</li>
       {% endfor %}
-    </ul>
+    </dl>
   </div>
   <div>
-    <ul class="anchor">
-      <li><span>[<a href="/{{ site.data["home"].path }}"
->EDEN Online</a>]</span><span><span class="eden"
->ED7 ENTERTAINMENT</span> Online Portal. <span class="italic">Itself is a project alright.</span></span></li>
-    </ul>
+    <dl class="anchor">
+      <li><dt>[<a href="/{{ site.data["home"].path }}"
+>EDEN Online</a>]</dt><dd><span class="eden"
+>ED7 ENTERTAINMENT</span> Online Portal. <span class="italic">Itself is a project alright.</span></dd></li>
+    </dl>
   </div>
 </section>
