@@ -7,17 +7,17 @@ key: "home_pages"
     <p>Sorted ascendingly by name.</p>
   </div>
   <div>
-    <dl class="anchor">
+    <ul class="anchor">
       {% for key in page.keys %}
       <li>{% include li-page.html key=key %}</li>
       {% endfor %}
     </ul>
   </div>
   <div>
-    <dl class="anchor">
+    <ul class="anchor">
       <li><dt>[<a href="/{{ site.data["home_pages"].path }}"
 >Pages</a>]</dt><dd
 >Where uncategorized pages are categorized to. <span class="italic">Recursion intensifies…</span></dd></li>
-    </dl>
+    </ul>
   </div>
 </section>
