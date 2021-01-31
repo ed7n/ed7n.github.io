@@ -1,0 +1,18 @@
+path: "pages/about/style"
+date: "2021-01-31"
+head:
+  title: "Style"
+body:
+  title: "Style"
+  subtitle: "About the Online Portal's style."
+menu:
+  - label: "Layouts"
+    href: "#layouts"
+    title: "Layouts"
+    subtitle: "Adapting to different media contexts."
+  - label: "Fonts"
+    href: "#fonts"
+    title: "Fonts"
+    subtitle: "We use Cantarell and Liberation Mono."
+  - label: "^About"
+    href: ".."

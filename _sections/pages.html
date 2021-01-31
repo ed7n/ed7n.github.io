@@ -1,12 +1,10 @@
 <ul class="anchor">
-  <li><dt>[<a href="pages/keyboard-navigation"
->Keyboard Navigation</a>]</dt><dd
->You can move around the Online Portal with just your keyboard!</dd></li>
-  <li><dt>[<a href="pages/media-queries"
->Media Queries</a>]</dt><dd
->Used by websites to adapt to your media context.</dd></li>
-  <li><dt>[<a href="pages/child-template"
->Child Template</a>]</dt><dd
->A preview of the look-and-feel on children pages.</dd></li>
+  <li><dt>[<a href="/{{ site.data["home_media-queries"].path }}"
+>{{ site.data["home_media-queries"].body.title }}</a>]</dt><dd
+>{{ site.data["home_media-queries"].body.subtitle }}</dd></li>
+  <li><dt>[<a href="/{{ site.data["home_child-template"].path }}"
+>{{ site.data["home_child-template"].body.title }}</a>]</dt><dd
+>{{ site.data["home_child-template"].body.subtitle }}</dd></li>
 </ul>
-<p>For more, visit the [<a href="pages">Pages page</a>].</p>
+<p>For more, visit the [<a href="/{{ site.data["home_pages"].path }}">Pages
+page</a>].</p>
