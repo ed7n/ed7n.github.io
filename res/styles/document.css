@@ -170,7 +170,7 @@ li {
   margin-inline-start: calc(var(--spacer) * 4);
 }
 
-li:hover {
+:not(a) > li:hover {
   background-color: var(--colorHoverBackground);
 }
 
