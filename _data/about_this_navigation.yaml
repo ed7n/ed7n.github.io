@@ -1,5 +1,5 @@
 path: "pages/about/navigation"
-date: "2021-01-31"
+date: "2021-02-03"
 head:
   title: "Navigation"
 body:
@@ -14,6 +14,10 @@ menu:
     href: "#jump-menu"
     title: "Jump Menu"
     subtitle: "Conveniently known as the global jump menu."
+  - label: "Links"
+    href: "#links"
+    title: "Links"
+    subtitle: "About their extra visual features."
   - label: "Keyboard Use"
     href: "#keyboard-use"
     title: "Keyboard Use"

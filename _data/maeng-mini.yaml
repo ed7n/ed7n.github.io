@@ -1,10 +1,10 @@
 path: "net/maeng-mini"
-date: "2021-01-10"
+date: "2021-02-03"
 head:
   title: "Mæŋ Mini"
 body:
   title: "Mæŋ Mini"
-  subtitle: "Portable CD Player Simulator / Web Audio Player."
+  subtitle: "Portable CD Player Simulator. Web Audio Player."
 menu:
   - label: "Featured"
     href: "#featured"

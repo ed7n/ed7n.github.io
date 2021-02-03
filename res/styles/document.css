@@ -25,6 +25,10 @@ article > section {
   padding-block-start: calc(var(--spacer) * 2);
 }
 
+article > section:target {
+  animation: 2s linear 3s both targetHighlightFadeOut;
+}
+
 article > section h5,
 article > section li,
 article > section p {
@@ -170,10 +174,6 @@ li {
   margin-inline-start: calc(var(--spacer) * 4);
 }
 
-:not(a) > li:hover {
-  background-color: var(--colorHoverBackground);
-}
-
 li > dd,
 li > dt {
   display: inline;
@@ -181,4 +181,18 @@ li > dt {
 
 li > dt + dd::before {
   content: " — ";
+}
+
+:not(a) > li:hover {
+  background-color: var(--colorHoverBackground);
+}
+
+@keyframes targetHighlightFadeOut {
+  from {
+    background-color: var(--colorHoverBackground);
+  }
+
+  to {
+    background-color: var(--colorBackground);
+  }
 }

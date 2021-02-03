@@ -1,0 +1,18 @@
+path: "pages/user-agent"
+date: "2021-02-03"
+head:
+  title: "User Agent"
+body:
+  title: "User Agent"
+  subtitle: "About your browser or the like."
+menu:
+  - label: "Properties"
+    href: "#properties"
+    title: "Properties"
+    subtitle: ""
+  - label: "Credits"
+    href: "#credits"
+    title: "Credits"
+    subtitle: ""
+  - label: "^Home"
+    href: "/"

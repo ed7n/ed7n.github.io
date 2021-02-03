@@ -1,5 +1,5 @@
 path: ""
-date: "2021-02-01"
+date: "2021-02-03"
 menu:
   - label: "News"
     href: "#news"
@@ -20,4 +20,4 @@ menu:
   - label: "About"
     href: "#about"
     title: "About"
-    subtitle: "What/who do you want to read about?"
+    subtitle: "What or who do you want to read about?"
