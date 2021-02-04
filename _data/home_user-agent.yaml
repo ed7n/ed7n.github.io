@@ -1,5 +1,5 @@
 path: "pages/user-agent"
-date: "2021-02-03"
+date: "2021-02-04"
 head:
   title: "User Agent"
 body:
@@ -21,6 +21,6 @@ menu:
   - label: "Fun"
     href: "#fun"
     title: "Fun"
-    subtitle: ""
+    subtitle: "Random play things."
   - label: "^Home"
     href: "/"

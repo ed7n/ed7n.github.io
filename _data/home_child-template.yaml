@@ -1,10 +1,10 @@
 path: "pages/child-template"
-date: "2021-01-10"
+date: "2021-02-04"
 head:
   title: "Child Template"
 body:
   title: "Child Template"
-  subtitle: "A preview of the look-and-feel on children pages."
+  subtitle: "A preview of the Online Portal's look-and-feel."
 menu:
   - label: "Lorem Ipsum"
     href: "#lorem-ipsum"

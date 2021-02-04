@@ -4,9 +4,9 @@ key: "home_projects"
 {% include variables.html %}
 <section>
   <div>
-    <p><i>The following projects have a corresponding section in the Online
-Portal. The most complete list can be found in our [<{{ htmlAOut }}
-"{{ gitHome }}?tab=repositories">list of repositories</a>]. Sorted ascendingly
+    <p><i>The following projects have a home in the Online Portal. The most
+complete list can be found in our [<{{ htmlAOut }}
+"{{ gitHome }}?tab=repositories">list of repositories</a>]. Ordered ascendingly
 by name.</i></p>
   </div>
   <div>
@@ -14,13 +14,9 @@ by name.</i></p>
       {% for key in page.keys %}
       <li>{% include li-page.html key=key %}</li>
       {% endfor %}
-    </ul>
-  </div>
-  <div>
-    <ul class="anchor">
       <li><span>[<a href="/{{ site.data["home"].path }}"
 >{{ siteTitle }}</a>]</span><span
->{{ siteSubtitle }} <i>Itself is a project alright.</i></span></li>
+>{{ siteSubtitle }}. <i>Itself is a project alright.</i></span></li>
     </ul>
   </div>
 </section>

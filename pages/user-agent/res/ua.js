@@ -1,9 +1,7 @@
 {
-  const FORMATTER_CLOSING = "</code>",
-    FORMATTER_OPENING = "<code>",
-    LIST_CLOSING = "</ul>",
+  const LIST_CLOSING = "</ul>",
     LIST_OPENING = '<ul class="no-margin">',
-    TINGLE_TIME = 5000,
+    VIBRATE_DURATION = 5000,
     geolocationOptions = {
       enableHighAccuracy: true,
     },
@@ -36,21 +34,22 @@
       "vendor",
       "vendorSub",
       "webdriver",
-    ];
+    ],
+    shareData = {
+      text: "Use your smartphone as a vibrator.",
+      url: "https://ed7n.github.io/pages/user-agent#fun",
+    };
 
   function parse(data) {
     if (typeof data === "function") return parse(data.apply(navigator));
     if (Array.isArray(data)) return formatArray(data);
-    if (String(data).length)
-      return FORMATTER_OPENING + data + FORMATTER_CLOSING;
-    return "";
+    return String(data).length ? data : "";
   }
 
   function formatArray(items) {
     if (items.length) {
       let out = LIST_OPENING;
-      for (item of items)
-        out += "<li>" + FORMATTER_OPENING + item + FORMATTER_CLOSING + "</li>";
+      for (item of items) out += "<li>" + item + "</li>";
       return out + LIST_CLOSING;
     }
     return "";
@@ -60,12 +59,7 @@
     if (array.length) {
       let out = LIST_OPENING;
       for (let index = 0; index < array.length; index++)
-        out +=
-          "<li>" +
-          FORMATTER_OPENING +
-          array.item(index).type +
-          FORMATTER_CLOSING +
-          "</li>";
+        out += "<li>" + array.item(index).type + "</li>";
       return out + LIST_CLOSING;
     }
     return "";
@@ -75,12 +69,7 @@
     if (array.length) {
       let out = LIST_OPENING;
       for (let index = 0; index < array.length; index++)
-        out +=
-          "<li>" +
-          FORMATTER_OPENING +
-          array.item(index).name +
-          FORMATTER_CLOSING +
-          "</li>";
+        out += "<li>" + array.item(index).name + "</li>";
       return out + LIST_CLOSING;
     }
     return "";
@@ -91,7 +80,7 @@
   }
 
   function vibrate() {
-    navigator.vibrate(TINGLE_TIME);
+    navigator.vibrate(VIBRATE_DURATION);
   }
 
   function getCurrentLocation() {
@@ -117,6 +106,10 @@
 
   function geolocationError(error) {
     window.alert(error.message);
+  }
+
+  function share() {
+    navigator.share(shareData);
   }
 
   for (primitive of primitives) {

@@ -1,5 +1,5 @@
 path: "pages"
-date: "2021-01-10"
+date: "2021-02-04"
 head:
   title: "Pages"
 body:
@@ -16,4 +16,5 @@ keys:
   - "home_media-queries"
   - "home_news"
   - "home_projects"
+  - "home_user-agent"
   - "home_weebly-gateway"
