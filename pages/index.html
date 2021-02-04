@@ -3,8 +3,8 @@ key: "home_pages"
 ---
 {% include variables.html %}
 <section>
-  <div class="italic">
-    <p>Sorted ascendingly by name.</p>
+  <div>
+    <p><i>Sorted ascendingly by name.</i></p>
   </div>
   <div>
     <ul class="anchor">
@@ -15,9 +15,9 @@ key: "home_pages"
   </div>
   <div>
     <ul class="anchor">
-      <li><dt>[<a href="/{{ site.data["home_pages"].path }}"
->{{ site.data["home_pages"].body.title }}</a>]</dt><dd
->{{ site.data["home_pages"].body.subtitle }} <span class="italic">Recursion intensifies…</span></dd></li>
+      <li><span>[<a href="/{{ site.data["home_pages"].path }}"
+>{{ site.data["home_pages"].body.title }}</a>]</span><span
+>{{ site.data["home_pages"].body.subtitle }} <i>Recursion intensifies…</i></span></li>
     </ul>
   </div>
 </section>

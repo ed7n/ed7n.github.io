@@ -1,9 +1,9 @@
 path: ""
-date: "2021-01-12"
+date: "2021-02-03"
 head:
   title: "NET"
 body:
-  title: "NET"
+  banner: "<link rel=\"stylesheet\" href=\"res/net-aw-banner.css\" /><img id=\"net-aw-banner\" src=\"res/media/net-aw-banner.png\" alt=\"Welcome to NET world.\" />"
 menu:
   - label: "Services"
     href: "#services"

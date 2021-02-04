@@ -3,11 +3,11 @@ key: "home_projects"
 ---
 {% include variables.html %}
 <section>
-  <div class="italic">
-    <p>The following projects have a corresponding section in the Online Portal.
-The most complete list can be found in our [<{{ htmlAOut }}
+  <div>
+    <p><i>The following projects have a corresponding section in the Online
+Portal. The most complete list can be found in our [<{{ htmlAOut }}
 "{{ gitHome }}?tab=repositories">list of repositories</a>]. Sorted ascendingly
-by name.</span>
+by name.</i></p>
   </div>
   <div>
     <ul class="anchor">
@@ -18,9 +18,9 @@ by name.</span>
   </div>
   <div>
     <ul class="anchor">
-      <li><dt>[<a href="/{{ site.data["home"].path }}"
->{{ siteTitle }}</a>]</dt><dd
->{{ siteSubtitle }} <span class="italic">Itself is a project alright.</span></dd></li>
+      <li><span>[<a href="/{{ site.data["home"].path }}"
+>{{ siteTitle }}</a>]</span><span
+>{{ siteSubtitle }} <i>Itself is a project alright.</i></span></li>
     </ul>
   </div>
 </section>
