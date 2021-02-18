@@ -93,7 +93,7 @@ a.up::before {
   text-decoration: underline;
 }
 
-.no-margin {
+.no-margin * {
   margin-block-end: 0;
   margin-block-start: 0;
 }

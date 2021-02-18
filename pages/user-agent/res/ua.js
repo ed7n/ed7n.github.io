@@ -121,4 +121,5 @@
   }
   append("length", parse(window.history.length));
   append("scrollRestoration", parse(window.history.scrollRestoration));
+  append("referrer", parse(document.referrer));
 }
