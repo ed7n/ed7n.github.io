@@ -1,0 +1,155 @@
+<form>
+  <fieldset>
+    <legend>Typeface</legend>
+    <div class="field row">
+      <label for="textbox-family">Font:</label>
+      <div class="input rigid">
+        <input id="textbox-family" type="text" list="textbox-families" value="Cantarell" />
+        <datalist id="textbox-families">
+          <option>cursive</option>
+          <option>emoji</option>
+          <option>fangsong</option>
+          <option>fantasy</option>
+          <option>math</option>
+          <option>monospace</option>
+          <option>sans-serif</option>
+          <option>serif</option>
+          <option>system-ui</option>
+          <option>ui-monospace</option>
+          <option>ui-rounded</option>
+          <option>ui-sans-serif</option>
+          <option>ui-serif</option>
+        </datalist>
+      </div>
+    </div>
+    <div class="field row">
+      <label for="textbox-size-value">Size:</label>
+      <div class="input short">
+        <input id="textbox-size-value" type="number" value="12" />
+        <select id="textbox-size-unit">
+          <option selected>pt</option>
+          <option>px</option>
+          <option>cm</option>
+          <option>mm</option>
+          <option>in</option>
+          <option>pc</option>
+        </select>
+      </div>
+    </div>
+    <div class="field row">
+      <label>Effects:</label>
+      <div class="input short">
+        <div class="field switch">
+          <input id="textbox-bold" type="checkbox" />
+          <label for="textbox-bold"><b>B</b></label></label>
+        </div>
+        <div class="field switch">
+          <input id="textbox-italic" type="checkbox" />
+          <label for="textbox-italic"><i>I</i></label>
+        </div>
+        <div class="field switch">
+          <input id="textbox-underline" type="checkbox" />
+          <label for="textbox-underline"><u>U</u></label>
+        </div>
+        <div class="field switch">
+          <input id="textbox-strike" type="checkbox" />
+          <label for="textbox-strike"><s>S</s></label>
+        </div>
+      </div>
+    </div>
+    <div class="field row">
+      <label for="textbox-color">Color:</label>
+      <div class="input rigid">
+        <input id="textbox-color" type="color" value="#bf7f7f" />
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Metrics</legend>
+    <p>Unless otherwise mentioned, values are in <code>px</code>.</p>
+    <section>
+      <h5>Position</h5>
+      <div class="field column">
+        <label for="textbox-x">X, Y Coordinates:</label>
+        <div class="input shorter">
+          <input id="textbox-x" type="number" value="0" />
+          <span>,&nbsp;</span>
+          <input id="textbox-y" type="number" value="12" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <h5>Scaling & Rotation</h5>
+      <div class="group">
+        <div class="field column">
+          <label for="textbox-width">Width:</label>
+          <div class="input short">
+            <input id="textbox-width" type="number" value="352" />
+          </div>
+        </div>
+        <div class="field column">
+          <label for="textbox-height">Height:</label>
+          <div class="input short">
+            <input id="textbox-height" type="number" value="288" />
+          </div>
+        </div>
+        <div class="field column">
+          <label for="textbox-rotation">Rotation (°):</label>
+          <div class="input short">
+            <input id="textbox-rotation" type="number" step="0.1" value="1.8" />
+          </div>
+        </div>
+      </div>
+      <div class="field switch">
+        <input type="checkbox" id="textbox-lock-ratio" />
+        <label for="textbox-lock-ratio">Lock Ratio</label>
+      </div>
+    </section>
+  </fieldset>
+  <fieldset>
+    <legend>Content</legend>
+    <div class="group">
+      <div class="field switch">
+        <input type="checkbox" id="textbox-visible" />
+        <label for="textbox-visible">Visible</label>
+      </div>
+      <div class="field switch">
+        <input type="checkbox" id="textbox-draw-text" />
+        <label for="textbox-draw-text">Draw Text</label>
+      </div>
+    </div>
+    <div class="field column">
+      <label for="textbox-text">Text:</label>
+      <div class="input fluid">
+        <textarea id="textbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+      </div>
+    </div>
+    <div class="field row">
+      <label for="textbox-inline-alignment">Inline Alignment:</label>
+      <div class="input fluid">
+        <select id="textbox-inline-alignment">
+          <option selected>Start</option>
+          <option>Center</option>
+          <option>Justify</option>
+          <option>End</option>
+        </select>
+      </div>
+    </div>
+    <div class="field row">
+      <label for="textbox-block-alignment">Block Alignment:</label>
+      <div class="input fluid">
+        <select id="textbox-block-alignment">
+          <option selected>Start</option>
+          <option>Center</option>
+          <option>End</option>
+        </select>
+      </div>
+    </div>
+  </fieldset>
+  <div class="field row no-label space-between">
+    <div class="input short">
+      <button type="button">OK</button>
+      <button type="reset">Reset</button>
+    </div>
+  </div>
+</form>

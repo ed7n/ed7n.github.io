@@ -1,0 +1,22 @@
+path: "net/unagi"
+date: "2021-03-11"
+head:
+  title: "Unagi"
+body:
+  title: "Unagi"
+  subtitle: "Universal NET Application Graphical Interface."
+menu:
+  - label: "Demonstration"
+    href: "#demonstration"
+    title: "Demonstration"
+    subtitle: ""
+  - label: "About"
+    href: "#about"
+    title: "About"
+    subtitle: ""
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+    subtitle: ""
+  - label: "^Home"
+    href: "/"

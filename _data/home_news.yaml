@@ -1,5 +1,5 @@
 path: "pages/news"
-date: "2021-02-04"
+date: "2021-03-11"
 head:
   title: "News"
 body:
@@ -9,5 +9,6 @@ menu:
   - label: "^Home"
     href: "/"
 keys:
+  - "news_20210311"
   - "news_20200818"
   - "news_20191002"

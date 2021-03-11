@@ -1,0 +1,9 @@
+date: "2021-03-11"
+head:
+  title: "Introducing Our Web UI Framework"
+body:
+  title: "Introducing Our Web UI Framework"
+  subtitle: "For universal web applications."
+menu:
+  - label: "^News"
+    href: ".."

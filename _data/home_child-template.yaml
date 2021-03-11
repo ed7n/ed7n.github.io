@@ -1,5 +1,5 @@
 path: "pages/child-template"
-date: "2021-02-04"
+date: "2021-03-11"
 head:
   title: "Child Template"
 body:
@@ -10,10 +10,6 @@ menu:
     href: "#lorem-ipsum"
     title: "Lorem Ipsum"
     subtitle: "\"Industry's standard dummy text ever since the 1500s\""
-  - label: "Pangrams"
-    href: "#pangrams"
-    title: "Pangrams"
-    subtitle: "\"Sentences using every letter of a given alphabet.\""
   - label: "CDDA"
     href: "#cdda"
     title: "Compact Disc Digital Audio (CDDA)"

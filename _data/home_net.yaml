@@ -1,5 +1,5 @@
-path: ""
-date: "2021-02-03"
+path: "net"
+date: "2021-03-11"
 head:
   title: "NET"
 body:
@@ -9,5 +9,9 @@ menu:
     href: "#services"
     title: "Services"
     subtitle: "Self-serve web applications."
+  - label: "Utilities"
+    href: "#utilities"
+    title: "Utilities"
+    subtitle: "For the making of web applications."
   - label: "^Home"
     href: "/"

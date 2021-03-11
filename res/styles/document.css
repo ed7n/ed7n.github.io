@@ -8,13 +8,12 @@ body {
   margin-inline-start: auto;
   max-width: 720px;
   min-width: auto;
-  --lineHeight: 1.67em;
-  --spacer: 0.25em;
+  --lineHeight: calc(var(--spacer) * 6.68);
 }
 
 article {
   margin-block-end: 4%;
-  margin-block-start: calc(var(--spacer) * 4);
+  margin-block-start: var(--spacer4);
   padding-inline-end: 4%;
   padding-inline-start: 4%;
 }
@@ -25,27 +24,28 @@ article div.hr {
 }
 
 article > section {
-  margin-block-end: calc(var(--spacer) * 8);
-  margin-block-start: calc(var(--spacer) * 6);
-  padding-block-start: calc(var(--spacer) * 2);
+  margin-block-end: var(--spacer8);
+  margin-block-start: var(--spacer6);
+  padding-block-start: var(--spacer2);
 }
 
 article > section:target {
   animation: 2s linear 3s both targetHighlightFadeOut;
 }
 
+article > section form,
 article > section h5,
 article > section li,
 article > section ol,
 article > section p,
 article > section ul {
-  margin-block-end: calc(var(--spacer) * 3);
+  margin-block-end: var(--spacer3);
 }
 
 article > section ol ol,
 article > section ul ul {
-  margin-block-start: calc(var(--spacer) * 2);
-  margin-inline-start: calc(var(--spacer) * 2);
+  margin-block-start: var(--spacer2);
+  margin-inline-start: var(--spacer2);
 }
 
 article > section p::before {
@@ -55,15 +55,15 @@ article > section p::before {
 }
 
 article > section pre {
-  margin-block-end: calc(var(--spacer) * 2);
+  margin-block-end: var(--spacer2);
 }
 
 article > section > div {
-  margin-block-end: calc(var(--spacer) * 4);
+  margin-block-end: var(--spacer4);
 }
 
 article > section > header {
-  margin-block-end: calc(var(--spacer) * 2);
+  margin-block-end: var(--spacer2);
 }
 
 article > section > header p {
@@ -86,7 +86,7 @@ blockquote {
   border-inline-start-style: solid;
   border-inline-start-width: 2px;
   color: var(--colorAccentHigh);
-  padding-inline-start: calc(var(--spacer) * 4);
+  padding-inline-start: var(--spacer4);
 }
 
 code,
@@ -178,7 +178,7 @@ img {
 }
 
 li {
-  margin-inline-start: calc(var(--spacer) * 4);
+  margin-inline-start: var(--spacer4);
 }
 
 li > :not(ul):first-child + :not(ul)::before {

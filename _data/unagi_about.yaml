@@ -1,0 +1,18 @@
+path: "net/unagi/about"
+date: "2021-03-11"
+head:
+  title: "About Unagi"
+body:
+  title: "About Unagi"
+  subtitle: "Some information about this framework."
+menu:
+  - label: "Specifications"
+    href: "#specifications"
+    title: "Specifications"
+    subtitle: "Pick from 20 styles that work on most sizes."
+  - label: "Prerequisites"
+    href: "#prerequisites"
+    title: "Prerequisites"
+    subtitle: "Internet Explorer is not supported."
+  - label: "^Unagi"
+    href: ".."
