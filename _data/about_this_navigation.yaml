@@ -1,5 +1,5 @@
 path: "pages/about/navigation"
-date: "2021-02-18"
+date: "2021-04-03"
 head:
   title: "Navigation"
 body:
@@ -21,6 +21,6 @@ menu:
   - label: "Keyboard Use"
     href: "#keyboard-use"
     title: "Keyboard Use"
-    subtitle: "You can move around the Online Portal with just your keyboard!"
+    subtitle: "You can move around the Online Portal with just your keyboard."
   - label: "^About"
     href: ".."

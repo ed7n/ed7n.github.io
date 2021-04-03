@@ -1,5 +1,5 @@
 path: "pages/about/eden"
-date: "2021-01-10"
+date: "2021-04-03"
 head:
   title: "About Us"
 body:
@@ -12,7 +12,7 @@ menu:
     subtitle: "What is <span class=\"eden\">ED7</span>? What about <span class=\"eden\">EDEN</span>?"
   - label: "History"
     href: "#history"
-    title: History
+    title: "History"
     subtitle: "Established in 2008…"
   - label: "^Home"
     href: "/"

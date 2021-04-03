@@ -18,7 +18,7 @@ key: "home_news"
     <h5>{{ year }}</h5>
     <ul>
       {% endif %}
-      <li>{{ site.data.news[key].date | date: "%m/%d/%Y" }}: [<a href="{{ href }}">{{ site.data.news[key].body.title | date: "%m/%d/%Y" }}</a>]</li>
+      <li>{{ site.data.news[key].date | date: dateFormat }}: [<a href="{{ href }}">{{ site.data.news[key].body.title | date: dateFormat }}</a>]</li>
       {% assign lastYear = year %}
       {% endfor %}
     </ul>

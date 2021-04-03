@@ -1,5 +1,5 @@
 NET Stylesheets README
-—by Brendon, 03/11/2021.
+—by Brendon, {{ "2021/03/11" | date: dateFormat }}.
 
 ——Dependencies
 `base.css` is required for all others. In addition, `form.css` uses the

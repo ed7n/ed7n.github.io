@@ -1,0 +1,14 @@
+path: "pages/about/eden/infrastructure"
+date: "2021-04-03"
+head:
+  title: "Infrastructure"
+body:
+  title: "Infrastructure"
+  subtitle: "About our everyday software."
+menu:
+  - label: "cfg"
+    href: "#cfg"
+    title: "cfg"
+    subtitle: "About the oddly-named cfg system."
+  - label: "^About Us"
+    href: ".."

@@ -5,20 +5,20 @@ site.data["home_2019-portal"].path }}">one
 page</a>].</p>
 </div>
 <div>
-  <h5>03/30/2020</h5>
+  <h5>{{ "2020/03/30" | date: dateFormat }}</h5>
   <p>Due to reports on missing margins with Safari and Chrome, its stylesheet
 was then backported to both browsers and others that didn't recognize
 bleeding-edge definitions and short forms.</p>
 </div>
 <div>
-  <h5>04/29/2020</h5>
+  <h5>{{ "2020/04/29" | date: dateFormat }}</h5>
   <p>As the Online Portal grew, hand-coding was becoming less tolerable. So the
 entirety was then refactored to use [<{{ htmlAOut }}"https://jekyllrb.com"
 >Jekyll</a>] in a modular fashion. However, to retain its dynamicism, content
 modules are still mostly hand-coded.</p>
 </div>
 <div>
-  <h5>01/04/2021</h5>
+  <h5>{{ "2021/01/04" | date: dateFormat }}</h5>
   <p>For the same reasons as above, a metadata pool was created. This allows for
 any page to access the metadata of any page (including itself), greatly-easing
 maintenance. A page metadata documents a page's path, title, subtitle, and those
