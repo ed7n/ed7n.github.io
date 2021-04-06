@@ -1,5 +1,5 @@
 path: "edenshdos/about"
-date: "2021-01-10"
+date: 2021-04-06
 head:
   title: "About EDENsh/dos"
 body:
@@ -9,10 +9,10 @@ menu:
   - label: "Scripts"
     href: "#scripts"
     title: "Scripts"
-    subtitle: ""
+    subtitle: "A bit on their what and how."
   - label: "Parallel Development"
     href: "#parallel-development"
     title: "Parallel Development"
-    subtitle: ""
+    subtitle: "Between the two platforms."
   - label: "^EDENsh/dos"
     href: ".."

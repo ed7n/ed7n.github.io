@@ -1,0 +1,16 @@
+path: "pages/changes"
+date: 2021-04-06
+head:
+  title: "Changes"
+body:
+  title: "Changes"
+  subtitle: "What's changed?"
+menu:
+  - label: "Archive"
+    href: "#archive"
+    title: "Archive"
+    subtitle: "of changes made in the previous years, ordered descendingly."
+  - label: "^Home"
+    href: "/"
+keys:
+  - "chlg_2020"

@@ -1,5 +1,5 @@
 path: "pages"
-date: "2021-02-04"
+date: 2021-02-04
 head:
   title: "Pages"
 body:
@@ -10,6 +10,7 @@ menu:
     href: "/"
 keys:
   - "home_2019-portal"
+  - "home_changes"
   - "home_child-template"
   - "home_contact"
   - "home_http-404"

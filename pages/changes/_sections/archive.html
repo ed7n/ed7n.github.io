@@ -1,0 +1,6 @@
+<ul class="smaller no-margin">
+  {% for key in page.keys %}
+  {% assign href = key | slice: 5, 8 %}
+  <li>[<a href="{{ href }}">{{ href }}</a>]</li>
+  {% endfor %}
+</ul>

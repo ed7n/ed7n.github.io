@@ -1,5 +1,5 @@
 path: "pages/about"
-date: "2021-04-03"
+date: 2021-04-03
 head:
   title: "About"
 body:
@@ -9,6 +9,7 @@ menu:
   - label: "Navigation"
     href: "#navigation"
     title: "Navigation"
+    subtitle: ""
   - label: "Design"
     href: "#design"
     title: "Design"

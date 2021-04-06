@@ -1,0 +1,9 @@
+date: 2021-04-06
+head:
+  title: "Changes in 2020"
+body:
+  title: "Changes in 2020"
+  subtitle: "What's changed in 2020?"
+menu:
+  - label: "^Changes"
+    href: ".."
