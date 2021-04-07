@@ -3,9 +3,19 @@ key: "slides_reconstruction"
 ---
 {% include variables.html %}
 <section>
-  <h5>{{ "2020-08-18" | date: dateForm }}</h5>
-  <p>A lot needs to be done. We don't expect NET-Slides to compete with of its
+  <div>
+    <h5>{{ "2020-08-18" | date: dateForm }}</h5>
+    <p>A lot needs to be done. We don't expect NET-Slides to compete with of its
 equivalents. We felt that the need to learn more about our tools, and decided to
-practice on a simpler project: Mæŋ Mini, which is destined to be the project for
-<del>2020</del> 2021.</p>
+practice on a simpler project: [<a href="/{{ site.data["maeng-mini"].path }}">{{
+site.data["maeng-mini"].body.title }}</a>], which <del>is</del> was destined to
+be the project for <del>2020</del> 2021.</p>
+  </div>
+  <div>
+    <h5>{{ "2021-04-07" | date: dateForm }}</h5>
+    <p>Components from the [<{{ htmlAOut }}"/net-slides/concept-ui">NET-Slides
+Concept UI</a>] were adapted to [<a href="/{{ site.data["unagi"].path }}">{{
+site.data["unagi"].body.title }}</a>], our web UI framework which will be used
+in NET-Slides.</p>
+  </div>
 </section>

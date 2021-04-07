@@ -4,6 +4,11 @@ key: "home_user-agent"
 {% include variables.html %}
 <script defer src="res/ua.js"></script>
 <section>
+  <p>This page uses some web APIs to identify your user agent and its runtime
+environment. Much like [<a href="/{{ site.data["home_media-queries"].path }}">{{
+site.data["home_media-queries"].body.title }}</a>], they can be abused to
+construct a fingerprint. Therefore, some values may be fudged to minimize the
+side effect.</p>
   <p>JavaScript is required for this page to work correctly.</p>
 </section>
 {% include sections.html %}

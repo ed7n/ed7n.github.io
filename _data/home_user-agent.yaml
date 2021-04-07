@@ -1,10 +1,10 @@
 path: "pages/user-agent"
-date: 2021-02-18
+date: 2021-04-07
 head:
   title: "User Agent"
 body:
   title: "User Agent"
-  subtitle: "About your browser or the like."
+  subtitle: "Identifying your browser or the like."
 menu:
   - label: "Navigator"
     href: "#navigator"

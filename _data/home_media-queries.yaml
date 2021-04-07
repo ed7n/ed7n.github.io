@@ -1,10 +1,10 @@
 path: "pages/media-queries"
-date: 2021-02-03
+date: 2021-04-07
 head:
   title: "Media Queries"
 body:
   title: "Media Queries"
-  subtitle: "Used by websites to adapt to your media context."
+  subtitle: "Allows websites to know your media context."
 menu:
   - label: "Media Type"
     href: "#media-type"
