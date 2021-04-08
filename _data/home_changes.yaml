@@ -1,15 +1,19 @@
 path: "pages/changes"
-date: 2021-04-07
+date: 2021-04-08
 head:
   title: "Changes"
 body:
   title: "Changes"
-  subtitle: "What's changed?"
+  subtitle: "What's changed here?"
 menu:
-  - label: "Archive"
-    href: "#archive"
-    title: "Archive"
-    subtitle: "of what changed in the previous years."
+  - label: "This Year"
+    href: "#this-year"
+    title: "This Year"
+    subtitle: ""
+  - label: "Last Years"
+    href: "#last-years"
+    title: "Last Years"
+    subtitle: ""
   - label: "^Home"
     href: "/"
 keys:
