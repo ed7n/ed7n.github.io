@@ -1,11 +1,15 @@
 path: "net/unagi/demonstration"
-date: 2021-03-11
+date: 2021-04-14
 head:
   title: "Unagi Demonstration"
 body:
   title: "Unagi Demonstration"
   subtitle: "A preview of its looks and feels."
 menu:
+  - label: "Menu"
+    href: "#menu"
+    title: "Menu"
+    subtitle: "A desktop-class menu bar using only CSS."
   - label: "Textbox"
     href: "#textbox"
     title: "Textbox"

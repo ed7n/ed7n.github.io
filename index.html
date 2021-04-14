@@ -10,7 +10,7 @@ key: "home"
 >This website follows your color scheme preference: currently <span id=
 "prefers-color-scheme"></span>.</li>
     <li
->04/08: [<a href="/{{ site.data["home_changes"].path }}">{{ site.data["home_changes"].body.subtitle }}</a>]</li>
+>{{ site.data["home_changes"].date | date: "%m/%d" }}: [<a href="/{{ site.data["home_changes"].path }}">{{ site.data["home_changes"].body.subtitle }}</a>]</li>
   </ul>
 </section>
 {% include sections.html %}

@@ -1,5 +1,5 @@
 path: "net/unagi/about"
-date: 2021-03-11
+date: 2021-04-14
 head:
   title: "About Unagi"
 body:
@@ -9,7 +9,7 @@ menu:
   - label: "Specifications"
     href: "#specifications"
     title: "Specifications"
-    subtitle: "Pick from 20 styles that work on most sizes."
+    subtitle: "Pick from 20 field styles that work on most sizes."
   - label: "Prerequisites"
     href: "#prerequisites"
     title: "Prerequisites"

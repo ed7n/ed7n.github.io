@@ -3,6 +3,7 @@ date: 2021-04-07
 head:
   title: "Mæŋ Mini"
 body:
+  banner: "<link rel=\"stylesheet\" href=\"res/mm.css\" /><img id=\"mm\" src=\"res/media/mm.png\" />"
   title: "Mæŋ Mini"
   subtitle: "Portable CD player simulator."
 menu:
