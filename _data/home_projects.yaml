@@ -1,5 +1,5 @@
 path: "pages/projects"
-date: 2021-03-11
+date: 2021-05-05
 head:
   title: "Projects"
 body:
@@ -9,6 +9,7 @@ menu:
   - label: "^Home"
     href: "/"
 keys:
+  - "calc"
   - "doc-lib"
   - "edenrm"
   - "edenshdos"

@@ -1,0 +1,26 @@
+path: "calc"
+date: 2021-05-05
+head:
+  title: "Calc"
+body:
+  title: "Calc"
+  subtitle: "An undependable calculator for Bash."
+menu:
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release files and supplements."
+  - label: "Usage"
+    href: "#usage"
+    title: "Usage"
+    subtitle: "Execution syntax."
+  - label: "About"
+    href: "#about"
+    title: "About"
+    subtitle: ""
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+    subtitle: ""
+  - label: "^Home"
+    href: "/"

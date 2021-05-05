@@ -1,0 +1,10 @@
+path: "calc/about"
+date: 2021-05-05
+head:
+  title: "About Calc"
+body:
+  title: "About Calc"
+  subtitle: "Some information about this project."
+menu:
+  - label: "^Calc"
+    href: ".."

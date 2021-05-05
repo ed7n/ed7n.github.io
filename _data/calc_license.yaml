@@ -1,0 +1,10 @@
+path: "calc/license"
+date: 2021-05-05
+head:
+  title: "License | Calc"
+body:
+  title: "License"
+  subtitle: "Calc is licensed under the MIT."
+menu:
+  - label: "^Calc"
+    href: ".."

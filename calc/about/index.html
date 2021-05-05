@@ -1,0 +1,34 @@
+---
+key: "calc_about"
+---
+{% include variables.html %}
+<section>
+  <div>
+    <p><i>This project is not to be taken seriously. If you need a calculator,
+then either get one for cheap, or use [<{{ htmlAOut }}"https://speedcrunch.org"
+>SpeedCrunch</a>].</i></p>
+  </div>
+  <div>
+    <p>Here are my ridiculous attempts to make a calculator (with links to their
+screenshots):</p>
+    <p>The [<{{ htmlAOut }}"{{ gitHome }}/calc/raw/master/res/u1.png">first
+one</a>] dates back to 2013. I was writing only batch scripts at the time, and
+my skills were infant. It stores up to eight lines of input,
+partially-calculates after each one, and saves their end result. The latter two
+are only to be printed with the help function (<kbd><kbd>0</kbd></kbd>). The
+reason for the input limitation is that each of its eight prompts and parses
+were scripted separately; there are eight copies of the same lines of
+command.</p>
+    <p>The [<{{ htmlAOut }}"{{ gitHome }}/calc/raw/master/res/u2.png">second
+one</a>] surfaced over 61 months later. My skills have much matured by then. It
+lifted input limitations, moved partial calculations to the <kbd><kbd
+>peek</kbd></kbd> function, introduced basic memory functions and the option to
+prepend inputs to the expression. It was made from scratch for [<a href="/{{
+site.data["edenshdos"].path }}">EDENsh/dos</a>].</p>
+    <p>The [<{{ htmlAOut }}"{{ gitHome }}/calc/raw/master/res/u3.png">third and
+latest one</a>] is a modification of the second. It introduced the <kbd><kbd
+>ext</kbd></kbd> option that sets fractional precision for simple divisions like
+<kbd><kbd>1 / 9</kbd></kbd>, because divisions are otherwise done integrally.
+The feature is simulated by multiplying the dividend by ten for each significant
+figure, alongside some string operations.</p>
+</section>

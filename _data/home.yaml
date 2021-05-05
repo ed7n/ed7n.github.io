@@ -1,5 +1,5 @@
 path: ""
-date: 2021-04-08
+date: 2021-05-05
 menu:
   - label: "News"
     href: "#news"
@@ -12,7 +12,7 @@ menu:
   - label: "Projects"
     href: "#projects"
     title: "Projects"
-    subtitle: "Featured by activity."
+    subtitle: "Featured by preference."
   - label: "Pages"
     href: "#pages"
     title: "Pages"
