@@ -1,5 +1,5 @@
 path: "pages/changes"
-date: 2021-05-09
+date: 2021-05-16
 head:
   title: "Changes"
 body:
@@ -9,11 +9,11 @@ menu:
   - label: "This Year"
     href: "#this-year"
     title: "This Year"
-    subtitle: ""
+    subtitle: "Ordered descendingly by date."
   - label: "Last Years"
     href: "#last-years"
     title: "Last Years"
-    subtitle: ""
+    subtitle: "Ordered descendingly."
   - label: "^Home"
     href: "/"
 keys:
