@@ -1,7 +1,8 @@
 {
   const LIST_CLOSING = "</ul>",
     LIST_OPENING = '<ul class="no-margin">',
-    VIBRATE_DURATION = 5000,
+    body = document.body,
+    fun = document.getElementById("fun"),
     geolocationOptions = {
       enableHighAccuracy: true,
     },
@@ -35,6 +36,8 @@
       "vendorSub",
       "webdriver",
     ],
+    rotateDelay = 100,
+    sensation = document.getElementById("sensation"),
     shareData = {
       text: "Use your smartphone as a vibrator.",
       url: "https://ed7n.github.io/pages/user-agent#fun",
@@ -80,7 +83,7 @@
   }
 
   function vibrate() {
-    navigator.vibrate(VIBRATE_DURATION);
+    navigator.vibrate(sensation.value);
   }
 
   function getCurrentLocation() {
@@ -106,6 +109,16 @@
 
   function geolocationError(error) {
     window.alert(error.message);
+  }
+
+  function rotate() {
+    body.style.setProperty("--sensation", sensation.value / 1000 + "s");
+    fun.classList.remove("rotate");
+    setTimeout(rotateCallback, rotateDelay);
+  }
+
+  function rotateCallback() {
+    fun.classList.add("rotate");
   }
 
   function share() {
