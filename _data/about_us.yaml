@@ -1,8 +1,9 @@
 path: "pages/about/eden"
-date: 2021-04-03
+date: 2021-06-10
 head:
   title: "About Us"
 body:
+  banner: "<link rel=\"stylesheet\" href=\"res/eden.css\" /><img id=\"eden\" src=\"res/media/eden.png\" alt=\"ED7 ENTERTAINMENT.\" />"
   title: "About Us"
   subtitle: "Who and what we are."
 menu:

@@ -1,0 +1,10 @@
+path: "net/jcard-template/credits"
+date: 2021-06-10
+head:
+  title: "Credits | J-Card Template"
+body:
+  title: "Credits"
+  subtitle: "Cheers to these talented people."
+menu:
+  - label: "^J-Card Template"
+    href: ".."
