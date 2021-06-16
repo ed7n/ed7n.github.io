@@ -1,23 +1,23 @@
 path: "pages/about/navigation"
-date: 2021-04-03
+date: 2021-06-15
 head:
   title: "Navigation"
 body:
   title: "Navigation"
   subtitle: "Moving around the Online Portal."
 menu:
-  - label: "Page Menu"
-    href: "#page-menu"
-    title: "Page Menu"
-    subtitle: "of contents."
-  - label: "Jump Menu"
-    href: "#jump-menu"
-    title: "Jump Menu"
-    subtitle: "Conveniently known as the global jump menu."
+  - label: "Menus"
+    href: "#menus"
+    title: "Menus"
+    subtitle: "For page and website navigation."
+  - label: "Toolbar"
+    href: "#toolbar"
+    title: "Toolbar"
+    subtitle: "For Top, Back, and Forward controls."
   - label: "Links"
     href: "#links"
     title: "Links"
-    subtitle: "About their extra visual features."
+    subtitle: "About their visual features."
   - label: "Keyboard Use"
     href: "#keyboard-use"
     title: "Keyboard Use"
