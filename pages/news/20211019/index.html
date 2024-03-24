@@ -1,0 +1,30 @@
+---
+key: "news_20211019"
+---
+{%-include variables.html-%}
+<section>
+  <h3>{{"2021-10-19" | date: formDate}}</h3>
+  <p>For just over two years, Liberation Mono has been our official monospace
+typeface. However, we ourselves hardly complied.</p>
+  <p>There had been a long-running discrepancy in our monospace font selection
+across our infrastructure. As a result, most applications used Liberation Mono,
+while a few--like our text editor and terminal emulator--used the environment
+default, which turned out to be Bitstream Vera Sans Mono. Since said two
+applications had been used in most of our activities, we barely used Liberation
+Mono throughout this past couple of years.</p>
+  <p>Said discrepancy had been brought back and forth in our agenda for well
+over a year. As our desktop environment had gone major changes over the past few
+weeks (see our new Netronic desktop theme suite!), we figured that this is a
+good time to patch it up.</p>
+  <p>After some long-overdue, subjective comparisons, we decided to abandon
+Liberation Mono in favor of the environment default--understandably, the former
+is designed to be metric-compatible with Courier New. However, the Bitstream
+Vera project and its DejaVu derivative seem to be unmaintained for a while. The
+Internet suggested that we turn to Hack. Having built on both foundations, we
+have been very happy with it as a drop-in replacement.</p>
+  <p>Therefore, Hack has replaced Liberation Mono as our official monospace
+typeface. This has been patched throughout our infrastructure and web projects,
+including EDEN Online. Hack is described as <q>a typeface designed for source
+code,</q> and is brought to the world by Source Foundry.</p>
+  <span>—Brendon, founder and sole member.</span>
+</section>

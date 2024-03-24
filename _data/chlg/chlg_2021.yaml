@@ -1,0 +1,9 @@
+path: "2021/"
+date: 2022-01-11
+head:
+  title: "Changes: 2021"
+body:
+  title: "Changes: 2021"
+  subtitle: "Changes made to this site in 2021."
+menu:
+  - key: "_changes"

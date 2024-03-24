@@ -1,0 +1,23 @@
+path: "qedit/"
+date: 2023-05-05
+head:
+  title: "QEdit"
+body:
+  title: "QEdit"
+  subtitle: "Cuesheet editor."
+menu:
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release packages and supplements."
+  - label: "Usage"
+    href: "#usage"
+    title: "Usage"
+    subtitle: "Basic instructions."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

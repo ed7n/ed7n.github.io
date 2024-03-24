@@ -1,0 +1,9 @@
+path: "net/viewer/history/"
+date: 2023-03-03
+head:
+  title: "History - NET-Viewer"
+body:
+  title: "History"
+  subtitle: "Just to view a text file."
+menu:
+  - key: "viewer"

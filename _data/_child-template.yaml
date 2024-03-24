@@ -1,0 +1,21 @@
+path: "pages/child-template/"
+date: 2023-02-17
+head:
+  title: "Child Template"
+body:
+  title: "Child Template"
+  subtitle: "A preview of the Online Portal's look-and-feel."
+menu:
+  - label: "Lorem Ipsum"
+    href: "#lorem-ipsum"
+    title: "Lorem Ipsum"
+    subtitle: "<q>Industry's standard dummy text ever since the 1500s</q>"
+  - label: "Compact Disc"
+    href: "#compact-disc"
+    title: "Compact Disc"
+    subtitle: "It's not compact anymore, but we still don't call it D."
+  - label: "Recursion"
+    href: "#recursion"
+    title: "Recursion"
+    subtitle: "in Computer Science."
+  - key: "_home"

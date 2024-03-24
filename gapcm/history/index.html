@@ -1,0 +1,57 @@
+---
+key: "gapcm_history"
+---
+{%-include variables.html-%}
+<section>
+  <p>After completing the game, I had the desire to rip its soundtrack, only to
+find out that:</p>
+  <ol>
+    <li>they can not be played conventionally,</li>
+    <li>they are barely audible when played raw, and</li>
+    <li>existing solutions were either bare or inaccessible.</li>
+  </ol>
+  <p>So--as usual--I decided to make my own. This time however, I went with the
+C programming language for the first time outside of school,<sup><a href="#note-a"
+>[a]</a></sup> after observing many similar projects. Then again, some are being
+rewritten in [<{{htmlAOut}}"https://www.rust-lang.org">Rust</a>]. Am I too
+late?</p>
+  <p>On {{"2023-03-28" | date: formDate}}, I uploaded a [<{{htmlAOut}}"https://www.youtube.com/watch?v=iPH80UoAIxE"
+>video recording</a>] of the decoder showcasing its looping capabilities. In its
+description, I said to <q>check back here by week's end for the public
+release.</q> Sorry it took a while. I got sick some time after the video,
+followed by the usual episodes of depression. I did work on my web
+projects--which were lighter on myself--during those periods before resuming in
+mid-April.</p>
+  <p>While the main goal is to be able to rip the game soundtrack, I also wanted
+to get a genuine start with C while simultaneously maturing my code which
+includes a tiny commons library. As with all recent projects, working iterations
+were repeatedly refactored until no more could be done.</p>
+  <p>Since I was making command-line applications, I took this opportunity to
+update my Java counterparts. I also updated [{%include a-page.html key="pnic"%}]
+to fix a minor bug I encountered when using [{%include a-page.html key=
+"pnic_kesimate"%}] for positional and size calculations.</p>
+  <p>While making the prober, I added a bit of Lemina and Ronfar to vary the
+error message of having too many options. They are the easiest in-game
+characters to create speeches for. The prober covered the final parts of
+development before the initial release on {{"2023-05-05" | date: formDate}}.</p>
+  <p>Naturally, I went to test everything outside Debian. For Windows via
+Mingw-w64 and Wine, an alternative header file must be included for byte order
+conversions, while everything else works. Meanwhile, the Bionic C library on
+Android 11 was older than expected, as flushing an input stream returns a bad
+file descriptor error. Revision 2 ignores this, and otherwise works on Android
+11 via Termux.</p>
+  <p>The 16-bit extension introduced in Revision 3 began as <i>"what a waste of
+bytes!"</i> Implementing it meant fixing my mistake of hard-coding the transcode
+library to skip the padding bytes and treat samples as bytes. This somehow led
+me to my first unit tests in years.</p>
+  <p>The playback helper script introduced with Revision 3 started in my phone
+as a preserved long chain of commands to reduce the use of its touch keyboard.
+Later, the idea of a playback helper script became clear, and work on it moved
+to the Latitude 5480.</p>
+</section>
+<section>
+  <div class="hr"></div>
+  <ol class="no-margin smaller" type="a">
+    <li id="note-a">where I received very little instruction on.</li>
+  </ol>
+</section>

@@ -1,0 +1,9 @@
+path: "net/jcard-template/credits/"
+date: 2023-02-17
+head:
+  title: "Credits - J-Card Template"
+body:
+  title: "Credits"
+  subtitle: "Cheers to these talented people."
+menu:
+  - key: "jcard-template"

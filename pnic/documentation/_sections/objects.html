@@ -1,0 +1,29 @@
+<p>A {{data["pnic"].body.title}} object refers to an associative array with the
+following keys:</p>
+<ul class="technical">
+  <li><span
+>int</span><span
+>integer,</span></li>
+  <li><span
+>flt</span><span
+>float or fraction,</span></li>
+  <li><span
+>res</span><span
+>raw result,</span></li>
+  <li><span
+>neg</span><span
+>negative flag,</span></li>
+  <li><span
+>pos</span><span
+>positive flag, and</span></li>
+  <li><span
+>err</span><span
+>error.</span></li>
+</ul>
+<p>Empty <code>int</code>s and <code>flt</code>s default to <code>0</code>. A {{
+data["pnic"].body.title}} object representing the number zero is neither
+positive nor negative, thus both its <code>pos</code> and <code>neg</code> are
+empty.</p>
+<p>As an example, the following expression declares a {{data["pnic"].body.title
+}} object for the number <code>-0.41099</code>:</p>
+<pre><kbd>declare -A number=([flt]=41099 [neg]='neg')</kbd></pre>

@@ -1,0 +1,13 @@
+<p>Its implementations of addition, subtraction, and multiplication are based on
+hand algorithms taught during early and middle schools, how these operations are
+divisible into simpler problems, and how the algorithms are scalable to any real
+number imaginable.</p>
+<p>However, the same can not be said for division, <i>as I am yet to know how a
+divisor can be split into singular units</i>. Instead, it divides by repeatedly
+subtracting the divisor from the dividend, padding each with zeros to both
+improve its runtime and precision.</p>
+<p>Comparison and shift operators are added for convenience. While they can be
+done with the above four, their implementations are independent of them. In
+particular, the shift operators are bound to Bash's arithmetic limits.</p>
+<p>Information on using {{data["pnic"].body.title}} and its operators are in the
+[{%include a-page.html key="pnic_documentation"%}] page.

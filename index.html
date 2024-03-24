@@ -1,0 +1,20 @@
+---
+key: "_home"
+---
+{%-include variables.html-%}
+<link rel="stylesheet" href="{{sitePathRes}}/notices.css" />
+<script defer src="{{sitePathRes}}/notices.js"></script>
+<section class="no-margin smaller">
+  <ul id="notices">
+    <li><span>The [{%include a-page.html key="_about_color-scheme" html="color
+scheme"%}] is <span id="color-scheme-fallback">disabled</span><span id=
+"color-scheme-state"></span><span id="color-scheme-value"></span>.</span></li>
+    <li>[{%include a-page.html key="_changes"%}] were last made on {{data[
+"_changes"].date | date: formDate}}.</li>
+  </ul>
+</section>
+{%include sections.html-%}
+<section>
+  <div class="hr"></div>
+  <p><i>Built on <span class="bolder">NET</span> technology.</i></p>
+</section>

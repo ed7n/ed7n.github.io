@@ -1,0 +1,22 @@
+body {
+  --lengthMixer: calc(var(--lengthMixin) * 2 / 3);
+  --lengthMixin: calc(var(--spacer16) * 3);
+}
+
+#mixer-stage {
+  height: var(--lengthMixer);
+  width: var(--lengthMixer);
+  position: relative;
+  top: calc(var(--lengthMixin) / 2);
+  left: calc((var(--lengthMixin) - var(--lengthMixer)) / 2);
+}
+
+#mixin-stage {
+  height: var(--lengthMixin);
+  margin: auto;
+  width: var(--lengthMixin);
+}
+
+#output:target {
+  animation: none;
+}

@@ -1,0 +1,5 @@
+<ul class="line">
+{%-for key in pageData.keys-%}
+<li>[<a href="{{data.chlg[key].path}}">{{key | slice: 5, 8}}</a>]</li>
+{%-endfor-%}
+</ul>

@@ -1,0 +1,21 @@
+NET Stylesheets README by Brendon, 02/17/2023.
+
+——Usage
+First and foremost, load `base.css`. In standard use, follow with `layout.css`
+then either `application.css` or `document.css`. The rest may be loaded on
+demand.
+
+
+——Unagi
+`form.css`, `input.css`, and `una-menu.css` are parts of Unagi. `input.css` must
+be loaded prior to `form.css`.
+
+
+————Notice
+When setting widths, `min-content` may be inconsistent with custom labels due to
+some precedence towards the `size` attribute of input elements, whose default
+value varies across user agents. Either set this attribute to 7*, or use
+independent lengths for widths instead.
+
+* In standard conditions, it is the highest value to measure below
+  `lengthLabelMin` (97.8333 < 104). For mini!, use 5 (76.2333 < 79.0333).

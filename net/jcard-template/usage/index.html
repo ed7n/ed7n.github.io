@@ -1,0 +1,20 @@
+---
+key: "jcard-template_usage"
+---
+{%-include variables.html-%}
+<section>
+  <p>J-cards made with the [<{{htmlAOut}}"https://unixispower.gitlab.io/jcard-template"
+>original version</a>] can be reproduced with ours as their template metrices
+are identical.</p>
+    <p><i>Need help with the print shop? We also have [{%include a-page.html key
+="jcard-template_print-shop" html="a page"%}] for that.</i></p>
+</section>
+{%include sections.html-%}
+<section>
+  <div class="hr"></div>
+  <ol class="no-margin smaller" type="a">
+    <li id="note-a">Your files can not be accessed with their paths; they can
+only be manually provided by you. We also decided against embedding image data
+into the J-card data file.</li>
+  </ol>
+</section>

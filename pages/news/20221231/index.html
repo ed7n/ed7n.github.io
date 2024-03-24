@@ -1,0 +1,64 @@
+---
+key: "news_20221231"
+---
+{%-include variables.html-%}
+<section>
+  <h3>{{"2022-12-31" | date: formDate}}</h3>
+  <p>This year has been very eventful to say the least.</p>
+  <p>For us, we introduced Pnic in late May. It is a Bash script for
+trillion-digit arithmetic calculations. Initially, division's (/) limited
+precision prevented Pnic's true completion. This was quickly resolved with its
+new and current algorithm. Launched alongside Pnic was KESIMATE, our pocket
+calculator simulator powered by Pnic. However, because we slouched on its
+launch, we would like to insert the following addendum to <i>We Made Our Own
+Calculator</i>, the post that launched both projects.</p>
+  <blockquote>
+    <p>KESIMATE simulates a real pocket calculator authentically down to the
+display blink, while remaining relatively lightweight for life by staying
+independent of user interface (UI) libraries. It is also very small and
+portable: only 33 kiB including Pnic, and you can use it on anything that runs
+Bash. Finally, like with any good shell scripts, customizing its key bindings is
+as easy as editing a text file.</p>
+  </blockquote>
+  <p>KESIMATE is not perfect however: its performance on (square) roots is
+abysmal, and its capabilities are limited for many. We can also not say whether
+it is ready for production use. On our end, KESIMATE has been employed as our
+software calculator since its launch, even for crucial finances. It is through
+this that we found and fixed its and Pnic's bugs. When all is set, we may
+proceed to turn them into binaries to squeeze every last bit of performance.</p>
+  <p>Earlier this month, we reached our 14th anniversary, but were busy with
+various activities.</p>
+  <p>First, we discovered that--in Bash--it is faster to detect a variable's
+occupancy with its length rather than itself. This is opposite to other
+languages like C and Java, but this ultimately depends on how they are
+implemented. We refactored the scripts of all active projects while going over
+each to fix any bugs. This resulted in three revision releases today.</p>
+  <p>Meanwhile, we found a bug in Bash in which the length of some variables are
+returned incorrectly. This affected about 2% of our refactors, including Pnic.
+We filed a report as #110799 and it was since marked as done. Once a fix becomes
+available, we will wait for about half-a-year before revising those affected by
+it.</p>
+  <p>Second, we acquired our first Android tablet after at least seven years. We
+also made changes to our Android software infrastructure across all active
+devices to turn them--especially the tablet--into mobile versions of our aging
+PCs using only FOSS. While we are still undetermined on our entry into Android
+development, we are fascinated on how entry-level models have gone a long way
+from being unusable to adequate, minus their cameras. As for our PCs, we hope to
+replace our Latitude 5480 in four years (totaling to nine) before demoting it
+from Primary to Secondary.</p>
+  <p>Lastly, we spun off one of our internal Bash scripts into a public project.
+SheFF--short for Shell FFmpeg--prompts the user with options to build their
+FFmpeg command, FFmpeg being the multimedia multi-tool used by YouTube and
+NASA's Perseverance rover in Mars. Colloquially, SheFF is a video
+converter. Before developing software, media transcoding (conversion) was part
+of our production activities since the beginning, and finding the right tools
+was not easy. So, not only is SheFF a convenience for us, but also a throwback
+to our media production years, even though it missed our 14th anniversary by a
+few weeks.</p>
+  <p>As this year comes to a sighful close, we are looking forward to see what
+2023 will bring. You can help by actually looking after one another; not faking
+it. Likewise, we greatly appreciate those who reached out to us, particularly
+for J-Card Template--we should really work on it soon. With only seven minutes
+to New Year's Eve (UTC) at this time of writing, we wish you a great 2023.</p>
+  <span>—Brendon, founder and sole member.</span>
+</section>

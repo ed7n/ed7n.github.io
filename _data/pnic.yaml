@@ -1,0 +1,23 @@
+path: "pnic/"
+date: 2023-07-30
+head:
+  title: "Pnic"
+body:
+  title: "Pnic"
+  subtitle: "String-based math library for Bash."
+menu:
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release files and supplements."
+  - label: "Usage"
+    href: "#usage"
+    title: "Usage"
+    subtitle: "Basic instructions and documentation."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

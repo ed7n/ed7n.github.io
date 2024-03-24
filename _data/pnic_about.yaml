@@ -1,0 +1,21 @@
+path: "pnic/about/"
+date: 2023-05-15
+head:
+  title: "About Pnic"
+body:
+  title: "About Pnic"
+  subtitle: "Some information about this project."
+menu:
+  - label: "Representation"
+    href: "#representation"
+    title: "Representation"
+    subtitle: "8-bit trillions."
+  - label: "Operators"
+    href: "#operators"
+    title: "Operators"
+    subtitle: "Back to school."
+  - label: "Performance"
+    href: "#performance"
+    title: "Performance"
+    subtitle: "in big O notation."
+  - key: "pnic"

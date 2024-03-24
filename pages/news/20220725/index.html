@@ -1,0 +1,46 @@
+---
+key: "news_20220725"
+---
+{%-include variables.html-%}
+<section>
+  <h3>{{"2022-07-25" | date: formDate}}</h3>
+  <p>Three years ago, we introduced NET for our web projects starting with
+NET-Slides, for which we then made a concept UI envisioning an ideal
+desktop-class web application. Last year, we introduced Unagi, NET's web UI
+framework, with parts taken from the concept UI. Work on NET then stalled, hence
+the same for all web projects including J-Card Template. We have not settled on
+infrastructures for web applications, alongside other obligations.</p>
+  <p>Meanwhile, about ten months ago, our third-party desktop theme stopped
+working. Even today, we still have not heard back from its developers, and
+long-considered it dead after only nine short months of life. We proceeded to
+make our own desktop theme.</p>
+  <p>Making a GTK 3 theme requires understanding parts of its widget toolkit
+(our PCs run on Xfce desktop environment, which is built on GTK 3). This is
+fitting because we too wanted to know how GUI widgets go together. A theme is
+defined mainly with CSS, like those on the web, which--despite major
+differences--naturalized the adapting of NET to a GTK 3 theme. We took the
+skeleton of the default theme since the theme itself is also the least
+problematic. Well, GTK 3 turns out to be quite messy--evident from those
+stylesheets--but still got what we wanted--sort of.</p>
+  <p>Eventually, goals extended from just the theme to a more complete theming
+suite, covering Xfce's window manager and notification service, and Wine.
+Finally, the Netronic name came in the last days before its silent initial
+release.</p>
+  <p>We have a more accurate account of Netronic's backstory in its History
+page.</p>
+  <p>Today, we are officially announcing Update 1 of Netronic. Since the initial
+release, this Update brings a new color scheme based on Windows Classic;
+supports HDPI (150%), XHDPI (200%), and XXHDPI (300%) displays, plus an MHDPI
+(125%) variant of the window manager theme; basic Qt 5 support; and some fixes
+and minor edits. For ourselves, we automated much of the building process for
+the window manager themes, having saved much of our time and sanity.</p>
+  <p>Users migrating from Update 0 Revision 7 must be aware of some breaking
+changes. Correcting ourselves following Google's guidelines, HDPI is not 125%
+but 150%, and XHDPI is not 150% but 200%, 125% is now MHDPI. We also
+title-capitalized the Qt 5 color scheme names like we should have earlier. Our
+apologies for any inconvenience.</p>
+  <p>We hope that this Update will serve us for the times to come with less
+issues, and we will ultimately followup with Xfce's growing transition to GTK
+4.</p>
+  <span>—Brendon, founder and sole member.</span>
+</section>

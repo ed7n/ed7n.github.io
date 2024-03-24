@@ -1,0 +1,20 @@
+path: "pnic/kesimate/"
+date: 2023-07-30
+head:
+  title: "KESIMATE"
+body:
+  title: "KESIMATE"
+  subtitle: "Pocket calculator simulator."
+menu:
+  - label: "Features"
+    href: "#features"
+    title: "Features"
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release files."
+  - label: "Usage"
+    href: "#usage"
+    title: "Usage"
+    subtitle: "Basic instructions."
+  - key: "pnic"

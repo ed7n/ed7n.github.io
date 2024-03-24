@@ -1,0 +1,9 @@
+path: "doc-lib/license/"
+date: 2023-02-17
+head:
+  title: "License - Document Library"
+body:
+  title: "License"
+  subtitle: "Individual documents are available under CC-BY-SA 4.0."
+menu:
+  - key: "doc-lib"

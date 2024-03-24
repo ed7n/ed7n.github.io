@@ -1,0 +1,28 @@
+path: "pages/user-agent/"
+date: 2023-02-17
+head:
+  title: "User Agent"
+body:
+  title: "User Agent"
+  subtitle: "Identifying your browser or the like."
+menu:
+  - label: "Navigator"
+    href: "#navigator"
+    title: "Navigator"
+    subtitle: "Various user agent properties."
+  - label: "History"
+    href: "#history"
+    title: "History"
+    subtitle: "of pages visited in the current tab or frame."
+  - label: "Referrer"
+    href: "#referrer"
+    title: "Referrer"
+    subtitle: "URL of the page from which you got here."
+  - label: "Credits"
+    href: "#credits"
+    title: "Credits"
+  - label: "Fun"
+    href: "#fun"
+    title: "Fun"
+    subtitle: "Experimental play things."
+  - key: "_home"

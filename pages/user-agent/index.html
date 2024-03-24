@@ -1,0 +1,21 @@
+---
+key: "_user-agent"
+---
+{%-include variables.html-%}
+<link rel="stylesheet" href="{{sitePathRes}}/styles/input.css" />
+<link rel="stylesheet" href="{{sitePathRes}}/styles/form.css" />
+<link rel="stylesheet" href="res/user-agent.css" />
+<script defer src="res/user-agent.js"></script>
+<section>
+  <p>This page uses some web APIs to identify your user agent and its runtime
+environment. Much like [{%include a-page.html key="_media-queries"%}], they can
+be abused to construct a fingerprint. Therefore, some values may be fudged to
+minimize the side effect.</p>
+  <p>JavaScript is required for this page to work correctly.</p>
+</section>
+{%include sections.html-%}
+<section>
+  <div class="hr"></div>
+  <p><i>See also [{%include a-page.html key="_media-queries"%}] for a
+CSS-powered equivalent.</i></p>
+</section>

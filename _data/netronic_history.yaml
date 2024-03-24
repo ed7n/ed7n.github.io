@@ -1,0 +1,9 @@
+path: "netronic/history/"
+date: 2021-10-19
+head:
+  title: "History - Netronic"
+body:
+  title: "History"
+  subtitle: "Computing-Machine was broken."
+menu:
+  - key: "netronic"

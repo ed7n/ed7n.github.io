@@ -1,0 +1,15 @@
+path: "mjpegfplay/history/"
+date: 2021-01-10
+head:
+  title: "History - mJPEGfPlay"
+body:
+  title: "History"
+  subtitle: "Formerly part of UBC CPSC210-2018W-T1."
+menu:
+  - label: "Background"
+    href: "#background"
+    title: "Background"
+  - label: "Development"
+    href: "#development"
+    title: "Development"
+  - key: "mjpegfplay"

@@ -1,0 +1,85 @@
+---
+key: "_2019-portal"
+layout: "none"
+---
+{%-include variables.html-%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Brendon" />
+    <meta name="description" content="An adaptation of our first homepage." />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" href="res/styles.css" />
+    <title>EDEN Online</title>
+  </head>
+  <body>
+    <span>[{%include a-page.html class="up bolder" key="_home" html="Home"%}] —
+<small><i>This is an adaptation of the {{siteClass}} when it was first published
+on {{"2019-12-31" | date: formDate}}. Links are regularly updated to reflect the
+latest changes.</i></small></span>
+    <header>
+      <h1>EDEN Online</h1>
+      <span>H<small>OME</small> <small>OF</small> <small>THE</small> O<small>NE-</small>M<small>AN</small> P<small>SEUDO</small> O<small>RGANIZATION</small> E<small>STABLISHED</small> <small>IN</small> 2008.</span>
+    </header>
+    <hr role="none" />
+    <span><small class="bolder">Menu:</small>[&nbsp;<a href="#net-services">NET Services</a>&nbsp;]—[&nbsp;<a href="#projects">Projects</a>&nbsp;]—[&nbsp;<a href="#about">About</a>&nbsp;]—[&nbsp;<a href="#contact-information">Contact Information</a>&nbsp;]</span>
+    <hr role="none" />
+    <h2 id="net-services">NET Services</h2>
+    <hr role="none" />
+    <ul>
+      <li><span class="bolder">[{%include a-page.html key="jcard-template" html="J-Card Template"%}]</span> — Printable in-browser template for cassette tape J-cards, plus serialization (load/save) features and greater customizables.</li>
+      <li><span class="bolder">[{%include a-page.html key="slides" html="NET-Slides"%}]</span> — Self-contained web presentation software.</li>
+    </ul>
+    <h2 id="projects">Projects</h2>
+    <hr role="none" />
+    <span class="bolder"><i>In alphabetical order:</i></span>
+    <ul>
+      <li><span class="bolder">[{%include a-page.html key="doc-lib" html="Document Library"%}]</span> — A collection of documents and manuals written by me.</li>
+      <li><span class="bolder">[{%include a-page.html key="edenrm" html="EDENrm"%}]</span> — Desktop widget suite for Rainmeter 4 (and 3.3 with a fallback version).</li>
+      <li><span class="bolder">[{%include a-page.html key="edenshdos" html="EDENsh/dos"%}]</span> — A collection of Bash/DOS scripts. Calculator Inside!</li>
+      <li><span class="bolder">[{%include a-page.html key="mjpegfplay" html="mJPEGfPlay"%}]</span> — Bi-directional, multi-speed, parallel-buffered image file sequence player for Java.</li>
+      <li><span class="bolder">[{%include a-page.html key="qedit" html="Q-Edit"%}]</span> — Cue sheet editor written in Java.</li>
+    </ul>
+    <i>...and many more. Head over to our (my) [<a href="{{siteData.gitRepos}}">list of repositories</a>] for a complete listing.</i>
+    <h2 id="about">About</h2>
+    <hr role="none" />
+    <h3>The Organization</h3>
+    <p>ED7 ENTERTAINMENT was founded in late 2008 with the launch of <i>Shoot
+Brendon</i>, an interactive PowerPoint "game" where the player must tap on my
+face in order to proceed, or else the game ends. It was my first ever publicized
+media, and I wanted to put a brand to it just like the big production companies
+to achieve similar kinds of recognition.</p>
+    <p>The name ED7 goes way back to 2004 when I came up with my nickname ED
+[iːdi] for no apparent reason. The number 7 was then appended as it was my
+favorite at the time. In 2010, it came to my senses that the name ED7
+ENTERTAINMENT is too long, and that a lot of people were rather confused with
+the intended pronunciation of ED7 being "E.D. seven" and not "add seven." So
+instead of stripping off ENTERTAINMENT, leaving only ED7, I abbreviated the
+whole name to EDEN by taking the first two characters of each word. This is
+indeed pronounced like the familiar English word "eden," which should ease off
+the above confusion.</p>
+    <p>EDEN was once focused on media production; that is no longer the case
+once my computer and thus scripting then coding skills grew in the early 2010s.
+While most of my projects today are under the EDEN brand, they have no mention
+of it other than in their licenses. Today, EDEN is simply an alternative
+identifier to myself in my projects.</p>
+    <h3>Its Sole Member</h3>
+    <p>I have been running EDEN all by myself for over a decade. As above, the
+idea behind this pseudo-organization is to achieve the kinds of recognition that
+are similar to big production companies. So EDEN is simply an alternative
+identifier to myself in my projects (I feel like repeating myself), which is the
+reason to why I have been its sole member.</p>
+    <h2 id="contact-information">Contact Information</h2>
+    <hr role="none" />
+    <span><i>ED7 ENTERTAINMENT (Brendon Irwan) can be contacted by the following means:</i></span>
+    <ul>
+      <li><span class="bolder">E<small>LECTRONIC</small> M<small>AIL</small>: [<a href="mailto:BrendonIrwan@outlook.com">BrendonIrwan@outlook.com</a>]</span></li>
+    </ul>
+    <footer>
+      <hr role="none" />
+      <span><small>This work is licensed under a [<{{htmlAOut}}"https://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0 International License</a>].</small></span><br />
+      <span><small>This page was last updated by Brendon at {{pageDate | date: "%m/%d/%Y"}}. —[&nbsp;<a href="#top">TOP</a>&nbsp;]—</small></span>
+    </footer>
+  </body>
+</html>

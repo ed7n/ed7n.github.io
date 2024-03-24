@@ -1,0 +1,9 @@
+path: "mjpegfplay/reconstruction/"
+date: 2022-10-20
+head:
+  title: "Reconstruction - mJPEGfPlay"
+body:
+  title: "Reconstruction"
+  subtitle: "We axed plans for our ultimate media fiddler."
+menu:
+  - key: "mjpegfplay"

@@ -1,0 +1,40 @@
+---
+key: "jcard-template_history"
+---
+{%-include variables.html-%}
+<section>
+  <p>I found [<{{htmlAOut}}"https://unixispower.gitlab.io/jcard-template">this
+J-card template</a>] back in early 2018 and liked it for its ease of use,
+compared to those templates slapped into Word document files that may not appear
+consistently throughout various word processors. I used it for all my mix tapes
+since then.</p>
+  <p>However, I ran into a problem: Microsoft's Print To PDF feature did not
+cooperate well with Waterfox, a Firefox-based web browser. So I had to cave and
+use Internet Explorer--being my only alternative browser--as a remedy. Because
+Internet Explorer is so old, some texts were not displaying properly. It turns
+out that the fix was just defining an extra CSS rule to the spine title
+group.</p>
+  <p>Over time, I felt that I must refresh my base-level HTML + JavaScript
+skills I acquired back. So I set myself a challenge to modify and add new
+features to the existing template. This challenge meant actually reading and
+understanding someone else's code, something that I have never done to that
+point.</p>
+  <p>I am glad how it turned out. I started at {{"2019-02-18" | date: formDate}}
+11 00, then paused at 13 45 to get some sleep, then took another five hours or
+so to finish the remainder.</p>
+  <p>A part of the original project I had to strip out is server integration,
+because I have no experience nor any knowledge about them at that moment. This
+is no longer the case when I began serving it online.</p>
+  <p>Since then, I have been using it as a test bed to my web infrastructure. As
+such, it became the first to use the [{%include a-page.html key="unagi"%}]
+framework in early 2021, and--with the new user interface--real application mode
+in early 2023.</p>
+  <p>In late 2019, Blaine Murphy himself acknowledged this fork:</p>
+  <span class="smaller">Adapted from [<{{htmlAOut}}"https://twitter.com/unixispower/status/1210689295784132610"
+>Tweet</a>]:</span>
+  <blockquote>
+    <p>I'm glad you were able to navigate the mess of CSS :) That project was/is
+a personal challenge to use vanilla HTML5/CSS3/JS and oh man parts of the card
+layout code are hairy. Thanks for expanding on the idea and attributing &lt;3</p>
+  </blockquote>
+</section>

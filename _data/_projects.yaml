@@ -1,0 +1,28 @@
+path: "pages/projects/"
+date: 2023-05-05
+head:
+  title: "Projects"
+body:
+  title: "Projects"
+  subtitle: "What we are and were up to."
+menu:
+  - key: "_home"
+keys:
+  - "calc"
+  - "doc-lib"
+  - "ews"
+  - "edenrm"
+  - "edenshdos"
+  - "edjc"
+  - "gapcm"
+  - "jcard-template"
+  - "maeng-mini"
+  - "mjpegfplay"
+  - "mlsanitizer"
+  - "netronic"
+  - "pnic"
+  - "qedit"
+  - "sheff"
+  - "slides"
+  - "unagi"
+  - "viewer"

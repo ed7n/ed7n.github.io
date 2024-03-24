@@ -1,0 +1,29 @@
+<p>{{data["pnic"].body.title}} implements operators on top of those built into
+Bash. Thus, it is slower than lower-level equivalents, which have different use
+cases than those for {{data["pnic"].body.title}}.</p>
+<p>Unless otherwise noted, let <var>m</var> be the length of the longer operand,
+and <var>n</var> be that of the shorter.</p>
+<ul class="headered">
+  <li><span
+>Addition</span><span
+>O(<var>m</var>)</span></li>
+  <li><span
+>Subtraction</span><span
+>O(<var>m</var>)</span></li>
+  <li><span
+>Multiplication</span><span
+>O(<var>m</var><var>n</var>)</span></li>
+  <li><span
+>Division</span><span
+>O(<var>m</var><var>p</var>/<var>n</var>) where <var>m</var> is the dividend,
+<var>n</var> is the divisor, and <var>p</var> is the precision.</span></li>
+  <li><span
+>Comparison</span><span
+>O(<var>m</var>)</span></li>
+  <li><span
+>Shift</span><span
+>O(<var>n</var>), where <var>n</var> is the distance.</span></li>
+</ul>
+<p>These are very rough estimates with underlying operations unaccounted for.
+During testing, multiplication performed much slower than the rest. Division can
+perform even slower with large precision.</p>

@@ -1,0 +1,25 @@
+path: "pnic/documentation/"
+date: 2022-12-31
+head:
+  title: "Documentation - Pnic"
+body:
+  title: "Documentation"
+  subtitle: "Using Pnic."
+menu:
+  - label: "Setup"
+    href: "#setup"
+    title: "Setup"
+    subtitle: "Setting up Pnic."
+  - label: "Objects"
+    href: "#objects"
+    title: "Objects"
+    subtitle: "Associative arrays for and from functions."
+  - label: "Functions"
+    href: "#functions"
+    title: "Functions"
+    subtitle: "Interfacing with Pnic."
+  - label: "Expressions"
+    href: "#expressions"
+    title: "Expressions"
+    subtitle: "Basic interpreter syntax."
+  - key: "pnic"

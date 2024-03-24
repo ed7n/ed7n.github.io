@@ -1,0 +1,9 @@
+path: "pages/about/fonts/"
+date: 2023-02-17
+head:
+  title: "Fonts"
+body:
+  title: "Fonts"
+  subtitle: "We use Cantarell and Hack."
+menu:
+  - key: "_about"

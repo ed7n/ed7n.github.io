@@ -1,0 +1,21 @@
+<section>
+  <p>A binary digit (bit) has two symbols: 0 and 1. Eight of them together can
+produce 256 unique combinations of 0s and 1s. When used to represent numbers
+zero and onwards, the largest is 255, which is too small in many cases.</p>
+  <p>Alternatively, a number can also be represented as an array of digits, each
+of which is addressable by an index of the above representation. In other words,
+each of the 256 combinations of 0s and 1s corresponds to a digit index.
+Therefore, the largest number representable this way is 256 digits.<sup><a href=
+"#note-3">[3]</a></sup></p>
+  <p>However, this non-native numerical representation means that operators must
+be implemented in software and run much slower. Memory is required to store
+those implementations as well as working numbers. Such concerns are secondary to
+{{data["pnic"].body.title}}, and that we recommend those on critical
+infrastructure to seek low-level solutions instead.</p>
+</section>
+<section>
+  <ol class="no-margin smaller" start="3">
+    <li id="note-3">In practice, this would leave no memory for everything
+else unless the address space is larger than eight bits.</li>
+  </ol>
+</section>

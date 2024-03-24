@@ -1,0 +1,18 @@
+path: "gapcm/usage/"
+date: 2023-05-21
+head:
+  title: "Using GAPCM"
+body:
+  title: "Using GAPCM"
+  subtitle: "Supplementary guide."
+menu:
+menu:
+  - label: "PCM2WAV"
+    href: "#pcm2wav"
+    title: "PCM2WAV"
+    subtitle: "Interoperation with audio software."
+  - label: "Advanced"
+    href: "#advanced"
+    title: "Advanced"
+    subtitle: "Tricks from the Magic Guild."
+  - key: "gapcm"

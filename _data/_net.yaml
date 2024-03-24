@@ -1,0 +1,18 @@
+path: "net/"
+date: 2023-03-27
+head:
+  title: "NET World"
+body:
+  banner: "<img class=\"mono\" loading=\"lazy\" src=\"/res/media/net-aw-banner.png\" alt=\"Welcome to NET world.\" />"
+  title: "NET World"
+  subtitle: "Welcome to NET world."
+menu:
+  - label: "Services"
+    href: "#services"
+    title: "Services"
+    subtitle: "Self-serve web applications."
+  - label: "Utilities"
+    href: "#utilities"
+    title: "Utilities"
+    subtitle: "For the making of web applications."
+  - key: "_home"

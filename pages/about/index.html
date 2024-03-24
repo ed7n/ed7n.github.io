@@ -1,0 +1,24 @@
+---
+key: "_about"
+---
+{%-include variables.html-%}
+<section>
+  <p>{{siteTitle}} is the official website of [{%include a-page.html key=
+"_about-us" html=siteData.orgName%}]. It is designed to be as simple as humanly
+possible while maintaining some universal appeal, prioritizing accessibility,
+elegance, practicality, and semantics over appearance. We usually call it the {{
+siteClass}}.</p>
+  <p>If you want to dive deep into its technical specifications, then feel free
+to do any of the following:</p>
+  <ul>
+    <li>Enable your web browser's developer tools to see what is under its
+hood.</li>
+    <li>Check out its [<{{htmlAOut}}"{{gitHome}}/{{siteHost}}">Git repository</a
+>].</li>
+    <li>For the laymen, read the pages detailing its [<a href="#features"
+>features</a>].</li>
+  </ul>
+  <p>We would like to thank GitHub (and in turn, Microsoft) and the people who
+have kept and are keeping GitHub Pages running free of monetary charge.</p>
+</section>
+{%include sections.html%}

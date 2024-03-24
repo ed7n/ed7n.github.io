@@ -1,0 +1,9 @@
+path: "edjc/license/"
+date: 2022-06-12
+head:
+  title: "License - EDJC"
+body:
+  title: "License"
+  subtitle: "EDJC is licensed under the MIT."
+menu:
+  - key: "edjc"

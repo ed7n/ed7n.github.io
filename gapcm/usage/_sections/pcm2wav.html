@@ -1,0 +1,28 @@
+<section>
+  <p>A consumer PCM file should be headered to be conventionally usable. This
+can be done in many ways.</p>
+</section>
+<section>
+  <h3>FFmpeg</h3>
+  <p>You can pipe the decoder output to [<{{htmlAOut}}"https://ffmpeg.org"
+>FFmpeg</a>] and save it as a WAVE file:</p>
+  <pre><samp>$ <kbd>./gamdec -o - lunar2/rp040.pcm | ffmpeg -hide_banner -f u8 -ar 16276 -ac 1 -i - -c:a pcm_u8 rp040.wav</kbd></samp></pre>
+  <p>For stereo, set <code>-ac</code> to 2. Details can be found in [<{{htmlAOut
+}}"https://trac.ffmpeg.org/wiki/audio%20types">their wiki</a>].</p>
+</section>
+<section>
+  <h3>SoX</h3>
+  <p>If FFmpeg is too noisy, then you can do the same with [<{{htmlAOut}}"https://sox.sourceforge.net"
+>SoX</a>]:</p>
+  <pre><samp>$ <kbd>./gamdec -o - lunar2/rp041.pcm | sox -b 8 -e un -r 16276 -t raw -c 1 - rp041.wav</kbd></samp></pre>
+  <p>For stereo, set <code>-c</code> to 2.</p>
+</section>
+<section>
+  <h3>Tenacity</h3>
+  <p>You can also import the decoder output files into [<{{htmlAOut}}"https://tenacityaudio.org"
+>Tenacity</a>]: <kbd><samp>File</samp>→<samp>Import</samp>→<samp>Raw Data…</samp
+></kbd>, pick your file, set the appropriate values, then import away. From
+here, you can do whatever you want to.</p>
+  <p>The same goes for [<{{htmlAOut}}"https://www.audacityteam.org">Audacity</a
+>].</p>
+</section>

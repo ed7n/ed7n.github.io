@@ -1,0 +1,33 @@
+<section>
+  <p>A sequence is a directory with image files, optional audio files, and its
+metadata file. These can be prepared in any order.</p>
+</section>
+<section>
+  <h3>Image Files</h3>
+  <p>Using [<{{htmlAOut}}"https://ffmpeg.org">FFmpeg</a>], convert a video <code
+>in.mkv</code> into image files <code>1.jpg</code>, <code>2.jpg</code>, …
+with:</p>
+  <pre><samp>$ <kbd>ffmpeg -i in.mkv -cmp rd -dct faan -mbcmp rd -mbd rd -precmp rd -subcmp rd -trellis 2 -huffman optimal -q:v 16 %d.jpg</kbd></samp></pre>
+  <p>The above should result with the best possible output under quality (<code
+>-q:v</code>) 16. FFmpeg's JPEG encoder quality setting ranges from 2 (best) to
+31 (worst).</p>
+  <p>You can use <code>-r</code> and <code>-s</code> to set the output size and
+rate respectively.</p>
+  <p>While we recommend JPEG, Java--and {{data["mjpegfplay"].body.title}} in
+turn--also supports reading PNG, (W)BMP, and GIF images. However, a sequence
+must stick to a format, manually specified by its metadata file.</p>
+</section>
+<section>
+  <h3>Optional Audio Files</h3>
+  <p>Also using FFmpeg, convert the same video into PCM with:</p>
+  <pre><samp>$ <kbd>ffmpeg -i in.mkv 1.wav</kbd></samp></pre>
+  <p>Up to eight simultaneous audio streams are supported with separate files
+<code>1.wav</code>, <code>2.wav</code>, …, <code>8.wav</code>. Only the first
+stream will be used as a timing pilot.</p>
+</section>
+<section>
+  <h3>Metadata File</h3>
+  <p>A metadata file <code>metadata.edencfg</code> can be made with {{data[
+"mjpegfplay"].body.title}} under <kbd><samp>File</samp>→<samp>New…</samp></kbd
+>.</p>
+</section>

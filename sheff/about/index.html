@@ -1,0 +1,49 @@
+---
+key: "sheff_about"
+---
+{%-include variables.html-%}
+<section>
+  <section>
+    <p>{{data["sheff"].body.title}} is a shell frontend to FFmpeg. Colloquially,
+it may be described as a video converter, which is what it is most commonly used
+for.</p>
+  </section>
+  <section>
+    <h3>For End Users</h3>
+    <p>{{data["sheff"].body.title}}'s user interface is menu-driven. Users are
+prompted with options to build their FFmpeg command, which is to be run, edited
+(temporarily), or saved as a shell script. It softens the hardships from using
+the FFmpeg command line tools, and possibly demonstrates the basic structure of
+said commands. Options resemble their FFmpeg counterparts, so some familiarity
+is recommended.</p>
+  </section>
+  <section>
+    <h3>For Developers</h3>
+    <p>{{data["sheff"].body.title}} is designed to be quickly extensible. Its
+menu-driven user interface complements its array-centric data structure. In
+addition to menu selections, there are utility functions for reading integers
+(within a range), booleans, and times; as well as those that interact with
+underlying data. With this power, adding a single-argument option can take only
+thirty seconds.</p>
+  </section>
+  <section>
+    <h3>For Us</h3>
+    <p>{{data["sheff"].body.title}} became part of the [{%include a-page.html
+key="ews"%}] in early 2022 as EWS FFmpeg Helper. As such, parts of the
+infrastructure can be seen in its code. Its growing complexity spun it off into
+its own project. Its proven usefulness over the year publicized it to what it is
+today. We named it {{data["sheff"].body.title}} because of its likeness to a
+restaurant chef (notice the pronunciation), with FFmpeg being the kitchen, and
+the user as the customer. Though initially, its name was inspired from [<{{
+htmlAOut}}"https://github.com/WinFF/winff">WinFF</a>], a graphical FFmpeg
+frontend.</p>
+  </section>
+  <section>
+    <h3><i>For Me</i></h3>
+    <p><i>This project is a throwback to one of my longest-running computer
+activities. I have used at least a dozen of converters--including [<{{htmlAOut}}
+"https://www.xmedia-recode.de/en">XMedia Recode</a>]--before finally learning to
+use FFmpeg's command line tools. With this frontend, I hope to have made
+everyone's workflow a bit easier, just like those before me.</i></p>
+  </section>
+</section>

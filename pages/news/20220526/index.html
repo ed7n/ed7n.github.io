@@ -1,0 +1,53 @@
+---
+key: "news_20220526"
+---
+{%-include variables.html-%}
+<section>
+  <h3>{{"2022-05-26" | date: formDate}}</h3>
+  <p><i>Before I start: to those who wrote to me on J-Card Template, I hear you.
+There have been requests to fit more cards into a page, implement fold-out
+cards, and even templates for MiniDisc. The template was forked from Blaine
+Murphy's, and all I did is to add convenience features on top of it. So I will
+need to study how he lays down the card. Don't worry: they <strong>will</strong>
+come, one at a time, but I can't tell exactly when. And yes, the <code
+>LICENSE</code> file needs to be updated.</i></p>
+  <p>Calc is currently our oldest active project spanning over eight years of
+development. It provides an interface to the host's shell arithmetic features as
+a calculator. It has been very obvious to us that said features are not designed
+to be calculators, especially with no floating-point arithmetic.</p>
+  <p>After dropping Windows in late 2019, we attempted to bring fractional
+precision to elementary divisions like <kbd>1 / 9</kbd>. Normally, Calc returns
+a <samp>0</samp> for that, while our workaround produces exactly <samp
+>0.111111111111111111</samp> instead. As you might have guessed, this approach
+is elementary, and extrapolating such to other limitations can get extremely
+difficult.</p>
+  <p>Overcoming limitations has been a fun(?) part in our projects. In EDENrm:
+our Rainmeter skin suite, we made a rudimentary audio player that detects the
+end of an audio file with silence. We made similar audio players for PowerPoint
+too--without the silence detection. It has indeed been a long time since we
+pulled off tricks of those kinds. So, as a successor to Calc, we completed a
+math library for Bash (a shell commonly found in Unix-based operating
+systems).</p>
+  <p>Pnic is independent of Bash's arithmetic features; it does math with string
+manipulations and lookup tables, like those hand methods taught in early and
+middle schools. While its runtime performance is not very hot, it aims to be
+able to work on any real number imaginable--correctly of course. So--in
+theory--Pnic can multiply ten-million-digit numbers just fine. And yes, Pnic
+does floating-point arithmetic.</p>
+  <p>Division however, still relies on Bash's arithmetic features, so you will
+have to excuse us while we figure out ways to divide like the rest. For now, we
+injected our workaround from Calc, which not only overcame the limits of the
+dividend, but also worsens rounding errors.</p>
+  <p>But wait, there's more!</p>
+  <p>Introducing KESIMATE, a pocket calculator simulator that uses Pnic for its
+calculations. In addition to what's already in boring calculator programs, it
+simulates power, fraction, and percentage. It also has sign change and square
+root features. Only KESIMATE matches the behavior of real, physical pocket
+calculators--<i>as far as my collection goes.</i></p>
+  <p>You can find the links to the project pages in the home page under the
+Projects section.</p>
+  <p>Integrating Pnic into Calc could take a lifetime because we will need to
+implement an expression parser. So, that is definitely off the table, but we
+will still maintain Calc as we see fit.</p>
+  <span>—Brendon, founder and sole member.</span>
+</section>

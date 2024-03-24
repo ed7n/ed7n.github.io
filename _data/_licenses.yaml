@@ -1,0 +1,12 @@
+path: "pages/licenses/"
+date: 2023-02-17
+head:
+  title: "Licenses"
+body:
+  title: "Licenses"
+  subtitle: "Our copies of long legal instruments."
+menu:
+  - key: "_home"
+keys:
+  - "_licenses_bysa4"
+  - "_licenses_lgpl2"

@@ -1,0 +1,85 @@
+<section>
+  <p>These can be made convenient by using the prober with command substitution
+and shell variables.</p>
+</section>
+<section>
+  <h3>Endless Playback</h3>
+  <p>You can play a game PCM file virtually endlessly by piping the decoder
+output to a raw PCM player. One such is FFplay, part of FFmpeg:</p>
+  <pre><samp>$ <kbd>./gamdec -l -1 -o - lunar2/rp040.pcm | ffplay -autoexit -hide_banner -f u8 -ar 16276 -ac 1 -</kbd></samp></pre>
+  <p>This plays its loop 65535 times. For stereo, set <code>-ac</code> to 2. Use
+<code>-nodisp</code> to disable the graphical display (and thus controls).</p>
+  <p>At the time of writing, FFplay has issues playing raw stereo planar PCM at
+the above rate, while an <code>-ar</code> of 16274 works fine. This does not
+occur in FFmpeg.</p>
+</section>
+<section>
+  <h3>Original Sound</h3>
+  <p>You can simulate the in-game characteristics with this FFmpeg audio filter
+chain:</p>
+  <pre><samp><kbd>aresample=32552:filter_size=0:phase_shift=0,channelmap=0,lowpass=5000:p=1,lowpass=5000:p=1</kbd></samp></pre>
+  <p><code>channelmap</code> is required for <code>lowpass</code> to work. For
+stereo, set it to <code>0|1</code> (mind the pipe). <code>lowpass</code> is
+repeated for a 12 dB per octave rolloff. Adjust its cutoff to preference.</p>
+  <p>Note that 32252 is twice of 16276 and is the native rate of the RF5C164.</p>
+</section>
+<section>
+  <h3>Fade-in</h3>
+  <p>Some if not all game PCM files fade in in-game. With FFmpeg, you can
+recreate this with the <code>afade</code> filter:</p>
+  <pre><samp><kbd>afade=t=in:d=0.0795</kbd></samp></pre>
+  <p>The above duration is actually 16276 / 1024 / 2 seconds or half a sector.
+This is enough to smoothen the start of the PCM stream, and does not follow the
+in-game counterparts.</p>
+</section>
+<section>
+  <h3>No Lead</h3>
+  <p>To skip the lead, get the loop start position (mark) with the prober and
+multiply it by 1024 samples. With FFmpeg, you can pass this to the <code
+>atrim</code> filter:</p>
+  <pre><samp><kbd>atrim=start_sample=$(./gaminfo -m lunar2/rp040.pcm)*1024</kbd></samp></pre>
+  <p>For stereo, multiply the mark by 512 samples instead.</p>
+</section>
+<section>
+  <h3>VGM Rip</h3>
+  <p>The standard sequence of playing twice followed by a 10-second fade-out can
+be done with FFmpeg. Shell variables are much preferred this time:</p>
+  <pre><samp>$ <kbd>file=lunar2/rp040.pcm \
+      ; output=${file##*/}.wav \
+      ; fade=10 \
+      ; loop=2 \
+      ; rate=16276 \
+      ; channels=$(./gaminfo -c ${file}) \
+      ; mark=$(( $(./gaminfo -m ${file}) * (1024 / channels) )) \
+      ; end=$(( ($(./gaminfo -n ${file}) - mark) * loop + mark )) \
+      ; ./gamdec -p 0 -l $(( loop + 6 )) -o - ${file} \
+      | ffmpeg -hide_banner -f u8 -ar ${rate} -ac ${channels} -i - -c:a pcm_s16le \
+          -af "afade=t=out:start_sample=${end}:d=${fade},atrim=end_sample=${end} + ${rate} * ${fade}" \
+          ${output}</kbd></samp></pre>
+  <p>Adjust the parameters to preference.</p>
+</section>
+<section>
+  <h3>Reproducibility Test</h3>
+  <p>To verify the correctness of {{data["gapcm"].body.title}}, you can decode
+then encode a game PCM file and compare its checksum against that of its clone.
+This example requires shell support for arrays.</p>
+  <p>Given a file <var>file</var>:</p>
+  <pre><samp>$ <kbd>file=lunar2/rp041.pcm</kbd></samp></pre>
+  <p>Store its header fields into an array <var>fields</var>:</p>
+  <pre><samp>$ <kbd>IFS=$'\n ' && for field in $(./gaminfo ${file} | cut -d : -f 2 -s); do fields+=(${field}); done</kbd></samp></pre>
+  <p>Then pass them to the encoder within this long chain of commands:</p>
+  <pre><samp>$ <kbd>{
+  ./gamdec -p 0 -l 1 -t -o - ${file} \
+      | ./gamenc -c ${fields[0]} -m ${fields[1]} -n ${fields[2]} \
+          -ea 0x${fields[3]} 0x${fields[4]} 0x${fields[5]} 0x${fields[6]} 0x${fields[7]} 0x${fields[8]} \
+          -ep ${fields[9]} -ed ${fields[10]} \
+          -el ${fields[11]} ${fields[12]} ${fields[13]} -p ${fields[14]} \
+          -t -o - -
+} 2> /dev/null | md5sum -b ${file} -</kbd></samp></pre>
+  <p>The checksum for both files should be printed for you to match by eye.</p>
+  <p>If you want to run this test again, then clear <var>fields</var> first.</p>
+  <pre><samp>$ <kbd>unset fields[@]</kbd></samp></pre>
+  <p>Alternatively, you can also run <code>res/repro-test.sh</code> with a
+directory of game PCM files. This compares files by their bytes instead of
+checksums.</p>
+</section>

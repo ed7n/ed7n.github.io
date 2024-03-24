@@ -1,0 +1,30 @@
+---
+key: "news_20230410"
+---
+{%-include variables.html-%}
+<section>
+  <h3>{{"2023-04-10" | date: formDate}}</h3>
+  <p>Recently, we discovered a technique to achieve full DPI awareness on
+CSS-powered platforms. It passes our control of the root font size to the user
+agent--and you in turn--and basing all metrices on it instead of absolute units
+like pixel and point. This got both NET and Netronic to respect your font size
+preference down to their borders, much like adjusting the zoom level of a web
+page. Additionally, the root font size is also affected by DPI settings,
+effectively making this technique fully DPI aware.</p>
+  <p>For Netronic, said technique eliminates the need for DPI variants on its
+GTK themes. So, Revision 6 excludes them, <strong>which may break any high DPI
+setup</strong>. To migrate, do a clean install to remove those unneeded DPI
+variants, then select your preferred color variant with <samp>set a matching
+Xfwm4 theme</samp> disabled. For now, window manager (Xfwm4) themes are
+unaffected, but expect the same to happen in the future. We apologize for the
+inconvenience in return of its benefits.</p>
+  <p>For NET, said technique enables DPI awareness on our web applications and
+documents.</p>
+  <p>Unrelated to this post, this will be our last time working on four
+gigabytes of single-channel memory (RAM) at most after nearly 115 months. We
+finally gave in and decided to upgrade in hopes to enhance the usability of our
+aging Latitude 5480 without affecting our philosophies; eliminate memory
+concerns in our activities, not our products. CPU Turbo Boost remains locked and
+reserved for the last hurrah.</p>
+  <span>—Brendon, founder and sole member.</span>
+</section>

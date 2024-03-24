@@ -1,0 +1,9 @@
+path: "pages/about/layouts/"
+date: 2023-04-10
+head:
+  title: "Layouts"
+body:
+  title: "Layouts"
+  subtitle: "Adapting to different media contexts."
+menu:
+  - key: "_about"

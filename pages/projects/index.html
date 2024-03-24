@@ -1,0 +1,20 @@
+---
+key: "_projects"
+---
+{%-include variables.html-%}
+<section>
+  <section>
+    <p><i>The following projects have a home in the {{siteClass}}. The most
+complete list can be found in our [<{{htmlAOut}}"{{siteData.gitRepos}}">list of
+repositories</a>]. Ordered ascendingly by name.</i></p>
+  </section>
+  <section>
+    <ul class="anchor">
+    {%-for key in pageData.keys%}
+      <li>{%include li-page.html key=key%}</li>
+    {%-endfor%}
+      <li>{%include li-page.html key="_home" html=siteTitle cap=siteSubtitle
+open=1%}. <i>Itself is a project alright.</i></span></li>
+    </ul>
+  </section>
+</section>

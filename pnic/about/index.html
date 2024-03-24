@@ -1,0 +1,28 @@
+---
+key: "pnic_about"
+---
+{%-include variables.html-%}
+<section>
+  <section>
+    <p>{{data["pnic"].body.title}}'s goal is to at least perform the four basic
+arithmetic operations without directly using the host's arithmetic features.
+Currently, that host is Bash.</p>
+    <p>{{data["pnic"].body.title}} is a math library for use in Bash scripts.
+All operations except for shifts are done with string manipulations and lookup
+tables; they are mostly independent of both Bash's arithmetic<sup><a href=
+"#note-1">[1]</a></sup> and pattern matching<sup><a href="#note-2">[2]</a></sup>
+features. Thus, {{data["pnic"].body.title}} can work on numbers way beyond
+native limits: over twenty digits in an 8-bit environment.</p>
+  </section>
+  <section>
+    <ol class="no-margin smaller">
+      <li id="note-1">Bash's arithmetic feature is used in occupancy
+conditionals. Substring expansion parameters--for example--are automatically
+arithmetic in Bash, but {{data["pnic"].body.title}} does no such operations in
+them.</li>
+      <li id="note-2">except for replacing each character with a specified
+character, for sanity's sake.</li>
+    </ol>
+  </section>
+</section>
+{%include sections.html%}

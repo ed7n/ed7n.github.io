@@ -1,0 +1,23 @@
+path: "edenrm/"
+date: 2021-01-10
+head:
+  title: "EDENrm"
+body:
+  title: "EDENrm"
+  subtitle: "Desktop widget suite for Rainmeter 4 (and 3.3 with a fallback version)."
+menu:
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release packages and supplements."
+  - label: "Usage"
+    href: "#usage"
+    title: "Usage"
+    subtitle: "Basic instructions."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

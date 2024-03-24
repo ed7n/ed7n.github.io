@@ -1,0 +1,19 @@
+path: "edjc/"
+date: 2022-03-12
+head:
+  title: "EDJC"
+body:
+  title: "EDJC"
+  subtitle: "EDEN Java Commons API."
+menu:
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release packages and supplements."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

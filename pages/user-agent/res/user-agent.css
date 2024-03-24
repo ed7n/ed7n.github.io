@@ -1,0 +1,13 @@
+#fun.merry {
+  animation: var(--userAgentSensation) linear merry;
+}
+
+@keyframes merry {
+  from {
+    transform: rotateZ(0);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}

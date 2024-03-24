@@ -1,0 +1,35 @@
+<section>
+  <p>Download the latest release of {{data["netronic"].body.title}} found at the
+[{%include a-page.html class="up" key="netronic" href="#downloads" html="landing
+page"%}].</p>
+</section>
+<section>
+  <h3>GTK / Complete</h3>
+  <p>Extract the <code>themes</code> directory to either yourself: <code
+>~/.local/share</code>, or everyone: <code>/usr/local/share</code>.</p>
+</section>
+<section>
+  <h3>GTK / Individual</h3>
+  <p>Extract your preferred themes from the <code>themes</code> directory to
+either yourself: <code>~/.local/share/themes</code>, or everyone: <code
+>/usr/local/share/themes</code>.</p>
+</section>
+<section>
+  <h3>Qt 5</h3>
+  <p>The <code>qt5ct/colors</code> directory contains palette files for use with
+the Qt5 Configuration Tool (qt5ct). Extract it to either yourself: <code
+>~/.config/qt5ct</code>, or everyone: <code>/usr/share/qt5ct</code>.</p>
+  <p>If you installed qt5ct during this user session, you may have to relogin
+for changes to start taking effect. It should inform you when to do this to set
+<code>QT_QPA_PLATFORMTHEME=qt5ct</code>.</p>
+</section>
+<section>
+  <h3>Wine</h3>
+  <p>The <code>wine</code> directory contains registry files for importing.</p>
+  <p>You may want to disable theming--either in <code>winecfg</code>, or import
+<code>wine/winecfg-notheme.reg</code>--before importing your preferred <code>{{
+data["netronic"].body.title}}</code> registry file.</p>
+  <p>Alternatively, Wine staging users may try the GTK theming feature.</p>
+  <p>You may need to restart <code>wineserver</code> for these to take
+effect.</p>
+</section>

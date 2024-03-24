@@ -1,0 +1,25 @@
+path: "pages/about/navigation/"
+date: 2023-02-17
+head:
+  title: "Navigation"
+body:
+  title: "Navigation"
+  subtitle: "Moving around the website."
+menu:
+  - label: "Menus"
+    href: "#menus"
+    title: "Menus"
+    subtitle: "For page and site navigation."
+  - label: "Toolbar"
+    href: "#toolbar"
+    title: "Toolbar"
+    subtitle: "For Top, Back, and Forward controls."
+  - label: "Links"
+    href: "#links"
+    title: "Links"
+    subtitle: "About their visual features."
+  - label: "Keyboard Use"
+    href: "#keyboard-use"
+    title: "Keyboard Use"
+    subtitle: "More power to you."
+  - key: "_about"

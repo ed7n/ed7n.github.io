@@ -1,0 +1,23 @@
+path: "gapcm/"
+date: 2024-03-06
+head:
+  title: "GAPCM"
+body:
+  title: "GAPCM"
+  subtitle: "<i>Eternal Blue</i> PCM converter."
+menu:
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release packages and supplements."
+  - label: "Usage"
+    href: "#usage"
+    title: "Usage"
+    subtitle: "Basic instructions."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

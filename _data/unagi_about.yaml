@@ -1,0 +1,17 @@
+path: "net/unagi/about/"
+date: 2023-02-17
+head:
+  title: "About Unagi"
+body:
+  title: "About Unagi"
+  subtitle: "Some information about this framework."
+menu:
+  - label: "Specifications"
+    href: "#specifications"
+    title: "Specifications"
+    subtitle: "Works on most sizes with over 24 field styles."
+  - label: "Prerequisites"
+    href: "#prerequisites"
+    title: "Prerequisites"
+    subtitle: "Internet Explorer is not supported."
+  - key: "unagi"

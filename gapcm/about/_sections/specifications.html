@@ -1,0 +1,35 @@
+<section>
+  <p>A game PCM file is divided into 2048-byte sectors.</p>
+  <p>The first sector is the header. 2 bytes for format, 4 bytes for loop start
+position (mark), 4 bytes for length, 11 bytes for echo parameters, one byte for
+pregap, and the rest should be zeroes. Following the m68k, multibyte integers
+are stored in big-endian order.</p>
+  <p>The remaining sectors make up the PCM stream. Each 8-bit sample is preceded
+by eight zero-padding bits, totaling to 1024 samples per sector. For stereo
+streams, an even-numbered<sup><a href="#note-1">[1]</a></sup> sector has samples
+for the left, then the next one for the right. Therefore, two sectors are
+required to reconstruct 1024 stereo samples.</p>
+  <p>Each sample is a sign-magnitude representation of the range [−128, 127].
+[0x00, 0x7f] maps to [−1, −128], and [0x80, 0xff] maps to [0, 127], in which
+0xff or 127 is used as the loop stop control. They are played back at 16276 Hz
+or one-768th of ~12.5 MHz--at least on original hardware. Emulators and alike
+running at 60 Hz framerate play them at 16297 Hz.<sup><a href="#note-2">[2]</a
+></sup></p>
+  <p>More details can be found in [<{{htmlAOut}}"http://www.vgmpf.com/Wiki/index.php?title=PCM_(Lunar)"
+>this VGM Preservation Foundation wiki</a>], though we must correct that the
+length header field measures in frames, not samples.</p>
+</section>
+<section>
+  <div class="hr"></div>
+  <ol class="no-margin smaller">
+    <li id="note-1">Counting from and including the header.</li>
+    <li id="note-2"><div>16276 × (60 / (53693175 / (3420 × 262))), following
+<code>Genesis-Plus-GX/core/system.c</code>:
+      <blockquote>
+        <p>The original console would run exactly 53693175 M-cycles per sec
+(53203424 for PAL) 3420 M-cycles per line and 262 (313 for PAL) lines per
+frame.</p>
+      </blockquote>
+    </div></li>
+  </ol>
+</section>

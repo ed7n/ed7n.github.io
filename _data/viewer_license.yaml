@@ -1,0 +1,9 @@
+path: "net/viewer/license/"
+date: 2023-03-03
+head:
+  title: "License - NET-Viewer"
+body:
+  title: "License"
+  subtitle: "NET-Viewer is licensed under the MIT."
+menu:
+  - key: "viewer"

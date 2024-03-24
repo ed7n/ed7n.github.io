@@ -1,0 +1,9 @@
+path: "net/send-whatsapp/"
+date: 2023-07-05
+head:
+  title: "Send WhatsApp"
+body:
+  title: "Send WhatsApp"
+  subtitle: "To a phone number not in your contacts."
+menu:
+  - key: "_home"

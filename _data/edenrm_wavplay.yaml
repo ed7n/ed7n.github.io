@@ -1,0 +1,12 @@
+path: "edenrm/wavplay/"
+date: 2021-01-10
+head:
+  title: "WavPlay - EDENrm"
+body:
+  title: "WavPlay"
+  subtitle: "Includes a starter guide."
+menu:
+  - label: "Getting Started"
+    href: "#getting-started"
+    title: "Getting Started"
+  - key: "edenrm"

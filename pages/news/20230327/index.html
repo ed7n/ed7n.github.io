@@ -1,0 +1,49 @@
+---
+key: "news_20230327"
+---
+{%-include variables.html-%}
+<section>
+  <h3>{{"2023-03-27" | date: formDate}}</h3>
+  <section>
+    <p>Today, we are releasing Netronic Update 1 Revision 4 with changes that
+may be of your significance.</p>
+  </section>
+  <section>
+    <h4>Handy Dark Scheme Workaround</h4>
+    <p>GTK dark theming was improved with Xfce 4.18. However, Handy applications
+do not work with Netronic's dark themes, while fine with its light and Win9
+themes. Our workaround--titled above--presents the dark themes as otherwise, at
+the cost of foregoing system-wide <i>dark mode</i>.</p>
+    <p>Said workaround was included in the release package for Revision 3.
+Admittedly, we did not consider how much more bloat it added to the themes
+directory, on top of existing ones that are compromises to the CSS pixel unit
+issue.</p>
+    <p>So for Revision 4, we replaced the workaround with instructions to either
+rename your desired dark theme, or make a symbolic link to it, as long as its
+name does not end with <i>-dark</i>. The goal is to skirt around GTK's detection
+of dark themes, so applications work as if using a light theme but only
+technically and not visually. While this resolves the issue with Handy, it
+causes GTK to report your system color scheme as light.</p>
+    <p>By now, it should be obvious that--in addition to being half-baked--this
+dark theme mechanism is unclever in its design and execution.</p>
+  </section>
+  <section>
+    <h4>Initial GTK 4 Support</h4>
+    <p>With that out of the way, we are happy to announce Netronic's initial,
+alpha-quality support for GTK 4. Its stylesheets are modified from those for GTK
+3, with many parts being somehow forwards-compatible. For now, it aims to retain
+the functionality of GTK 4 applications, followed by basic visual
+correctness. Just so you know, a lot of borders are missing.</p>
+    <p>We hope for Netronic to be an early adopter; if it gets full GTK 4
+support before Greybird does, that will be awesome. Likely? Not with a one-man
+crew, but who knows. Of course, we will look at other GTK 4 themes for technical
+reference, so thanks to them.</p>
+    <p>With this announcement, we are not and will not be deprecating our GTK 3
+themes, neither can we tell when it will happen.</p>
+  </section>
+  <section>
+    <p>By the way, congratulations to Katerina Shkel for winning the Xfce 4.18
+wallpaper contest.</p>
+  </section>
+  <span>—Brendon, founder and sole member.</span>
+</section>

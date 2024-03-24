@@ -1,0 +1,259 @@
+.una-menu {
+  --timeDelayUnaMenuPeek: 0.125s;
+}
+
+.una-menu {
+  font-size: var(--fontSizeDent);
+  user-select: none;
+}
+
+.una-menu.soil,
+.una-menu.root,
+.una-menu.root:focus-within > .una-menu.stem,
+.una-menu.twig,
+.una-menu.twig:hover > .una-menu.stem,
+.una-menu.twig:focus-within > .una-menu.stem,
+.una-menu.leaf,
+.una-menu.item,
+.una-menu.icon {
+  display: flex;
+}
+
+.una-menu.soil,
+.una-menu.twig,
+.una-menu.leaf,
+.una-menu.item,
+.una-menu.icon {
+  flex-direction: row;
+}
+
+.una-menu.soil {
+  flex-wrap: wrap;
+}
+
+.una-menu.soil > .una-menu.hr,
+.una-menu.stem {
+  border-inline-end-style: solid;
+  border-inline-start-style: solid;
+}
+
+.una-menu.soil > .una-menu.hr {
+  border-inline-end-color: var(--colorAccentHigh);
+  border-inline-end-width: var(--widthBorder);
+  border-inline-start-color: var(--colorAccentLow);
+  border-inline-start-width: var(--widthBorder);
+}
+
+.una-menu.root,
+.una-menu.stem {
+  flex-direction: column;
+}
+
+.una-menu.root,
+.una-menu.root:focus-within > .una-menu.stem,
+.una-menu.twig,
+.una-menu.twig:hover > .una-menu.stem,
+.una-menu.twig:focus-within > .una-menu.stem,
+.una-menu.leaf,
+.una-menu.item,
+.una-menu.icon {
+  flex-wrap: nowrap;
+}
+
+.una-menu.root,
+.una-menu.twig,
+.una-menu.leaf {
+  padding-block-end: var(--spacer05);
+  padding-block-start: var(--spacer05);
+}
+
+.una-menu.root,
+.una-menu.twig {
+  position: relative;
+}
+
+.una-menu.root > .una-menu.stem,
+.una-menu.twig > .una-menu.stem {
+  display: none;
+}
+
+.una-menu.root > .una-menu.stem {
+  left: 0;
+  top: 100%;
+}
+
+.una-menu.root > .una-menu.item,
+.una-menu.twig > .una-menu.item,
+.una-menu.leaf > .una-menu.item,
+.una-menu.item > label,
+.una-menu.icon,
+.una-menu.mnemonic {
+  flex-shrink: 0;
+}
+
+.una-menu.root > .una-menu.item,
+.una-menu.twig > .una-menu.item,
+.una-menu.leaf > .una-menu.item,
+.una-menu.item > label,
+.una-menu.mnemonic {
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+.una-menu.root > .una-menu.item {
+  padding-inline-end: var(--spacer2);
+  padding-inline-start: var(--spacer2);
+}
+
+.una-menu.root:hover,
+.una-menu.twig:hover,
+.una-menu.leaf:hover {
+  background-color: var(--colorUnaMenuHoverBackground);
+}
+
+.una-menu.root:focus-within,
+.una-menu.twig:focus-within {
+  background-color: var(--colorUnaMenuFocusBackground);
+}
+
+.una-menu.root:active,
+.una-menu.twig:active,
+.una-menu.leaf:active {
+  background-color: var(--colorUnaMenuActiveBackground);
+}
+
+.una-menu.stem,
+.una-menu.stem > .una-menu.hr {
+  border-block-end-style: solid;
+  border-block-start-style: solid;
+}
+
+.una-menu.stem,
+.una-menu.twig,
+.una-menu.leaf,
+.una-menu.item > label,
+.una-menu.mnemonic {
+  min-width: max-content;
+}
+
+.una-menu.stem {
+  background-color: var(--colorAccentMin);
+  border-block-end-color: var(--colorAccentLow);
+  border-block-end-width: var(--widthBorderBumpEnd);
+  border-block-start-color: var(--colorAccentHigh);
+  border-block-start-width: var(--widthBorderBumpStart);
+  border-inline-end-color: var(--colorAccentLow);
+  border-inline-end-width: var(--widthBorderBumpEnd);
+  border-inline-start-color: var(--colorAccentHigh);
+  border-inline-start-width: var(--widthBorderBumpStart);
+  position: absolute;
+  z-index: 1;
+}
+
+.una-menu.stem > .una-menu.hr {
+  border-block-end-color: var(--colorAccentHigh);
+  border-block-end-width: var(--widthBorder);
+  border-block-start-color: var(--colorAccentLow);
+  border-block-start-width: var(--widthBorder);
+}
+
+.una-menu.stem > label,
+.una-menu.twig > .una-menu.item::after {
+  font-weight: bolder;
+}
+
+.una-menu.stem > label,
+.una-menu.item {
+  padding-inline-end: var(--spacer);
+  padding-inline-start: var(--spacer);
+}
+
+.una-menu.stem > label {
+  font-size: var(--fontSizeH5);
+}
+
+.una-menu.twig > .una-menu.stem {
+  left: 100%;
+  top: calc(-1 * var(--widthBorderBumpStart));
+}
+
+.una-menu.twig > .una-menu.item::after {
+  content: "→";
+  margin-inline-end: calc(-1 * var(--spacer));
+  margin-inline-start: var(--spacer2);
+}
+
+.una-menu.twig:hover > .una-menu.stem {
+  animation: step-end var(--timeDelayUnaMenuPeek) backwards unaMenuStemAppear,
+    var(--timeFade) linear var(--timeDelayUnaMenuPeek) backwards
+      unaMenuStemFadeIn;
+}
+
+.una-menu.twig:focus-within > .una-menu.stem {
+  animation: unset;
+}
+
+.una-menu.item > :not(:last-child) {
+  margin-inline-end: var(--spacer);
+}
+
+.una-menu.item > label {
+  text-align: start;
+}
+
+.una-menu.icon {
+  align-content: center;
+  flex-basis: var(--spacer6);
+  flex-grow: 0;
+  justify-content: center;
+  min-width: var(--spacer6);
+}
+
+.una-menu.icon > * {
+  margin: auto;
+}
+
+.una-menu.mnemonic {
+  color: var(--colorAccentMid);
+  text-align: end;
+}
+
+.una-menu.hr {
+  margin-block-end: unset;
+  margin-block-start: unset;
+}
+
+@media (prefers-color-scheme: light), print {
+  body:not(.dark) .una-menu.soil > .una-menu.hr {
+    border-inline-end-color: var(--colorAccentLow);
+    border-inline-start-color: var(--colorAccentHigh);
+  }
+
+  body:not(.dark) .una-menu.stem {
+    border-block-end-color: var(--colorAccentHigh);
+    border-block-start-color: var(--colorAccentLow);
+    border-inline-end-color: var(--colorAccentHigh);
+    border-inline-start-color: var(--colorAccentLow);
+  }
+
+  body:not(.dark) .una-menu.stem > .una-menu.hr {
+    border-block-end-color: var(--colorAccentLow);
+    border-block-start-color: var(--colorAccentHigh);
+  }
+}
+
+@keyframes unaMenuStemAppear {
+  from {
+    visibility: hidden;
+  }
+
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes unaMenuStemFadeIn {
+  from {
+    color: transparent;
+  }
+}

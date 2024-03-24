@@ -1,0 +1,15 @@
+path: "pages/weebly-gateway/"
+date: 2021-01-10
+head:
+  title: "Weebly Gateway"
+body:
+  title: "Weebly Gateway"
+  subtitle: "An adaptation of our former Gateway."
+menu:
+  - label: "Notice"
+    href: "#notice"
+    title: "Notice"
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - key: "_home"

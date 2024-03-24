@@ -1,0 +1,8 @@
+<p>In late March 2019, I noticed that CDEx couldn't differentiate between PREGAP
+and INDEX 00. They specify the gap before INDEX 01: the start of a TRACK's
+content. PREGAP inserts such gap artificially when they are not in the audio
+stream, while INDEX 00 specifies the time code at which the gap resides in the
+audio stream. CDEx includes these gaps during extraction but erroneously uses
+PREGAP. There seemed to be no easy way to convert them to INDEX 00. So I set out
+to make my own solution. Thus, four hours later, QEdit was born for that one
+purpose.</p>

@@ -1,0 +1,18 @@
+<section>
+  <p>Load {{data["pnic"].body.title}} by running its script <code>pnic.sh</code>
+in the current shell:</p>
+  <pre><samp>$ <kbd>. pnic.sh</kbd></samp></pre>
+</section>
+<section>
+  <h3>Division</h3>
+  <p>Optionally, you can set the division algorithm and precision either within
+or outside of {{data["pnic"].body.title}}. See the script for names.</p>
+  <p>The Pad, Count, Shift (<code>pcs</code>) algorithm allows for any
+precision. It is not bound by Bash's limits, but a large precision like <code
+>9999</code> can make division unusable. The default precision should suffice,
+so change it only when required by your application. This algorithm is the
+default as we recommend using it.</p>
+  <p>The Padding Dividend (<code>pdv</code>) algorithm is still available, with
+which your precision setting does not apply as it is fixed. Note that this
+algorithm is very prone to rounding errors.</p>
+</section>

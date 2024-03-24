@@ -1,0 +1,21 @@
+path: "net/jcard-template/print-shop/"
+date: 2023-02-17
+head:
+  title: "Print Shop - J-Card Template"
+body:
+  title: "Print Shop"
+  subtitle: "Our guide to more than just print."
+menu:
+  - label: "Setup"
+    href: "#setup"
+    title: "Setup"
+    subtitle: "Explanation of options."
+  - label: "Tips"
+    href: "#tips"
+    title: "Tips"
+    subtitle: "We discourage gratuities, but these are nice to have."
+  - label: "Master Tutorial"
+    href: "#master-tutorial"
+    title: "Master Tutorial"
+    subtitle: "For advanced readers and users."
+  - key: "jcard-template"

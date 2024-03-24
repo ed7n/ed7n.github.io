@@ -1,0 +1,21 @@
+path: "edenrm/formula-syntax/"
+date: 2021-01-26
+head:
+  title: "Formula Syntax - EDENrm"
+body:
+  title: "Formula Syntax"
+  subtitle: "For use in Calculator."
+menu:
+  - label: "Operators"
+    href: "#operators"
+    title: "Operators"
+  - label: "Functions"
+    href: "#functions"
+    title: "Functions"
+  - label: "Constants"
+    href: "#constants"
+    title: "Constants"
+  - label: "Conditionals"
+    href: "#conditionals"
+    title: "Conditionals"
+  - key: "edenrm"

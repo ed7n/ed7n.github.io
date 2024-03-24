@@ -1,0 +1,9 @@
+path: "pages/licenses/lgpl2/"
+date: 2023-02-17
+head:
+  title: "GNU LGPLv2.0"
+body:
+  title: "GNU LGPLv2.0"
+  subtitle: "Full license text."
+menu:
+  - key: "_licenses"

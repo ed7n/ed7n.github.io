@@ -1,0 +1,16 @@
+---
+key: "qedit_about"
+---
+{%-include variables.html-%}
+<section>
+  <p>{{data["qedit"].body.title}} is a command-line cuesheet editor. It parses
+the given input file into its own representation stored in memory, then performs
+the given actions, like <code>shift-times</code>, which shifts INDEX time codes
+by an offset to correct global timing errors. You can preview your edited
+cuesheet with <code>print</code>, and use <code>write</code> to save it to the
+given output file.</p>
+  <p>Application usage, as well as the complete list of actions can be found
+back in the [{%include a-page.html class="up" key="qedit" href="#usage" html=
+"landing page"%}].</p>
+</section>
+{%include sections.html%}

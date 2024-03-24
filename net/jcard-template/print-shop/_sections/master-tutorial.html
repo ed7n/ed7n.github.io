@@ -1,0 +1,61 @@
+<section>
+  <p><i>This section is optional.</i></p>
+</section>
+<section>
+  <p>The goal is to print various J-cards on one sheet until it can no longer
+fit anymore. This requires refeeding which public printers may not allow. In
+that case, you can only print multiples of a J-card.</p>
+</section>
+<section>
+  <h3>Sheet Path</h3>
+  <p>The first task is to know how the sheet goes through the printer, so that
+subsequent printouts will not be at the wrong places. You can place a mark on a
+corner of the sheet for reference, print a blank document on it, then look for
+your mark, observing its position and side. Repeat until you are confident.</p>
+</section>
+<section>
+  <h3>Margin Mode</h3>
+  <p>Before printing on a blank sheet, set the <b>margin</b> mode first. If <em
+>all</em> J-cards for that sheet have the <em>same</em> width, then you may use
+<kbd><samp>Variable</samp></kbd>. Otherwise, <kbd><samp>Half</samp></kbd> works
+for all cases. Once set, do not change it for this sheet.</p>
+</section>
+<section>
+  <h3>Start Index</h3>
+  <p>The next task is to master in setting the <b>start</b> index.</p>
+  <p>Formally, the start index for the <var>n</var>-th J-card is defined as the
+following equation:</p>
+  <figure>
+    <{{htmlImgMono}}"res/equation.png" alt="Explained below." />
+  </figure>
+  <p>In prose, it is at least the sum of <b>counts</b> from all previous
+J-cards, and the <b>start</b> index of the first one.</p>
+  <p>The following example cases describe how it is ideally set.</p>
+  <ul>
+    <li><span>If the sheet is <b>blank</b>, then set the start index to <kbd
+>1</kbd>.</span></li>
+    <li><span>If you printed <b>one</b> of the first J-card, then set the start
+index to <kbd>2</kbd>.</span></li>
+    <li><span>If you printed <b>one</b> of the first J-card, and <b>one</b> of
+the second J-card, then set the start index to <kbd>3</kbd>.</span></li>
+    <li><span>If you printed <b>one</b> of the first, and <b>two</b> of the
+second, then set the start to <kbd>4</kbd>.</span></li>
+    <li><span>If you printed <b>one</b> of the first, <b>two</b> of the second,
+and <b>four</b> of the third, then set the start to <kbd>8</kbd>.</span></li>
+    <li><span>If you printed <b>one</b> of first, <b>one</b> of second, and <b
+>four</b> of third, then set start to <kbd>7</kbd>.</span></li>
+    <li><span>If you printed <b>one</b> of first, <b>two</b> of second, and <b
+>three</b> of third, then set start to <kbd>7</kbd>.</span></li>
+    <li>Finally, if the sheet is <b>full</b>, then stop printing on it.</li>
+  </ul>
+  <p>Once you understand it, you should also understand that the first start
+index does not need to be <kbd>1</kbd>, nor do you have to follow the J-card
+order above. If the slot defined by that index is available, then you can print
+a J-card on it.</p>
+</section>
+<section>
+  <h3>Overprinting</h3>
+  <p>Once you completed both tasks, you should be able to prevent J-cards from
+overprinting one another. However, if you desire this effect, then you can set
+the <b>opacity</b> to adjust the print density.</p>
+</section>

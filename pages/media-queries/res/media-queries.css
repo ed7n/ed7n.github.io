@@ -1,0 +1,494 @@
+article {
+  --mqbc: var(--colorHighlightBackground);
+  --mqtd: underline;
+}
+
+@media screen {
+  #media-queries-screen {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media print {
+  #media-queries-print {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (any-hover: none) {
+  #media-queries-any-hover-none {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (any-hover: hover) {
+  #media-queries-any-hover-hover {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (any-pointer: none) {
+  #media-queries-any-pointer-none {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (any-pointer: coarse) {
+  #media-queries-any-pointer-coarse {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (any-pointer: fine) {
+  #media-queries-any-pointer-fine {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (color) {
+  #media-queries-color {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (color: 0) {
+  #media-queries-color-0 {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (color-gamut: srgb) {
+  #media-queries-color-gamut-srgb {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (color-gamut: p3) {
+  #media-queries-color-gamut-p3 {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (color-gamut: rec2020) {
+  #media-queries-color-gamut-rec2020 {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (color-index) {
+  #media-queries-color-index {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (color-index: 0) {
+  #media-queries-color-index-0 {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (display-mode: fullscreen) {
+  #media-queries-display-mode-fullscreen {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (display-mode: standalone) {
+  #media-queries-display-mode-standalone {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (display-mode: minimal-ui) {
+  #media-queries-display-mode-minimal-ui {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (display-mode: browser) {
+  #media-queries-display-mode-browser {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (dynamic-range: standard) {
+  #media-queries-dynamic-range-standard {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (dynamic-range: high) {
+  #media-queries-dynamic-range-high {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (environment-blending: opaque) {
+  #media-queries-environment-blending-opaque {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (environment-blending: additive) {
+  #media-queries-environment-blending-additive {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (environment-blending: subtractive) {
+  #media-queries-environment-blending-subtractive {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (forced-colors: none) {
+  #media-queries-forced-colors-none {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (forced-colors: active) {
+  #media-queries-forced-colors-active {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (grid: 0) {
+  #media-queries-grid-0 {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (grid: 1) {
+  #media-queries-grid-1 {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (hover: none) {
+  #media-queries-hover-none {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (hover: hover) {
+  #media-queries-hover-hover {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (inverted-colors: none) {
+  #media-queries-inverted-colors-none {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (inverted-colors: inverted) {
+  #media-queries-inverted-colors-inverted {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (monochrome) {
+  #media-queries-monochrome {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (monochrome: 0) {
+  #media-queries-monochrome-0 {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (nav-controls: none) {
+  #media-queries-nav-controls-none {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (nav-controls: back) {
+  #media-queries-nav-controls-back {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (orientation: portrait) {
+  #media-queries-orientation-portrait {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (orientation: landscape) {
+  #media-queries-orientation-landscape {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (overflow-block: none) {
+  #media-queries-overflow-block-none {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (overflow-block: scroll) {
+  #media-queries-overflow-block-scroll {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (overflow-block: paged) {
+  #media-queries-overflow-block-paged {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (overflow-inline: none) {
+  #media-queries-overflow-inline-none {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (overflow-inline: scroll) {
+  #media-queries-overflow-inline-scroll {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (pointer: none) {
+  #media-queries-pointer-none {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (pointer: coarse) {
+  #media-queries-pointer-coarse {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (pointer: fine) {
+  #media-queries-pointer-fine {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #media-queries-prefers-color-scheme-light {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #media-queries-prefers-color-scheme-dark {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-contrast: no-preference) {
+  #media-queries-prefers-contrast-no-preference {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-contrast: less) {
+  #media-queries-prefers-contrast-less {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-contrast: more) {
+  #media-queries-prefers-contrast-dark {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-contrast: custom) {
+  #media-queries-prefers-contrast-custom {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-reduced-data: no-preference) {
+  #media-queries-prefers-reduced-data-no-preference {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-reduced-data: reduce) {
+  #media-queries-prefers-reduced-data-reduce {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #media-queries-prefers-reduced-motion-no-preference {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #media-queries-prefers-reduced-motion-reduce {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-reduced-transparency: no-preference) {
+  #media-queries-prefers-reduced-transparency-no-preference {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  #media-queries-prefers-reduced-transparency-reduce {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (scan: interlace) {
+  #media-queries-scan-interlace {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (scan: progressive) {
+  #media-queries-scan-progressive {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (scripting: none) {
+  #media-queries-scripting-none {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (scripting: initial-only) {
+  #media-queries-scripting-initial-only {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (scripting: enabled) {
+  #media-queries-scripting-enabled {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (update: none) {
+  #media-queries-update-none {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (update: slow) {
+  #media-queries-update-slow {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (update: fast) {
+  #media-queries-update-fast {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (video-color-gamut: srgb) {
+  #media-queries-video-color-gamut-srgb {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (video-color-gamut: p3) {
+  #media-queries-video-color-gamut-p3 {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (video-color-gamut: rec2020) {
+  #media-queries-video-color-gamut-rec2020 {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (video-dynamic-range: standard) {
+  #media-queries-video-dynamic-range-standard {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}
+
+@media (video-dynamic-range: high) {
+  #media-queries-video-dynamic-range-high {
+    background-color: var(--mqbc);
+    text-decoration: var(--mqtd);
+  }
+}

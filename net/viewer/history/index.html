@@ -1,0 +1,30 @@
+---
+key: "viewer_history"
+---
+{%-include variables.html-%}
+<section>
+  <p>Viewing a local text file on my Android devices was a painful experience,
+and yet we call them smart. Go figure. WebView does not follow my color scheme
+preference, Bromite--also based on Chromium--does not display it in monospaced
+font, and Fennec--based on Firefox (Fenix)--does not provide any interface at
+all. Additionally, my only Notes application crashes from its large size,<sup><a
+href="#note-a">[a]</a></sup> and using Termux is clunky. Why bother installing
+another application just to view this file when I can make a viewer that works
+for everyone with a web browser? And just like that, {{data["viewer"].body.title
+}} is born.</p>
+  <p>I started with a copy of [{%include a-page.html key="jcard-template"%}],
+stripped all of its application-specific features and generalized the remains to
+make way for the future. Along the way, I decided to add support for media files
+and especially PDF documents. The end goal is for us to benefit from its output
+display adjustment controls.</p>
+  <p>Now, viewing a local text file on my Android devices is as easy as
+uploading it to a web page. Plus, I can enable the dark color scheme and
+monospaced font, then adjust the output display to my comfort. Now <em>that</em>
+is smart.</p>
+</section>
+<section>
+  <div class="hr"></div>
+  <ol class="no-margin smaller" type="a">
+    <li id="note-a">413700 bytes.</li>
+  </ol>
+</section>

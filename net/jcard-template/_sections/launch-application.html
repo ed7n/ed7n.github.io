@@ -1,0 +1,38 @@
+<ul class="anchor">
+  <li><span>[<{{htmlAOut}}"/jcard-template/"
+>{{pageTitle}}</a>]</span><span
+>Update 2 Revision 4, {{"2023-04-04" | date: formDate}}. [<{{htmlAOut}}"{{gitHome}}/jcard-template/raw/master/CHANGES"
+>Changes</a>]</span></li>
+</ul>
+<{{htmlFormOut}}"/jcard-template/">
+  <details>
+    <summary>Options</summary>
+    <div class="group">
+      <div class="field switch">
+        <div class="input">
+          <input id="force-dark" name="dark" type="checkbox" />
+        </div>
+        <label for="force-dark">Force dark</label>
+      </div>
+      <div class="field switch">
+        <div class="input">
+          <input id="reverse-panels" name="reverse" type="checkbox" />
+        </div>
+        <label for="reverse-panels">Reverse panels</label>
+      </div>
+      <div class="field switch">
+        <div class="input">
+          <input id="enable-ecc" name="ecc" type="checkbox" />
+        </div>
+        <label for="enable-ecc">Enable ECC</label>
+      </div>
+    </div>
+    <div class="field row">
+      <label>Launch:</label>
+      <div class="input shorter">
+        <button formaction="/jcard-template/1">Original UI</button>
+        <button>New UI</button>
+      </div>
+    </div>
+  </details>
+</form>

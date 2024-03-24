@@ -1,0 +1,60 @@
+---
+key: "_about_layouts"
+---
+{%-include variables.html-%}
+<link rel="stylesheet" href="res/layouts.css" />
+<section>
+  <section>
+    <p><i>Information in this page apply to websites using our technology.</i
+></p>
+  </section>
+  <section>
+    <p>This website has four document layouts, each of which targets some media
+context. They do not sniff on the user agent string, and thus are not optimized
+for any specific user agent. However, if something does not look right, then we
+recommend updating your user agent first.</p>
+    <p>You are currently viewing the <span id="layout-fallback">user agent
+default</span><span id="layout-current"></span> layout.</p>
+    <p>Layouts can overlap each other by their effects. The highlights indicate
+which ones are currently active.</p>
+    <ul class="headered">
+      <li><span id="layout-standard"
+>Standard</span><span
+>The base layout.</span></li>
+      <li><span id="layout-mobile"
+>Mobile</span><span
+>Set when the viewport width is at or below 45 times the root element font size
+(REMs).<sup>[<a href="#note-a">a</a>]</sup></span>
+        <ul>
+          <li>The page menu collapses into a floating <kbd><samp>{{navLabelTree
+}}</samp></kbd> button.</li>
+        </ul>
+      </li>
+      <li><i id="layout-mini"
+>mini!</i><span
+>Set when the viewport width is at or below 19.999 REMs.<sup>[<a href="#note-b"
+>b</a>]</sup></span>
+        <ul>
+          <li>Spacers reduce by 24%.</li>
+          <li>The base line height reduces by 10%.</li>
+          <li>The page menu restores to that in Standard.</li>
+        </ul>
+      </li>
+      <li><span id="layout-print"
+>Print</span><span
+>Set during printing contexts.</span>
+        <ul>
+          <li>The jump menu is omitted.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</section>
+<section>
+  <div class="hr"></div>
+  <ol class="no-margin smaller" type="a">
+    <li id="note-a">Under our standard rendering environment, it measures 720
+CSS pixels long.</li>
+    <li id="note-b">As above, 319 CSS pixels.</li>
+  </ol>
+</section>

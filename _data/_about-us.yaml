@@ -1,0 +1,18 @@
+path: "pages/about-us/"
+date: 2023-02-17
+head:
+  title: "About Us"
+body:
+  banner: "<img class=\"mono\" loading=\"lazy\" src=\"/res/media/eden.png\" alt=\"ED7 ENTERTAINMENT\" />"
+  title: "About Us"
+  subtitle: "Who and what we are."
+menu:
+  - label: "Names"
+    href: "#names"
+    title: "Names"
+    subtitle: "What is ED7? What about EDEN?"
+  - label: "History"
+    href: "#history"
+    title: "History"
+    subtitle: "Established in 2008…"
+  - key: "_home"

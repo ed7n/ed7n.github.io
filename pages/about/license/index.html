@@ -1,0 +1,8 @@
+---
+key: "_about_license"
+---
+{%-include variables.html-%}
+{%-capture copyright-%}
+<p>Copyright (c) 2019 - {{data["_changes"].date | date: "%Y"}} {{siteData.authorLegal}} ({{siteData.orgName}})</p>
+{%-endcapture-%}
+{%include sections.html%}

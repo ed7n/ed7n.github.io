@@ -1,0 +1,19 @@
+path: "edenshdos/"
+date: 2022-05-26
+head:
+  title: "EDENsh/dos"
+body:
+  title: "EDENsh/dos"
+  subtitle: "A defunct collection of Bash/DOS scripts."
+menu:
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release packages."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

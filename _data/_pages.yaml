@@ -1,0 +1,22 @@
+path: "pages/"
+date: 2023-03-03
+head:
+  title: "Pages"
+body:
+  title: "Pages"
+  subtitle: "Where uncategorized pages are categorized to."
+menu:
+  - key: "_home"
+keys:
+  - "_2019-portal"
+  - "_404"
+  - "_changes"
+  - "_child-template"
+  - "_contact"
+  - "_licenses"
+  - "_media-queries"
+  - "_news"
+  - "_privacy"
+  - "_projects"
+  - "_user-agent"
+  - "_weebly-gateway"

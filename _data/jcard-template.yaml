@@ -1,0 +1,23 @@
+path: "net/jcard-template/"
+date: 2023-04-04
+head:
+  title: "J-Card Template"
+body:
+  title: "J-Card Template"
+  subtitle: "Printable in-browser template for cassette tape J-cards."
+menu:
+  - label: "Launch Application"
+    href: "#launch-application"
+    title: "Launch Application"
+    subtitle: "NET Service."
+  - label: "Usage"
+    href: "#usage"
+    title: "Usage"
+    subtitle: "Basic instructions."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

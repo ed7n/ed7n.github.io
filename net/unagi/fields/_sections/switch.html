@@ -1,0 +1,97 @@
+<p>Switch form fields are designed primarily for checkboxes and radio buttons,
+but can also be used for free-form elements (meaning neither column nor row, and
+they must be without a label). Having two or more inputs in a switch form field
+is odd, so each field contains only one.</p>
+<p>The switch form fields with the radio buttons and free-form elements are
+contained within group containers (<code>.group</code>) to achieve their
+horizontal flow.</p>
+<section>
+  <h3>Checkbox</h3>
+  <form>
+    <div class="field switch">
+      <div class="input">
+        <input id="switch-checkbox-pre" type="checkbox" />
+      </div>
+      <label for="switch-checkbox-pre">Label</label>
+    </div>
+    <div class="field switch">
+      <label for="switch-checkbox-post">Label</label>
+      <div class="input">
+        <input id="switch-checkbox-post" type="checkbox" />
+      </div>
+    </div>
+  </form>
+</section>
+<section>
+  <h3>Radio</h3>
+  <form>
+    <div class="group">
+      <div class="field switch">
+        <div class="input">
+          <input id="switch-radio-pre-1" name="switch-radio-pre" type="radio" />
+        </div>
+        <label for="switch-radio-pre-1">Label</label>
+      </div>
+      <div class="field switch">
+        <div class="input">
+          <input id="switch-radio-pre-2" name="switch-radio-pre" type="radio" />
+        </div>
+        <label for="switch-radio-pre-2">Label</label>
+      </div>
+      <div class="field switch">
+        <div class="input">
+          <input id="switch-radio-pre-3" name="switch-radio-pre" type="radio" />
+        </div>
+        <label for="switch-radio-pre-3">Label</label>
+      </div>
+    </div>
+    <div class="group">
+      <div class="field switch">
+        <label for="switch-radio-post-1">Label</label>
+        <div class="input">
+          <input id="switch-radio-post-1" name="switch-radio-post" type="radio" />
+        </div>
+      </div>
+      <div class="field switch">
+        <label for="switch-radio-post-2">Label</label>
+        <div class="input">
+          <input id="switch-radio-post-2" name="switch-radio-post" type="radio" />
+        </div>
+      </div>
+      <div class="field switch">
+        <label for="switch-radio-post-3">Label</label>
+        <div class="input">
+          <input id="switch-radio-post-3" name="switch-radio-post" type="radio" />
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
+<section>
+  <h3>Free-form</h3>
+  <form>
+    <div class="group">
+      <div class="field switch">
+        <button type="button">Button</button>
+      </div>
+      <div class="field switch">
+        <input size="7" value="Input Size 7" />
+      </div>
+      <div class="field switch">
+        <label>Label</label>
+      </div>
+      <div class="field switch">
+        <meter value="0.7">0.7</meter>
+      </div>
+      <div class="field switch">
+        <select>
+          <option>Option</option>
+          <option selected>Select</option>
+        </select>
+      </div>
+      <div class="field switch">
+        <span>[<{{htmlAOut}}"https://en.wikipedia.org/wiki/Et_cetera">et cetera</a>]</span>
+      </div>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,19 @@
+path: "net/css-color-mixer/"
+version: "Revision 1"
+date: 2023-02-17
+head:
+  title: "CSS Color Mixer"
+body:
+  title: "CSS Color Mixer"
+  subtitle: "Two CSS colors, a button, then your color picker."
+menu:
+  - label: "Output"
+    href: "#output"
+    title: "Output"
+  - label: "Form"
+    href: "#form"
+    title: "Form"
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - key: "_home"
