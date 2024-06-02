@@ -1,0 +1,9 @@
+path: "pnic/license/"
+date: 2023-02-27
+head:
+  title: "License - Pnic"
+body:
+  title: "License"
+  subtitle: "Pnic is licensed under the MIT."
+menu:
+  - key: "pnic"

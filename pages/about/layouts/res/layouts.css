@@ -1,0 +1,46 @@
+#layout-current:after {
+  content: "Standard";
+  font-style: oblique;
+}
+
+#layout-fallback {
+  display: none;
+}
+
+#layout-standard {
+  background-color: var(--colorHighlightBackground);
+  text-decoration: underline;
+}
+
+@media (max-width: 45rem) {
+  #layout-current:after {
+    content: "Mobile";
+  }
+
+  #layout-mobile {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 19.999rem) {
+  #layout-current:after {
+    content: "mini!";
+  }
+
+  #layout-mini {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}
+
+@media print {
+  #layout-current:after {
+    content: "Print";
+  }
+
+  #layout-print {
+    background-color: var(--colorHighlightBackground);
+    text-decoration: underline;
+  }
+}

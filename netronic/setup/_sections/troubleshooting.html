@@ -1,0 +1,22 @@
+<section>
+  <h3>Notice</h3>
+  <p>Xfce 4.18 resolved some significant issues with [<{{htmlAOut}}"https://gnome.pages.gitlab.gnome.org/libhandy"
+>Handy</a>] and GTK 4, and we followed it with initial support. So if you have
+issues with either, update both Xfce and {{data["netronic"].body.title}}
+first.</p>
+</section>
+<section>
+  <h3>Specific Troubleshooting</h3>
+  <p>If you extracted the theme files elsewhere and an application is not themed
+right, then ensure that it can and may read there; check its [<{{htmlAOut}}"https://apparmor.net/"
+>AppArmor</a>] profile. Some applications look only in <code
+>/usr/share/themes</code>, where system-managed themes are installed. Installing
+{{data["netronic"].body.title}} there should be fine.</p>
+  <p>If a Handy application follows your dark color scheme but not the theme
+altogether, then either rename the theme or make a symbolic link to it, as long
+as its name does not end with <i>-dark</i>. This workaround foregoes system-wide
+<i>dark mode.</i></p>
+  <p>If you see any odd magenta-colored widgets, then you have discovered one of
+our placeholders for the unknowns; please [{%include a-page.html key="_contact"
+html="let us know"%}] about them.</p>
+</section>

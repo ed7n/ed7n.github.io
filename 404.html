@@ -1,0 +1,25 @@
+---
+key: "_404"
+---
+{%-include variables.html-%}
+<section>
+  <p>Please double-check your URL. We double-check ours too.</p>
+  <p>If you believe that something here is broken, then [{%include a-page.html
+key="_contact" html="write to us"%}] about it.</p>
+  <p>Otherwise, you can go to one of these pages:</p>
+  <ul class="anchor">
+    <li><span>[<a class="up" href="."
+>Index</a>]</span><span><code
+>.</code></span></li>
+    <li><span>[<a class="up" href=".."
+>Parent</a>]</span><span><code
+>..</code></span></li>
+    <li><span>[<a class="up" href="/"
+>Root</a>]</span><span><code
+>/</code></span></li>
+    <li><span>[{%include a-page.html class="up" key="_home" html="Home"%}]</span
+><span><code
+>{{siteRoot}}/{{data["_home"].path}}</code></span></li>
+  </ul>
+  <p>As always, we apologize for any inconvenience caused.</p>
+</section>

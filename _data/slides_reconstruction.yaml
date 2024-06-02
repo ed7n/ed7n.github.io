@@ -1,0 +1,9 @@
+path: "net/slides/reconstruction/"
+date: 2023-03-07
+head:
+  title: "Reconstruction - NET-Slides"
+body:
+  title: "Reconstruction"
+  subtitle: "Follow us as we (slowly) build our ultimate web application."
+menu:
+  - key: "slides"

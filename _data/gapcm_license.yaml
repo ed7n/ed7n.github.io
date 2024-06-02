@@ -1,0 +1,9 @@
+path: "gapcm/license/"
+date: 2024-06-02
+head:
+  title: "License - GAPCM"
+body:
+  title: "License"
+  subtitle: "GAPCM is licensed under the MIT."
+menu:
+  - key: "gapcm"

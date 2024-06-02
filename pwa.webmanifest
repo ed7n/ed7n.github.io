@@ -1,0 +1,19 @@
+{
+  "name": "EDEN Online",
+  "description": "ED7 ENTERTAINMENT Online Portal.",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "res/media/favicon.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    },
+    {
+      "src": "res/media/favicon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/",
+  "start_url": "/"
+}

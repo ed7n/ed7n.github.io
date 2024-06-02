@@ -1,0 +1,17 @@
+---
+key: "_licenses"
+---
+{%-include variables.html-%}
+<section>
+  <section>
+    <p>The following license texts are large enough to be limited as a singleton
+throughout the {{siteClass}}. <i>Ordered ascendingly by name.</i></p>
+  </section>
+  <section>
+    <ul class="anchor">
+    {%-for key in pageData.keys%}
+      <li>{%include li-page.html key=key%}</li>
+    {%-endfor%}
+    </ul>
+  </section>
+</section>

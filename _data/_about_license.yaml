@@ -1,0 +1,15 @@
+path: "pages/about/license/"
+date: 2023-02-17
+head:
+  title: "License"
+body:
+  title: "License"
+  subtitle: "EDEN Online is licensed under CC-BY-SA 4.0 and MIT."
+menu:
+  - label: "Contents"
+    href: "#contents"
+    title: "Contents"
+  - label: "Technologies"
+    href: "#technologies"
+    title: "Technologies"
+  - key: "_about"

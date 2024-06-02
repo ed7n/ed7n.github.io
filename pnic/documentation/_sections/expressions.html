@@ -1,0 +1,61 @@
+<section>
+  <p>A basic interpreter of basic expressions is available as the function <code
+>PNC.eval</code>. It evaluates the given expression and prints the result--no {{
+data["pnic"].body.title}} objects.</p>
+  <p>Each word is either a number or an operator. A number word is parsed then
+evaluated with the current result and operator. As with all of {{data["pnic"
+].body.title}}, it must be non-negative and decimal. An operator word changes
+the current operator.</p>
+  <p>Expressions are evaluated left-to-right. Result printouts start with a
+polarity symbol (<code>+</code> or <code>-</code>), followed by the number.
+However, errors--if present--are printed in their place.</p>
+</section>
+<section>
+  <h3>Operator Words</h3>
+  <p>Be careful with shell expansions.</p>
+  <ul class="headered">
+    <li><span
+><code>+</code>, <code>add</code></span><span
+>Addition.</span></li>
+    <li><span
+><code>-</code>, <code>sub</code></span><span
+>Subtraction.</span></li>
+    <li><span
+><code>*</code>, <code>mul</code></span><span
+>Multiplication.</span></li>
+    <li><span
+><code>/</code>, <code>sub</code></span><span
+>Division.</span></li>
+    <li><span
+><code>&lt;&gt;</code>, <code>cmp</code></span><span
+>Comparison.</span></li>
+    <li><span
+><code>&lt;&lt;</code>, <code>shl</code></span><span
+>Left shift.</span></li>
+    <li><span
+><code>&gt;&gt;</code>, <code>shr</code></span><span
+>Right shift.</span></li>
+  </ul>
+</section>
+<section>
+  <h3>Examples</h3>
+  <pre><samp>$ <kbd>PNC.eval 1
+</kbd>+1
+$ <kbd>PNC.eval 1 2
+</kbd>+2
+$ <kbd>PNC.eval 1 + 2
+</kbd>+3
+$ <kbd>PNC.eval + 1 2
+</kbd>+3
+$ <kbd>PNC.eval + 1 - 2
+</kbd>-1
+$ <kbd>PNC.eval + 1 - '*' 2
+</kbd>+2
+$ <kbd>PNC.eval 1 sub 2 cmp 3
+</kbd>-
+$ <kbd>PNC.eval 1 shl 2 cmp 3
+</kbd>+
+$ <kbd>PNC.eval 1 mul 2 div 0 cmp 3
+</kbd>Division by zero.
+</samp></pre>
+</section>

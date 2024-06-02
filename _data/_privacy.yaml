@@ -1,0 +1,9 @@
+path: "pages/privacy/"
+date: 2023-03-03
+head:
+  title: "Privacy"
+body:
+  title: "Privacy"
+  subtitle: "Data collection, use, and retention."
+menu:
+  - key: "_about"

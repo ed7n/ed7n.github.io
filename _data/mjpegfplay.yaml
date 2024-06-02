@@ -1,0 +1,23 @@
+path: "mjpegfplay/"
+date: 2023-05-12
+head:
+  title: "mJPEGfPlay"
+body:
+  title: "mJPEGfPlay"
+  subtitle: "Bi-directional, multi-speed, parallel-buffered image file sequence player."
+menu:
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release packages and supplements."
+  - label: "Usage"
+    href: "#usage"
+    title: "Usage"
+    subtitle: "Basic instructions."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

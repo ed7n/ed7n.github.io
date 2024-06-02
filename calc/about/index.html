@@ -1,0 +1,41 @@
+---
+key: "calc_about"
+---
+{%-include variables.html-%}
+<section>
+  <section>
+    <p><i>This project is not to be taken seriously. If you need a calculator,
+then either get one for cheap, or check out [{%include a-page.html key=
+"pnic_kesimate"%}]</i>.</p>
+  </section>
+  <section>
+    <p>{{data["calc"].body.title}} exposes the host's shell arithmetic features
+as a calculator. Here are my ridiculous attempts to make it happen (with links
+to their screenshots):</p>
+    <p>The [<{{htmlAOut}}"{{gitHome}}/calc/raw/master/res/u1.png">first one</a>]
+dates back to 2013. I was writing only batch scripts at the time, and my skills
+were infant. It stores up to eight lines of input, partially-calculates after
+each one, and saves their end result. The latter two are only to be printed with
+the help function (<kbd>0</kbd>). The reason for the input limitation is that
+each of its eight prompts and parses were scripted separately; there are eight
+copies of the same lines of command.</p>
+    <p>The [<{{htmlAOut}}"{{gitHome}}/calc/raw/master/res/u2.png">second
+one</a>] surfaced over 61 months later. My skills have much matured by then. It
+lifted input limitations, moved partial calculations to the <kbd>peek</kbd>
+function, introduced basic memory functions and the option to prepend inputs to
+the expression. It was made from scratch for [{%include a-page.html key=
+"edenshdos"%}].</p>
+    <p>The [<{{htmlAOut}}"{{gitHome}}/calc/raw/master/res/u3.png">third one</a>]
+is a modification of the second. It introduced the <kbd>ext</kbd> (now <kbd
+>fps</kbd>) option that sets fractional precision for simple divisions like
+<kbd>1 / 9</kbd>, because divisions are otherwise done integrally. The feature
+is simulated by multiplying the dividend by ten for each significant figure,
+alongside some string operations.</p>
+    <p>The [{%include a-page.html key="pnic_kesimate" html="fourth one"%}] is a
+spiritual successor separate from this project. Initially, it borrowed the above
+division technique for a couple of releases before it got its own. It has a
+different approach to arithmetic.</p>
+    <p>{{data["calc"].body.title}} is our oldest active project spanning over
+nine years.</p>
+  </section>
+</section>

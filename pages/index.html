@@ -1,0 +1,18 @@
+---
+key: "_pages"
+---
+{%-include variables.html-%}
+<section>
+  <section>
+    <p><i>Ordered ascendingly by name.</i></p>
+  </section>
+  <section>
+    <ul class="anchor">
+    {%-for key in pageData.keys%}
+      <li>{%include li-page.html key=key%}</li>
+    {%-endfor%}
+      <li>{%include li-page.html key="_pages" open=1%} <i>Recursion
+intensifies…</i></span></li>
+    </ul>
+  </section>
+</section>

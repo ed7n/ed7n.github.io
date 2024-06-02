@@ -1,0 +1,35 @@
+---
+key: "slides_reconstruction"
+---
+{%-include variables.html-%}
+<section>
+  <section>
+    <h3>{{"2020-08-18" | date: formDate}}</h3>
+    <p>A lot needs to be done. We do not expect {{data["slides"].body.title}} to
+compete with of its equivalents. We felt that the need to learn more about our
+tools, and decided to practice on a simpler project: [{%include a-page.html key=
+"maeng-mini"%}], which is destined to be the project for <del>2020 2021</del>
+<ins>the forseeable future</ins>.</p>
+  </section>
+  <section>
+    <h3>{{"2021-04-07" | date: formDate}}</h3>
+    <p>Components from the [<{{htmlAOut}}"/net-slides/concept-ui">{{data[
+"slides"].body.title}} Concept UI</a>] were adapted to [{%include a-page.html
+key="unagi"%}], our web UI framework which will be used in {{data["slides"
+].body.title}}.</p>
+  </section>
+  <section>
+    <h3>{{"2023-02-17" | date: formDate}}</h3>
+    <p>{{data["unagi"].body.title}} matures by (re-)introducing its first real
+mode application: [{%include a-page.html key="jcard-template"%}], whose new UI
+resembles some of {{data["slides"].body.title}}, and infrastructure was
+purposely generalized possibly for others to come.</p>
+  </section>
+  <section>
+    <h3>{{"2023-03-03" | date: formDate}}</h3>
+    <p>[{%include a-page.html key="viewer"%}] is a proof of concept of said
+generalization, and utilizes the {{data["unagi"].body.title}} menu bar.
+Together, their shared foundation may grow to be sufficient for {{data["slides"
+].body.title}}.</p>
+  </section>
+</section>

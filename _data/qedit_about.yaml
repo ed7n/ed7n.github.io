@@ -1,0 +1,17 @@
+path: "qedit/about/"
+date: 2021-11-03
+head:
+  title: "About QEdit"
+body:
+  title: "About QEdit"
+  subtitle: "Some information about this application."
+menu:
+  - label: "Cuesheet Inspection"
+    href: "#cuesheet-inspection"
+    title: "Cuesheet Inspection"
+    subtitle: "QEdit can inspect your cuesheets."
+  - label: "REMs and Others"
+    href: "#rems-and-others"
+    title: "REMs and Others"
+    subtitle: "How QEdit handles these statements."
+  - key: "qedit"

@@ -1,0 +1,89 @@
+<form>
+  <fieldset>
+    <legend><h3>Compose Letter</h3></legend>
+    <div class="field column">
+      <div class="label">
+        <select>
+          <option>Dear</option>
+          <option selected>Hey</option>
+          <option>To</option>
+        </select>
+        <input type="text" value="Rachel" />
+        <span>,</span>
+      </div>
+      <div class="input fluid">
+        <textarea
+>Wishing that I could sleep with you as much as I have been with him for the
+past four years.</textarea>
+      </div>
+    </div>
+    <div class="field column">
+      <div class="label">
+        <select>
+          <option>Cheers</option>
+          <option selected>Love</option>
+          <option>Thanks</option>
+          <option>Sincerely</option>
+        </select>
+        <span>,</span>
+      </div>
+      <div class="input fluid">
+        <input type="text" value="~Micca." />
+      </div>
+    </div>
+    <div class="field row space-between">
+      <div class="input short">
+        <button type="button">Send</button>
+        <button type="button">Quit…</button>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend><h3>Tale Lookup</h3></legend>
+    <datalist id="net-link-keys">
+      <option>Entry #</option>
+      <option>Subject</option>
+      <option>Status</option>
+      <option>Mode</option>
+      <option>Age</option>
+    </datalist>
+    <div class="field row">
+      <div class="label">
+        <input type="text" list="net-link-keys" placeholder="Enter key." value="Subject" />
+      </div>
+      <div class="input rigid">
+        <input type="text" placeholder="Enter search term." value="Rachel" />
+      </div>
+    </div>
+    <div class="field row">
+      <div class="label">
+        <input type="text" list="net-link-keys" placeholder="Enter key." value="Mode" />
+      </div>
+      <div class="input rigid">
+        <input type="text" placeholder="Enter search term." value="internal" />
+      </div>
+    </div>
+    <div class="field row">
+      <div class="label">
+        <input type="text" list="net-link-keys" placeholder="Enter key." />
+      </div>
+      <div class="input rigid">
+        <input type="text" placeholder="Enter search term." />
+      </div>
+    </div>
+    <div class="field row">
+      <label>Filters:</label>
+      <div class="input short">
+        <button type="button">Append</button>
+        <button type="button">Remove</button>
+        <button type="button">Clear</button>
+      </div>
+    </div>
+    <div class="field row space-between">
+      <div class="input short">
+        <button type="button">Run</button>
+        <button type="button">Cancel</button>
+      </div>
+    </div>
+  </fieldset>
+</form>

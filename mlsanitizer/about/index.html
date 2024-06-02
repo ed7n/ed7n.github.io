@@ -1,0 +1,32 @@
+---
+key: "mlsanitizer_about"
+---
+{%-include variables.html-%}
+<section>
+  <p>{{data["mlsanitizer"].body.title}} is a command-line program that strips
+most if not all of ManualsLib's watermarks in PDF files. For each file:</p>
+  <ol>
+    <li>It looks for <code>%PDF-1.4</code> at the first line to confirm its
+format and version. ManualsLib-watermarked documents have always been PDF
+1.4.</li>
+    <li>It reads much of the file to detect for omittable watermarks with crude
+heuristics.</li>
+    <li><span>If watermarks are detected, it writes the file to the output
+while:</span>
+      <ul>
+        <li>it omits said watermarks,
+        <li>detects for unomittable watermarks and edits them on the fly,
+and</li>
+        <li>calculates its cross reference offset (<var>startxref</var>).</li>
+      </ul>
+    </li>
+  </ol>
+  <p>Each output file name appends <code>-mlsanitized</code> to its input file
+name before its extension.</p>
+  <p>Because it does not parse PDF documents into memory, it reads a watermarked
+file twice: one for detecting, one for writing. As such, a file system caching
+functionality is recommended.</p>
+  <p>Its operation removes all annotations in a document, does not restore one
+to its original condition, nor does it add anything to one.</p>
+</section>
+{%include sections.html%}

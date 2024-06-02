@@ -1,0 +1,21 @@
+path: "pages/about/"
+date: 2023-05-05
+head:
+  title: "About"
+body:
+  title: "About"
+  subtitle: "What this is."
+menu:
+  - label: "Features"
+    href: "#features"
+    title: "Features"
+  - label: "History"
+    href: "#history"
+    title: "History"
+  - label: "License"
+    href: "#license"
+    title: "License"
+  - label: "Trivia"
+    href: "#trivia"
+    title: "Trivia"
+  - key: "_home"

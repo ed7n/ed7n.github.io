@@ -1,0 +1,15 @@
+path: "edenshdos/history/"
+date: 2021-01-10
+head:
+  title: "History - EDENsh/dos"
+body:
+  title: "History"
+  subtitle: "Born from my needs of automation."
+menu:
+  - label: "Background"
+    href: "#background"
+    title: "Background"
+  - label: "Chronology"
+    href: "#chronology"
+    title: "Chronology"
+  - key: "edenshdos"

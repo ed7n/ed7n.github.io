@@ -1,0 +1,10 @@
+---
+key: "edjc_license"
+---
+{%-include variables.html-%}
+{%-capture copyright-%}
+<p>Copyright (c) 2018 - 2022 {{siteData.authorLegal}} ({{siteData.orgName}})</p>
+{%-endcapture-%}
+<section>
+{%include licenses/mit.html copyright=copyright%}
+</section>

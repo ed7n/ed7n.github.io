@@ -1,0 +1,57 @@
+<section>
+  <pre><samp>$ <kbd>java -jar qedit.jar --help
+</kbd>QEdit devM by Brendon, 05/05/2023.
+——A cuesheet editor. https://ed7n.github.io/qedit
+
+Usage: [&lt;action&gt;]... (print|write &lt;path&gt;) &lt;file&gt;
+Where:
+  print                  Print to the standard output.
+  write &lt;path&gt;           Write to the given path.
+
+Actions:
+  check                  Check for errors and print them to the standard output.
+  index-to-pregap        Move INDEX 00 to PREGAP.
+  pregap-to-index        Move PREGAP to INDEX 00.
+  no-catalog             Erase the session CATALOG.
+  no-cdtext              Erase all CD-Text.
+  no-isrc                Erase all ISRCs.
+  no-performer           Erase all PERFORMERs.
+  no-session-performer   Erase the session PERFORMER.
+  no-track-performer     Erase track PERFORMERs.
+  no-postgap             Erase all POSTGAPs.
+  no-pregap              Erase all PREGAPs.
+  no-rem                 Erase all REMs.
+  no-songwriter          Erase all SONGWRITERs.
+  no-session-songwriter  Erase the session SONGWRITER.
+  no-track-songwriter    Erase track SONGWRITERs.
+  no-title               Erase all TITLEs.
+  no-session-title       Erase the session TITLE.
+  no-track-title         Erase track TITLEs.
+  set-eol {CRLF|LF|CR}   Set line ending to the given.
+  set-perfomer           Set all PERFORMERs to the given.
+  set-session-perfomer   Set the session PERFORMER to the given.
+  set-track-performer    Set track PERFORMERs to the given.
+  set-postgap            Set all POSTGAPs to the given in frames.
+  set-pregap             Set all PREGAPs to the given in frames.
+  set-songwriter         Set all SONGWRITERs to the given.
+  set-session-songwriter Set the session SONGWRITER to the given.
+  set-track-songwriter   Set track SONGWRITERs to the given.
+  set-title              Set all TITLEs to the given.
+  set-session-title      Set the session TITLE to the given.
+  set-track-title        Set track TITLEs to the given.
+  shift-times &lt;offset&gt;   Shift INDEX time codes by the given frame offset,
+                         or `0` to use that of the absolute-first INDEX.
+  swap-authors           Swap all SONGWRITERs and PERFORMERs.
+
+Actions are case-insensitive. Any failed action halts the program.
+
+Program Arguments:
+  -h, --help            Display this help message.
+  --                    Stop parsing options.
+</samp></pre>
+</section>
+<section>
+  <h3>Example</h3>
+  <pre><samp>$ <kbd>java -jar qedit.jar shift-times 32 index-to-pregap set-eol crlf write Drive.cue Drive.cue</kbd></samp></pre>
+  <p><i>Note that this overwrites the input file.</i></p>
+</section>

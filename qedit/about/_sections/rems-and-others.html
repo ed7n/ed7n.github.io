@@ -1,0 +1,33 @@
+<section>
+  <h3>REMs</h3>
+  <p>REM or remark statements do not make part of the layout metadata, but are
+used for annotations, and--more often--non-standard metadata such as genre. They
+can be placed anywhere in a cuesheet. However, {{data["qedit"].body.title}}
+groups them by their location in the same order as how they are found.
+Specifically:</p>
+  <ul>
+    <li>REMs before the first TRACK will be placed at the top of the
+cuesheet.</li>
+    <li>REMs after TRACK but before INDEX will be placed after FLAGS but before
+track CD-Text and PREGAP.</li>
+    <li>REMs between two INDEXes will be placed as they are found.</li>
+    <li>REMs after INDEX but before TRACK will be placed before POSTGAP and
+FILE.</li>
+  </ul>
+</section>
+<section>
+  <h3>Others</h3>
+  <p>Occassionally, non-standard metadata statements do not use REM.
+Consequently, cuesheets that contain them are also non-standard. {{data["qedit"
+].body.title}} handles them similarly to how it does with REMs, but at a lower
+priority. Specifically:</p>
+  <ul>
+    <li>Others before the first TRACK will be placed after session CD-Text but
+before FILE.</li>
+    <li>Others after TRACK but before INDEX will be placed after track CD-Text
+but before PREGAP.</li>
+    <li>Others between two INDEXes will be placed after REMs.</li>
+    <li>Others after INDEX but before TRACK will be placed after REMs but before
+POSTGAP and FILE.</li>
+  </ul>
+</section>

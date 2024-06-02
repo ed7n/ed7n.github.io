@@ -1,0 +1,10 @@
+---
+key: "sheff_license"
+---
+{%-include variables.html-%}
+{%-capture copyright-%}
+<p>Copyright (c) 2020 - 2024 {{siteData.authorLegal}} ({{siteData.orgName}})</p>
+{%-endcapture-%}
+<section>
+{%include licenses/mit.html copyright=copyright%}
+</section>

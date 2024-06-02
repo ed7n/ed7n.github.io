@@ -1,0 +1,22 @@
+---
+key: "news_20220717"
+---
+{%-include variables.html-%}
+<section>
+  <h3>{{"2022-07-17" | date: formDate}}</h3>
+  <p>For Update 0 Revision 2, we introduce Pnic's new division algorithm that is
+independent of Bash's arithmetic features. This algorithm eliminates the
+rounding errors of the old and allows an infinite precision, at the cost of
+runtime. It is based on repeated subtractions, which is possibly the worst
+method for division--besides guessing--but by conditionally-padding both the
+divisor and divident with zeros, we improved both the runtime and precision.</p>
+  <p>Alongside this news: we revised KESIMATE to use this algorithm, kept the
+option to use the old algorithm for those who rely on its quirks, and completed
+much of the documentation.</p>
+  <p>Pnic's main goal is to perform the four arithmetic operations by string
+manipulations and lookup tables, and this new algorithm completes it. Now, there
+is much more in the field of mathematics outside of these operators, and there
+are many more platforms outside of Bash. We would be glad to expand Pnic in such
+ways as we see fit.</p>
+  <span>—Brendon, founder and sole member.</span>
+</section>

@@ -1,0 +1,12 @@
+path: "mjpegfplay/about/"
+date: 2023-05-15
+head:
+  title: "About mJPEGfPlay"
+body:
+  title: "About mJPEGfPlay"
+  subtitle: "Some information about this application."
+menu:
+  - label: "Design"
+    href: "#design"
+    title: "Design"
+  - key: "mjpegfplay"

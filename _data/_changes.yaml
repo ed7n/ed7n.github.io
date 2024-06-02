@@ -1,0 +1,20 @@
+path: "pages/changes/"
+date: 2024-06-02
+head:
+  title: "Changes"
+body:
+  title: "Changes"
+  subtitle: "What's changed here?"
+menu:
+  - label: "2024"
+    href: "#2024"
+    title: "2024"
+  - label: "Previous Years"
+    href: "#previous-years"
+    title: "Previous Years"
+  - key: "_home"
+keys:
+  - "chlg_2023"
+  - "chlg_2022"
+  - "chlg_2021"
+  - "chlg_2020"

@@ -1,0 +1,28 @@
+<section>
+  <p>We now describe the basic design.</p>
+  <p>First, three<sup><a href="#note-1">[1]</a></sup> independent image readers,
+each on their own sequence of image files. A video renderer selects the
+appropriate frame from its reader, then performs post-processing--including
+scaling--prior to display.</p>
+  <p>Second, one audio mixer for up to 127 simultaneous streams. Sources are
+independently controlled--including seeking--and are mixed with a simple
+additive method. The mix is multiplied by the user-defined level before reaching
+the audio hardware.</p>
+  <p>Third, two independent timers: one clocks the video renderer to update the
+display accordingly, and the other clocks the orchestrator to update the
+playback model and synchronize the video to the audio.</p>
+  <p>Lastly, the same orchestrator controls the above modules on user and
+playback events. For instance, if the user taps <kbd><samp>Pause</samp></kbd>,
+then the orchestrator signals the video timer and audio mixer to hold their
+activities.</p>
+  <p>On top of everything, two user interfaces plug into the orchestrator, of
+which the other is enabled only with the <code>--console</code> option.</p>
+  <p>There are two special orchestrators: the first one toggles the video clock
+at the times specified in the sequence metadata; the other one plays numbered
+audio files sequentially rather than concurrently, like a playlist.</p>
+</section>
+<section>
+  <ol class="no-margin smaller">
+    <li id="note-1">User adjustable.</li>
+  </ol>
+</section>

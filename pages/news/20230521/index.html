@@ -1,0 +1,45 @@
+---
+key: "news_20230521"
+---
+{%-include variables.html-%}
+<section>
+  <h3>{{"2023-05-21" | date: formDate}}</h3>
+  <p>Despite having launched a couple of weeks ago, we had nothing newsworthy on
+GAPCM. Basically, it converts 8-bit PCM from and to a format devised for a
+28-year old video game, with the main goal of ripping its soundtrack. PCM is
+short for pulse-code modulation and is the basis of digital audio.</p>
+  <p>Today however, we are releasing Revision 3 of the project with non-standard
+support for 16-bit PCM while retaining 8-bit compatibility. Normally, an 8-bit
+sample is preceded by a padding byte, an alignment constraint from reading data
+in 16-bit words into an 8-bit bus. The padding byte is thus ignored during
+playback on the Ricoh RF5C164. GAPCM can safely use this byte as a supplement to
+the sample. Decoders that ignore it--including the one in-game--should remain
+playing the 8-bit sample, while GAPCM can combine both bytes into a 16-bit
+little-endian sample. This extension is disabled by default and its setting is
+hard-coded.</p>
+  <p>Revision 3 also brought two significant changes. Firstly, the encoder's
+default loop start position (mark) value has been changed to follow the stream
+length for the shortest possible loop. The previous default of zero can be set
+with <kbd>-m 0</kbd>. Secondly, given a game PCM file, its stream length must
+be greater than and not equal to its mark; so loops can not be empty, and a
+stream length of zero is invalid.</p>
+  <p>In addition to the above, we also made the GAMplay playback helper script,
+to which you give a game PCM file you want to listen to. It provides a simple
+interface for near-authentic playback without having to learn much about
+anything, save for basic command-line skills. Decoding and playback parameters
+are determined between two modes: <samp>single</samp>, in which the file is
+played in one sweep; and <samp>loop</samp>, in which the file is
+programmatically looped six times followed by a 10-second fade-out. Ultimately,
+its behavior is adjustable in script.</p>
+  <p>This project got us officially started with the C programming language,
+which turned 50 last year. We wanted to take full advantage of the latest
+standard revision as well as the GCC 13 compiler. However, Debian testing is
+currently under a freeze in preparation for the next stable release, so new
+software releases are deferred until then. We provide binaries for Debian and
+Windows, but the source code should compile in any modern POSIX-compliant
+environment. Notably, macOS is POSIX-certified out-of-the-box.</p>
+  <p>In other news, SheFF--our shell FFmpeg frontend--was updated earlier this
+month for AV1 support. We decided to go with the SVT-AV1 encoder for now and may
+switch to rav1e in a future release.</p>
+  <span>—Brendon, founder and sole member.</span>
+</section>

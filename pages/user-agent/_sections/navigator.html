@@ -1,0 +1,147 @@
+<p>The <code>Navigator</code> web API facilitates the retrieval of the user
+agent's identity and state. The following lists some available properties, and
+what your user agent returns for each. Your user agent may not support some of
+them, sometimes for privacy.</p>
+<section>
+  <h3>Standard</h3>
+  <ul class="headered technical">
+    <li><span
+>canShare</span><span><span
+>Will invoking the native sharing mechanism succeed?&nbsp;</span
+><output id="user-agent-canShare"></output></span></li>
+    <li><span
+>cookieEnabled</span><span><span
+>Will setting a cookie not be ignored?&nbsp;</span
+><output id="user-agent-cookieEnabled"></output></span></li>
+    <li><span
+>deviceMemory</span><span><span
+>Approximate Amount of Device Memory (in GB):&nbsp;</span
+><output id="user-agent-deviceMemory"></output></span></li>
+    <li><span
+>doNotTrack</span><span><span
+>Do-not-track Preference:&nbsp;</span
+><output id="user-agent-doNotTrack"></output></span></li>
+    <li><span
+>hardwareConcurrency</span><span><span
+>Number of Logical Processor Cores Available:&nbsp;</span
+><output id="user-agent-hardwareConcurrency"></output></span></li>
+    <li><span
+>javaEnabled</span><span><span
+>Is the user agent Java-enabled?&nbsp;</span
+><output id="user-agent-javaEnabled"></output></span></li>
+    <li><span
+>language</span><span><span
+>Preferred Language:&nbsp;</span
+><output id="user-agent-language"></output></span></li>
+    <li><span
+>languages</span><span
+>Known Languages (ordered by preference):</span
+><ul class="no-margin" id="user-agent-languages"></ul></li>
+    <li><span
+>maxTouchPoints</span><span><span
+>Maximum Number of Simultaneous Touch Contact Points:&nbsp;</span
+><output id="user-agent-maxTouchPoints"></output></span></li>
+    <li><span
+>mimeTypes</span><span
+>Enumerable Supported MIME types:</span
+><ul class="no-margin" id="user-agent-mimeTypes"></ul></li>
+    <li><span
+>onLine</span><span><span
+>Is the user agent working online?&nbsp;</span
+><output id="user-agent-onLine"></output></span></li>
+    <li><span
+>pdfViewerEnabled</span><span><span
+>Does the user agent supports inline display of PDF files?&nbsp;</span
+><output id="user-agent-pdfViewerEnabled"></output></span></li>
+    <li><span
+>plugins</span><span
+>Enumerable Installed Plugins:</span
+><ul class="no-margin" id="user-agent-plugins"></ul></li>
+    <li><span
+>userAgent</span><span><span
+>User Agent String:&nbsp;</span
+><output id="user-agent-userAgent"></output></span></li>
+    <li><span
+>vendor</span><span><span
+>Vendor:&nbsp;</span
+><output id="user-agent-vendor"></output></span></li>
+    <li><span
+>webdriver</span><span><span
+>Is the user agent controlled by automation?&nbsp;</span
+><output id="user-agent-webdriver"></output></span></li>
+  </ul>
+</section>
+<section>
+  <h3>Non-standard</h3>
+  <ul class="headered technical">
+    <li><span
+>buildID</span><span><span
+>Build Identifier:&nbsp;</span
+><output id="user-agent-buildID"></output></span></li>
+    <li><span
+>securitypolicy</span><span><span
+>Netscape 4.7x-specific:&nbsp;</span
+><output id="user-agent-securitypolicy"></output></span></li>
+    <li><span
+>standalone</span><span><span
+>Is the user agent running in standalone mode?&nbsp;</span
+><output id="user-agent-standalone"></output></span></li>
+  </ul>
+</section>
+<section>
+  <h3>Deprecated</h3>
+  <ul class="headered technical">
+    <li><span
+>appCodeName</span><span><span
+>Internal Code Name:&nbsp;</span
+><output id="user-agent-appCodeName"></output></span></li>
+    <li><span
+>appName</span><span><span
+>Official Name:&nbsp;</span
+><output id="user-agent-appName"></output></span></li>
+    <li><span
+>appVersion</span><span><span
+>Version:&nbsp;</span
+><output id="user-agent-appVersion"></output></span></li>
+    <li><span
+>oscpu</span><span><span
+>Current Operating System:&nbsp;</span
+><output id="user-agent-oscpu"></output></span></li>
+    <li><span
+>platform</span><span><span
+>Platform:&nbsp;</span
+><output id="user-agent-platform"></output></span></li>
+    <li><span
+>product</span><span><span
+>Always <i>Gecko</i>:&nbsp;</span
+><output id="user-agent-product"></output></span></li>
+    <li><span
+>productSub</span><span><span
+>Build Number:&nbsp;</span
+><output id="user-agent-productSub"></output></span></li>
+    <li><span
+>taintEnabled</span><span><span
+>Always <i>false</i>:&nbsp;</span
+><output id="user-agent-taintEnabled"></output></span></li>
+    <li><span
+>vendorSub</span><span><span
+>Vendor Version Number:&nbsp;</span
+><output id="user-agent-vendorSub"></output></span></li>
+  </ul>
+</section>
+<section>
+  <h3>NavigatorUAData</h3>
+  <p>This interface is part of an upcoming replacement to the user agent string:
+User-Agent Client Hints. Its purpose is to:</p>
+  <ul>
+    <li>return parts of the user agent data in a selective manner,</li>
+    <li>get of rid crufts, which were left over the decades for backwards
+compatibility,</li>
+    <li>eliminate the need to parse such a string,</li>
+  </ul>
+  <p>just to name a few. As of this page's date, this experimental feature is
+supported only in Chrome/-ium. Properties are grouped by their entropy, with
+those being low are unlikely to identify a user, and vice versa for those being
+high. The following is a printout of the low entropy properties.</p>
+  <pre id="user-agent-userAgentData"></pre>
+</section>

@@ -1,0 +1,30 @@
+---
+key: "_media-queries"
+---
+{%-include variables.html-%}
+<link rel="stylesheet" href="{{sitePathRes}}/styles/input.css" />
+<link rel="stylesheet" href="res/media-queries.css" />
+<section>
+  <p>Many websites use media queries to adapt their contents to your media
+context, but they can also be abused to uniquely identify you:</p>
+  <blockquote>
+    <p>Because media queries provide insights into the capabilities--and by
+extension, the features and design--of the device the user is working with,
+there is the potential that they could be abused to construct a fingerprint
+which identifies the device, or at least categorizes it to some degree of detail
+that may be undesirable to users.</p>
+    <p>Because of this potential, a browser may opt to fudge the returned values
+in some manner in order to prevent them from being used to precisely identify a
+computer.</p>
+  </blockquote>
+  <p>This page lists the available enumerated or enumerable queries, their
+return values, and what your user agent returns for each. Some of them may not
+be supported.</p>
+  <p>The set of queries shown here adheres to Media Queries Level 5.</p>
+</section>
+{%include sections.html-%}
+<section>
+  <div class="hr"></div>
+  <p><i>See also [{%include a-page.html key="_user-agent"%}] for a
+JavaScript-powered equivalent.</i></p>
+</section>

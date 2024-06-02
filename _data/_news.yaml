@@ -1,0 +1,29 @@
+path: "pages/news/"
+date: 2024-03-24
+head:
+  title: "News"
+body:
+  title: "News"
+  subtitle: "What's new?"
+menu:
+  - key: "_home"
+keys:
+  - "news_20240209"
+  - "news_20231231"
+  - "news_20230705"
+  - "news_20230521"
+  - "news_20230410"
+  - "news_20230327"
+  - "news_20230217"
+  - "news_20230303"
+  - "news_20230216"
+  - "news_20221231"
+  - "news_20220725"
+  - "news_20220717"
+  - "news_20220526"
+  - "news_20211123"
+  - "news_20211019"
+  - "news_20210831"
+  - "news_20210311"
+  - "news_20200818"
+  - "news_20191002"

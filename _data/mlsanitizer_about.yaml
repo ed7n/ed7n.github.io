@@ -1,0 +1,17 @@
+path: "mlsanitizer/about/"
+date: 2021-08-31
+head:
+  title: "About MLSanitizer"
+body:
+  title: "About MLSanitizer"
+  subtitle: "Some information about this application."
+menu:
+  - label: "Compatibility"
+    href: "#compatibility"
+    title: "Compatibility"
+    subtitle: "Sanitized PDFs are compatible with pretty much all readers."
+  - label: "Issues"
+    href: "#issues"
+    title: "Issues"
+    subtitle: "It may crash from excessive memory use."
+  - key: "mlsanitizer"

@@ -1,0 +1,384 @@
+<section>
+  <p>You can {%include button-open-all-details.html html="open all details"%} by
+tapping on the button.</p>
+</section>
+<section>
+  <h3>Viewport or Page Characteristics</h3>
+  <details>
+    <summary>orientation</summary>
+    <ul class="headered">
+      <li><span id="media-queries-orientation-portrait"
+>portrait</span><span
+>The viewport or page height is greater than or equal to its width.</span></li>
+      <li><span id="media-queries-orientation-landscape"
+>landscape</span><span
+>The viewport or page height is lesser than its width.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>overflow-block</summary>
+    <ul class="headered">
+      <li><span id="media-queries-overflow-block-none"
+>none</span><span
+>Block-overflowing content is not displayed.</span></li>
+      <li><span id="media-queries-overflow-block-scroll"
+>scroll</span><span
+>Block-overflowing content is exposed with scrolling.</span></li>
+      <li><span id="media-queries-overflow-block-paged"
+>paged</span><span
+>Block-overflowing content is displayed on the following page.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>overflow-inline</summary>
+    <ul class="headered">
+      <li><span id="media-queries-overflow-inline-none"
+>none</span><span
+>Inline-overflowing content is not displayed.</span></li>
+      <li><span id="media-queries-overflow-inline-scroll"
+>scroll</span><span
+>Inline-overflowing content is exposed with scrolling.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>display-mode</summary>
+    <ul class="headered">
+      <li><span id="media-queries-display-mode-fullscreen"
+>fullscreen</span><span
+>No user agent chrome.</span></li>
+      <li><span id="media-queries-display-mode-standalone"
+>standalone</span><span
+>Standalone application look and feel.</span></li>
+      <li><span id="media-queries-display-mode-minimal-ui"
+>minimal-ui</span><span
+>As above and with minimal UI elements.</span></li>
+      <li><span id="media-queries-display-mode-browser"
+>browser</span><span
+>Standard browser context.</span></li>
+    </ul>
+  </details>
+</section>
+<section>
+  <h3>Display Quality</h3>
+  <details>
+    <summary>scan</summary>
+    <ul class="headered">
+      <li><span id="media-queries-scan-interlace"
+>interlace</span><span
+>The output device draws odd and even lines alternately.</span></li>
+      <li><span id="media-queries-scan-progressive"
+>progressive</span><span
+>The output device draws lines sequentially.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>grid</summary>
+    <ul class="headered">
+      <li><span id="media-queries-grid-1"
+>1</span><span
+>The output device is grid-based.</span></li>
+      <li><span id="media-queries-grid-0"
+>0</span><span
+>The output device is bitmap-based.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>update</summary>
+    <ul class="headered">
+      <li><span id="media-queries-update-none"
+>none</span><span
+>The layout can no longer be updated.</span></li>
+      <li><span id="media-queries-update-slow"
+>slow</span><span
+>As below, but the output device is constrained in speed.</span></li>
+      <li><span id="media-queries-update-fast"
+>fast</span><span
+>The layout may change dynamically.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>environment-blending</summary>
+    <ul class="headered">
+      <li><span id="media-queries-environment-blending-opaque"
+>opaque</span><span
+>Black is dark and white is 100% light.</span></li>
+      <li><span id="media-queries-environment-blending-additive"
+>additive</span><span
+>Black is fully transparent and white is 100% light.</span></li>
+      <li><span id="media-queries-environment-blending-subtractive"
+>subtractive</span><span
+>White is fully transparent and dark colors have the most contrast.</span></li>
+    </ul>
+  </details>
+</section>
+<section>
+  <h3>Color</h3>
+  <details>
+    <summary>color</summary>
+    <ul class="headered">
+      <li><span id="media-queries-color"
+>color</span><span
+>The output device supports color.</span></li>
+      <li><span id="media-queries-color-0"
+>0</span><span
+>The output device does not support color.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>color-index</summary>
+    <ul class="headered">
+      <li><span id="media-queries-color-index"
+>color-index</span><span
+>The output device uses a color lookup table.</span></li>
+      <li><span id="media-queries-color-index-0"
+>0</span><span
+>The output device does not use a color lookup table.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>monochrome</summary>
+    <ul class="headered">
+      <li><span id="media-queries-monochrome"
+>monochrome</span><span
+>The output device supports monochrome.</span></li>
+      <li><span id="media-queries-monochrome-0"
+>0</span><span
+>The output device does not support monochrome.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>color-gamut</summary>
+    <ul class="headered">
+      <li><span id="media-queries-color-gamut-srgb"
+>srgb</span><span
+>The user agent and output device support approximately the sRGB gamut or
+more.</span></li>
+      <li><span id="media-queries-color-gamut-p3"
+>p3</span><span
+>The user agent and output device support approximately the DCI-P3 gamut or
+more.</span></li>
+      <li><span id="media-queries-color-gamut-rec2020"
+>rec2020</span><span
+>The user agent and output device support approximately the ITU-R BT.2020 gamut
+or more.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>dynamic-range</summary>
+    <ul class="headered">
+      <li><span id="media-queries-dynamic-range-high"
+>high</span><span
+>The user agent and output device support high dynamic range.</span></li>
+      <li><span id="media-queries-dynamic-range-standard"
+>standard</span><span
+>Either the user agent or the output device does not support high dynamic
+range.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>inverted-colors</summary>
+    <ul class="headered">
+      <li><span id="media-queries-inverted-colors-none"
+>none</span><span
+>Colors have not been inverted.</span></li>
+      <li><span id="media-queries-inverted-colors-inverted"
+>inverted</span><span
+>Colors have been inverted.</span></li>
+    </ul>
+  </details>
+</section>
+<section>
+  <h3>Interaction</h3>
+  <details>
+    <summary>pointer</summary>
+    <ul class="headered">
+      <li><span id="media-queries-pointer-none"
+>none</span><span
+>The primary input mechanism does not include a pointing device.</span></li>
+      <li><span id="media-queries-pointer-coarse"
+>coarse</span><span
+>The primary input mechanism includes a pointing device of limited
+accuracy.</span></li>
+      <li><span id="media-queries-pointer-fine"
+>fine</span><span
+>The primary input mechanism includes an accurate pointing device.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>hover</summary>
+    <ul class="headered">
+      <li><span id="media-queries-hover-none"
+>none</span><span
+>The primary input mechanism can not (conveniently) hover over elements.</span
+></li>
+      <li><span id="media-queries-hover-hover"
+>hover</span><span
+>The primary input mechanism can conveniently hover over elements.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>any-hover</summary>
+    <ul class="headered">
+      <li><span id="media-queries-any-hover-none"
+>none</span><span
+>No input mechanism can (conveniently) hover over elements.</span></li>
+      <li><span id="media-queries-any-hover-hover"
+>hover</span><span
+>At least one input mechanism can conveniently hover over elements.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>any-pointer</summary>
+    <ul class="headered">
+      <li><span id="media-queries-any-pointer-none"
+>none</span><span
+>No input mechanism includes a pointing device.</span></li>
+      <li><span id="media-queries-any-pointer-coarse"
+>coarse</span><span
+>At least one input mechanism includes a pointing device of limited
+accuracy.</span></li>
+      <li><span id="media-queries-any-pointer-fine"
+>fine</span><span
+>At least one input mechanism includes an accurate pointing device.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>nav-controls</summary>
+    <ul class="headered">
+      <li><span id="media-queries-nav-controls-none"
+>none</span><span
+>The user agent does not provide any obviously discoverable navigation
+controls.</span></li>
+      <li><span id="media-queries-nav-controls-back"
+>back</span><span
+>The user agent provides navigation controls.</span></li>
+    </ul>
+  </details>
+</section>
+<section>
+  <h3>Video</h3>
+  <details>
+    <summary>video-color-gamut</summary>
+    <ul class="headered">
+      <li><span id="media-queries-video-color-gamut-srgb"
+>srgb</span><span
+>The output device's video plane supports approximately the sRGB gamut or
+more.</span></li>
+      <li><span id="media-queries-video-color-gamut-p3"
+>p3</span><span
+>The output device's video plane supports approximately the DCI-P3 gamut or
+more.</span></li>
+      <li><span id="media-queries-video-color-gamut-rec2020"
+>rec2020</span><span
+>The output device's video plane supports approximately the ITU-R BT.2020 gamut
+or more.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>video-dynamic-range</summary>
+    <ul class="headered">
+      <li><span id="media-queries-video-dynamic-range-high"
+>high</span><span
+>The user agent and output device's video plane support high dynamic
+range.</span></li>
+      <li><span id="media-queries-video-dynamic-range-standard"
+>standard</span><span
+>Either the user agent or the output device's video plane does not support high
+dynamic range.</span></li>
+    </ul>
+  </details>
+</section>
+<section>
+  <h3>Scripting</h3>
+  <details>
+    <summary>scripting</summary>
+    <ul class="headered">
+      <li><span id="media-queries-scripting-enabled"
+>enabled</span><span
+>Scripting is enabled for the document's lifetime.</span></li>
+      <li>
+        <span id="media-queries-scripting-initial-only"
+>initial-only</span><span
+>Scripting is enabled only during the initial page load.</span>
+      </li>
+      <li><span id="media-queries-scripting-none"
+>none</span><span
+>Scripting is either disabled or unsupported.</span></li>
+    </ul>
+  </details>
+</section>
+<section>
+  <h3>User Preference</h3>
+  <details>
+    <summary>prefers-reduced-motion</summary>
+    <ul class="headered">
+      <li><span id="media-queries-prefers-reduced-motion-no-preference"
+>no-preference</span><span
+>No preference.</span></li>
+      <li><span id="media-queries-prefers-reduced-motion-reduce"
+>reduce</span><span
+>The user prefers motion to be reduced.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>prefers-reduced-transparency</summary>
+    <ul class="headered">
+      <li><span id="media-queries-prefers-reduced-transparency-no-preference"
+>no-preference</span><span
+>No preference.</span></li>
+      <li><span id="media-queries-prefers-reduced-transparency-reduce"
+>reduce</span><span
+>The user prefers transparency effects to be reduced.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>prefers-contrast</summary>
+    <ul class="headered">
+      <li><span id="media-queries-prefers-contrast-no-preference"
+>no-preference</span><span
+>No preference.</span></li>
+      <li><span id="media-queries-prefers-contrast-less"
+>less</span><span
+>The user prefers a lesser contrast level.</span></li>
+      <li><span id="media-queries-prefers-contrast-more"
+>more</span><span
+>The user prefers a greater contrast level.</span></li>
+      <li><span id="media-queries-prefers-contrast-custom"
+>custom</span><span
+>The user wants to use some set of colors.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>forced-colors</summary>
+    <ul class="headered">
+      <li><span id="media-queries-forced-colors-active"
+>active</span><span
+>Colors are restricted.</span></li>
+      <li><span id="media-queries-forced-colors-none"
+>none</span><span
+>Colors are unrestricted.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>prefers-color-scheme</summary>
+    <ul class="headered">
+      <li><span id="media-queries-prefers-color-scheme-light"
+>light</span><span
+>The user prefers a light color scheme.</span></li>
+      <li><span id="media-queries-prefers-color-scheme-dark"
+>dark</span><span
+>The user prefers a dark color scheme.</span></li>
+    </ul>
+  </details>
+  <details>
+    <summary>prefers-reduced-data</summary>
+    <ul class="headered">
+      <li><span id="media-queries-prefers-reduced-data-no-preference"
+>no-preference</span><span
+>No preference.</span></li>
+      <li><span id="media-queries-prefers-reduced-data-reduce"
+>reduce</span><span
+>The user prefers lightweight alternate contents.</span></li>
+    </ul>
+  </details>
+</section>

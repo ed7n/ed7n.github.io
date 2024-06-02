@@ -1,0 +1,83 @@
+---
+key: "news_20230217"
+---
+{%-include variables.html-%}
+<section>
+  <p><i>This post was appended and edited for the release of Update 2.</i></p>
+</section>
+<section>
+  <h3>{{"2023-03-15" | date: formDate}}</h3>
+  <p>The long overdue update to J-Card Template is finally here.</p>
+  <p>Originally, we planned to release a finalized version of Revision A as
+Update 2, but ended up with drastic changes throughout nine subsequent release
+candidates.</p>
+  <p>We had issues with the new user interface (UI) mixing field types and sizes
+while maintaining its overall usability. In the end, we replaced the mixing with
+the uniformity found in modern (mobile) applications. It singularizes the field
+presentation and occupies more vertical space, but for the benefit of
+decluttering the controls to our desire.</p>
+  <p>We also wanted J-Card Template to serve as a basis for our future web
+applications, later supplemented by NET-Viewer which is based on it.</p>
+  <p>Nevertheless, we finalized the five major changes mentioned in our previous
+announcement. Most importantly, this release removes Print 2 but not entirely;
+we made a forward adapter, so loading an older J-card data file with Print 2
+sets the print <samp>Count</samp> option to 2.</p>
+  <p>Finally--as a last minute gift--the cover height can be reduced to allow
+more text content on the front panel. This is a stopgap solution to the track
+fitting issue which plagued J-Card Template throughout its existence. The real
+thing will have to wait for Update 3.</p>
+  <p>More information follows below. While it was written prior to Update 2,
+instructions were updated as necessary.</p>
+</section>
+<section>
+  <h3>{{"2023-02-17" | date: formDate}}</h3>
+  <p>The long overdue update to J-Card Template is almost ready, but we want you
+to try it out first.</p>
+  <p>Revision A is a release candidate for Update 2 that brings five major
+changes:</p>
+  <ol>
+    <li><span>Short spine support for <i>extraslim</i> cases.</span>
+      <ul>
+        <li>Its width of 0.4 in or 10.16 mm is not yet finalized. Let us know if
+it does not work for you.</li>
+      </ul>
+    </li>
+    <li><span>A new print shop replacing Print 2.</span>
+      <ul>
+        <li><strong>Print 2 has been deprecated and will be removed in Update
+2.</strong></li>
+        <li>You must disable Print 2 to use the print shop, which does much more
+than its predecessor but--admittedly--with some complications.</li>
+      </ul>
+    </li>
+    <li><span>New <em>and</em> updated user interfaces (UIs).</span>
+      <ul>
+        <li>The new UI is not yet the default for time to try it on your own. In
+it, the template output is always displayed, while the form and everything else
+remain mostly the same, so it should be easy to adapt to.</li>
+        <li>The fieldsets in both UIs are collapsible to reduce the amount of
+scrolling.</li>
+        <li>You can switch between the two UIs under <kbd><samp>More</samp
+>→<samp>View</samp>→<samp>Switch Interface</samp></kbd>.</li>
+      </ul>
+    </li>
+    <li><span>Convenient cover image controls.</span>
+      <ul>
+        <li>We received mails regarding the cover image. While you still have to
+load and save them separately, we added controls to do so alongside the data
+file for convenience.</li>
+      </ul>
+    </li>
+    <li><span>An offline mode of sorts.</span>
+      <ul>
+        <li>J-Card Template has been made into a Progressive Web Application
+(PWA). You can install it for offline access with the NET-Installer, found under
+<kbd><samp>More</samp>→<samp>Application</samp>→<samp>Offline Access</samp></kbd
+>.</li>
+      </ul>
+    </li>
+  </ol>
+  <p>While we were not able to meet expectations, we hope that this update is
+worthwhile, and that you enjoy using it as much as we enjoy working on it.</p>
+  <span>—Brendon, founder and sole member.</span>
+</section>

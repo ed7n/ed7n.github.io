@@ -1,0 +1,23 @@
+path: "sheff/"
+date: 2024-06-02
+head:
+  title: "SheFF"
+body:
+  title: "SheFF"
+  subtitle: "Interactive FFmpeg frontend."
+menu:
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release files and supplements."
+  - label: "Usage"
+    href: "#usage"
+    title: "Usage"
+    subtitle: "Basic instructions."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

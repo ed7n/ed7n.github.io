@@ -1,0 +1,25 @@
+path: "pages/about/design/"
+date: 2023-02-17
+head:
+  title: "Design"
+body:
+  title: "Design"
+  subtitle: "About designing the Online Portal."
+menu:
+  - label: "Spacing"
+    href: "#spacing"
+    title: "Spacing"
+    subtitle: "Placing elements to where they belong."
+  - label: "Colors"
+    href: "#colors"
+    title: "Colors"
+    subtitle: "Comfortable yet distinguishable."
+  - label: "Graphics"
+    href: "#graphics"
+    title: "Graphics"
+    subtitle: "For illustrations and branding only."
+  - label: "Weighing"
+    href: "#weighing"
+    title: "Weighing"
+    subtitle: "Limiting the amount of page content."
+  - key: "_about"

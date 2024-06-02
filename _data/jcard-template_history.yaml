@@ -1,0 +1,9 @@
+path: "net/jcard-template/history/"
+date: 2023-02-17
+head:
+  title: "History - J-Card Template"
+body:
+  title: "History"
+  subtitle: "A comeback to web development."
+menu:
+  - key: "jcard-template"

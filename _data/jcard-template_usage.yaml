@@ -1,0 +1,21 @@
+path: "net/jcard-template/usage/"
+date: 2023-03-15
+head:
+  title: "Using J-Card Template"
+body:
+  title: "Using J-Card Template"
+  subtitle: "General usage information."
+menu:
+  - label: "Cover Image"
+    href: "#cover-image"
+    title: "Cover Image"
+    subtitle: "For the visual impression."
+  - label: "Fonts"
+    href: "#fonts"
+    title: "Fonts"
+    subtitle: "Dynamicize your J-cards by its typography."
+  - label: "Data Files"
+    href: "#data-files"
+    title: "Data Files"
+    subtitle: "About saved J-cards."
+  - key: "jcard-template"

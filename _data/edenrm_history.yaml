@@ -1,0 +1,9 @@
+path: "edenrm/history/"
+date: 2021-01-10
+head:
+  title: "History - EDENrm"
+body:
+  title: "History"
+  subtitle: "Once an illustro sandwhich."
+menu:
+  - key: "edenrm"

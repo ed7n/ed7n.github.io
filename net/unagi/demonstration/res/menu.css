@@ -1,0 +1,8 @@
+article .una-menu.soil {
+  border-block-end-color: var(--colorAccentLow);
+  border-block-end-style: solid;
+  border-block-end-width: var(--widthBorder);
+  border-block-start-color: var(--colorAccentLow);
+  border-block-start-style: solid;
+  border-block-start-width: var(--widthBorder);
+}

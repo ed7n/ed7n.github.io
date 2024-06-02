@@ -1,0 +1,35 @@
+---
+key: "mlsanitizer_history"
+---
+{%-include variables.html-%}
+<section>
+  <p>ManualsLib has been a great place for manuals that are no longer available
+from the authoring body. However, some of their manuals are watermarked,
+presumably to advertise themselves, and to make stealing a bit more difficult.
+These watermarks are undesirable especially if the original document left the
+Internet unarchived, and--like other similar watermarks--they make any document
+look less authentic and professional. I think ManualsLib has no rights to claim
+any ownership over those manuals, if those watermarks imply so.</p>
+  <p>The first step is to manually-edit each watermarked document with a text
+editor. Starting without knowledge on the internal structure of PDF, I searched
+for the URL attached to the watermarks, which became my starting point for
+trial-and-errors. The goal was to subtractively-remove its watermarks while
+retaining its readability with SumatraPDF, which uses MuPDF. My success over
+time made this mundane, so I decided to write a program to automate the task.</p>
+  <p>The second step is to translate my watermark detection methods into Java
+code, mostly by pattern matching. Following some standard practices, I wanted
+the output to be readable with readers other than those using MuPDF. The first
+working output failed on Evince (Proppler), and Firefox (PDF.js). Some digging
+led me to Apache's PDFBox, which was brought in for some debugging clues; and
+some understanding of the internal structure of PDF.</p>
+  <p>The third step is to refactor the code to output mostly-compliant PDFs.
+This involves calculating the cross reference offset (<var>startxref</var>), and
+removing references to then-removed watermarks. This would be much easier with
+PDFBox, but redesigning the program was too much, and the watermarking of
+documents in ManualsLib seemed to have shrunk if not ceased, leaving no urge to
+do so.</p>
+  <p>The fourth and final step is to brush it up for public release, and--of
+course--to compose its website. The original release date of {{"2021-08-01" |
+date: formDate}} was pushed back to work on the then new [{%include a-page.html
+key="edjc" htms=" API"%}], later used in this project.</p>
+</section>

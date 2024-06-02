@@ -1,0 +1,17 @@
+path: "net/jcard-template/about/"
+date: 2023-03-07
+head:
+  title: "About J-Card Template"
+body:
+  title: "About J-Card Template"
+  subtitle: "Some information about this application."
+menu:
+  - label: "Fork"
+    href: "#fork"
+    title: "Fork"
+    subtitle: "More than just a clone."
+  - label: "Technologies"
+    href: "#technologies"
+    title: "Technologies"
+    subtitle: "Standard web technologies and no frills."
+  - key: "jcard-template"

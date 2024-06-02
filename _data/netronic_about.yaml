@@ -1,0 +1,17 @@
+path: "netronic/about/"
+date: 2023-04-10
+head:
+  title: "About Netronic"
+body:
+  title: "About Netronic"
+  subtitle: "Some information about this package."
+menu:
+  - label: "Platforms"
+    href: "#platforms"
+    title: "Platforms"
+    subtitle: "Xfce, Qt 5, and Wine."
+  - label: "Variants"
+    href: "#variants"
+    title: "Variants"
+    subtitle: "Dark and light colors with sizes up to XXHDPI."
+  - key: "netronic"

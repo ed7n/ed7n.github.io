@@ -1,0 +1,9 @@
+path: "sheff/about/"
+date: 2022-12-31
+head:
+  title: "About SheFF"
+body:
+  title: "About SheFF"
+  subtitle: "Some information about this application."
+menu:
+  - key: "sheff"

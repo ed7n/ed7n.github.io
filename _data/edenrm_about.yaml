@@ -1,0 +1,17 @@
+path: "edenrm/about/"
+date: 2021-01-10
+head:
+  title: "About EDENrm"
+body:
+  title: "About EDENrm"
+  subtitle: "Some information about this package."
+menu:
+  - label: "Widgets"
+    href: "#widgets"
+    title: "Widgets"
+    subtitle: "Also known as Skins."
+  - label: "Limitations"
+    href: "#limitations"
+    title: "Limitations"
+    subtitle: "Some quirks."
+  - key: "edenrm"

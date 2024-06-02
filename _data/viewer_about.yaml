@@ -1,0 +1,9 @@
+path: "net/viewer/about/"
+date: 2023-03-07
+head:
+  title: "About NET-Viewer"
+body:
+  title: "About NET-Viewer"
+  subtitle: "Some information about this application."
+menu:
+  - key: "viewer"

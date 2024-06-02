@@ -1,0 +1,31 @@
+#color-scheme-fallback {
+  display: none;
+}
+
+#color-scheme-state::after {
+  content: "unset";
+}
+
+#color-scheme-value::after {
+  font-style: oblique;
+}
+
+@media (prefers-color-scheme: light) {
+  #color-scheme-state::after {
+    content: "set to ";
+  }
+
+  #color-scheme-value::after {
+    content: "light";
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #color-scheme-state::after {
+    content: "set to ";
+  }
+
+  #color-scheme-value::after {
+    content: "dark";
+  }
+}

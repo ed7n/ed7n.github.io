@@ -1,0 +1,13 @@
+path: "gapcm/about/"
+date: 2024-03-06
+head:
+  title: "About GAPCM"
+body:
+  title: "About GAPCM"
+  subtitle: "Some information about this project."
+menu:
+  - label: "Specifications"
+    href: "#specifications"
+    title: "Specifications"
+    subtitle: "Prose description of the file format in question."
+  - key: "gapcm"

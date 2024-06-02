@@ -1,0 +1,23 @@
+path: "mlsanitizer/"
+date: 2023-05-05
+head:
+  title: "MLSanitizer"
+body:
+  title: "MLSanitizer"
+  subtitle: "ManualsLib-watermarked PDF sanitizer."
+menu:
+  - label: "Downloads"
+    href: "#downloads"
+    title: "Downloads"
+    subtitle: "Release packages and supplements."
+  - label: "Usage"
+    href: "#usage"
+    title: "Usage"
+    subtitle: "Basic instructions."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

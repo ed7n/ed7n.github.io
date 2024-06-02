@@ -1,0 +1,9 @@
+path: "pages/licenses/bysa4/"
+date: 2023-02-17
+head:
+  title: "CC BY-SA 4.0"
+body:
+  title: "CC BY-SA 4.0"
+  subtitle: "Full license text."
+menu:
+  - key: "_licenses"

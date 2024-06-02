@@ -1,0 +1,18 @@
+path: "netronic/setup/"
+date: 2023-04-10
+head:
+  title: "Setup - Netronic"
+body:
+  title: "Setup"
+  subtitle: "Installation and usage."
+menu:
+  - label: "Installation"
+    href: "#installation"
+    title: "Installation"
+  - label: "Firefox"
+    href: "#firefox"
+    title: "Firefox"
+  - label: "Troubleshooting"
+    href: "#troubleshooting"
+    title: "Troubleshooting"
+  - key: "netronic"

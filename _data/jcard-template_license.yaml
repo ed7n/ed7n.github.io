@@ -1,0 +1,15 @@
+path: "net/jcard-template/license/"
+date: 2023-02-17
+head:
+  title: "License - J-Card Template"
+body:
+  title: "License"
+  subtitle: "J-Card Template is licensed under the BSD 2-Clause."
+menu:
+  - label: "Application"
+    href: "#application"
+    title: "Application"
+  - label: "Fonts"
+    href: "#fonts"
+    title: "Fonts"
+  - key: "jcard-template"

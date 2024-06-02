@@ -1,0 +1,206 @@
+<form>
+  <details open>
+    <summary><h3>Typeface</h3></summary>
+    <div class="field row">
+      <label for="textbox-family">Font:</label>
+      <div class="input rigid">
+        <input id="textbox-family" type="text" list="textbox-family-list" value="Cantarell" />
+        <datalist id="textbox-family-list">
+          <option>cursive</option>
+          <option>emoji</option>
+          <option>fangsong</option>
+          <option>fantasy</option>
+          <option>math</option>
+          <option>monospace</option>
+          <option>sans-serif</option>
+          <option>serif</option>
+          <option>system-ui</option>
+          <option>ui-monospace</option>
+          <option>ui-rounded</option>
+          <option>ui-sans-serif</option>
+          <option>ui-serif</option>
+        </datalist>
+      </div>
+    </div>
+    <div class="field row">
+      <label for="textbox-size-value">Size:</label>
+      <div class="input short">
+        <input id="textbox-size-value" type="number" value="12" />
+        <select id="textbox-size-unit">
+          <option selected>pt</option>
+          <option>px</option>
+          <option>cm</option>
+          <option>mm</option>
+          <option>in</option>
+          <option>pc</option>
+        </select>
+      </div>
+    </div>
+    <div class="field row">
+      <label>Effects:</label>
+      <div class="input short">
+        <div class="field switch">
+          <div class="input">
+            <input id="textbox-bold" type="checkbox" />
+          </div>
+          <label class="bolder" for="textbox-bold">B</label>
+        </div>
+        <div class="field switch">
+          <div class="input">
+            <input id="textbox-oblique" type="checkbox" checked />
+          </div>
+          <label class="oblique" for="textbox-oblique">O</label>
+        </div>
+        <div class="field switch">
+          <div class="input">
+            <input id="textbox-underline" type="checkbox" />
+          </div>
+          <label class="underline" for="textbox-underline">U</label>
+        </div>
+        <div class="field switch">
+          <div class="input">
+            <input id="textbox-strike" type="checkbox" />
+          </div>
+          <label for="textbox-strike"><s>S</s></label>
+        </div>
+      </div>
+    </div>
+    <div class="field row">
+      <label for="textbox-color">Color:</label>
+      <div class="input rigid">
+        <input id="textbox-color" type="color" value="#bf7f7f" />
+      </div>
+    </div>
+  </details>
+  <details>
+    <summary><h3>Metrics</h3></summary>
+    <p>Unless otherwise mentioned, values are in <code>px</code>.</p>
+    <section>
+      <h4>Position</h4>
+      <div class="field column">
+        <label for="textbox-x">X, Y coordinates:</label>
+        <div class="input shorter">
+          <input id="textbox-x" type="number" value="0" />
+          <span>,&nbsp;</span>
+          <input id="textbox-y" type="number" value="12" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <h4>Scaling &amp; Rotation</h4>
+      <div class="group">
+        <div class="field column">
+          <label for="textbox-width">Width:</label>
+          <div class="input short">
+            <input id="textbox-width" type="number" value="352" />
+          </div>
+        </div>
+        <div class="field column">
+          <label for="textbox-height">Height:</label>
+          <div class="input short">
+            <input id="textbox-height" type="number" value="288" />
+          </div>
+        </div>
+        <div class="field column">
+          <label for="textbox-rotation">Rotation (°):</label>
+          <div class="input short">
+            <input id="textbox-rotation" type="number" step="0.1" value="1.8" />
+          </div>
+        </div>
+      </div>
+      <div class="field switch">
+        <div class="input">
+          <input id="textbox-lock-ratio" type="checkbox" />
+        </div>
+        <label for="textbox-lock-ratio">Lock ratio</label>
+      </div>
+    </section>
+  </details>
+  <details open>
+    <summary><h3>Content</h3></summary>
+    <section>
+      <div class="group">
+        <div class="field switch">
+          <div class="input">
+            <input id="textbox-visible" type="checkbox" checked />
+          </div>
+          <label for="textbox-visible">Visible</label>
+        </div>
+        <div class="field switch">
+          <div class="input">
+            <input id="textbox-draw-text" type="checkbox" checked />
+          </div>
+          <label for="textbox-draw-text">Draw text</label>
+        </div>
+      </div>
+      <div class="field column">
+        <label for="textbox-text">Text:</label>
+        <div class="input fluid">
+          <textarea id="textbox-text"
+>
+Twelve hours passed since I left home. With me were my keys, phone, wallet, lip
+balm, transit pass, chips, hunger, and anxiety. "Will I make it? Will I really
+do it? What'll happen to me?" I decided to at least have some dinner. I went
+down again to borrow a lock pad--and its keys of course--in exchange for $10. I
+surveyed the adjacent bar, then back. I used the locker to store non-sensitives,
+while my wallet remained secure in my jacket's zip pocket.</textarea>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h4>Alignment</h4>
+      <div class="group">
+        <div class="field row">
+          <label for="textbox-inline-alignment">Inline:</label>
+          <div class="input shorter">
+            <select id="textbox-inline-alignment">
+              <option>Start</option>
+              <option>Center</option>
+              <option selected>Justify</option>
+              <option>End</option>
+            </select>
+          </div>
+        </div>
+        <div class="field row">
+          <label for="textbox-block-alignment">Block:</label>
+          <div class="input shorter">
+            <select id="textbox-block-alignment">
+              <option selected>Start</option>
+              <option>Center</option>
+              <option>End</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+  </details>
+  <details>
+    <summary><h3>Metadata</h3></summary>
+    <div class="field row">
+      <label for="textbox-name">Name:</label>
+      <div class="input fluid">
+        <input id="textbox-name" type="text" value="NET-Slides Object" />
+      </div>
+    </div>
+    <div class="field row">
+      <label for="textbox-author">Author:</label>
+      <div class="input fluid">
+        <input id="textbox-author" type="text" value="Brendon" />
+      </div>
+    </div>
+    <div class="field row">
+      <label for="textbox-caption">Caption:</label>
+      <div class="input fluid">
+        <textarea id="textbox-caption"
+>Text taken from "Escape".
+[{{siteData.gateway}}/pages/escape]</textarea>
+      </div>
+    </div>
+  </details>
+  <div class="field row space-between">
+    <div class="input short">
+      <button type="button">OK</button>
+      <button type="reset">Reset</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,121 @@
+<details open>
+  <summary><h3>Decoder</h3></summary>
+  <section>
+    <pre><samp>$ <kbd>./gamdec --help
+</kbd>GAMdec u0r6 by Brendon 03/06/2024.
+——Eternal Blue PCM decoder. https://ed7n.github.io/gapcm
+
+Usage: -o &lt;path&gt; [&lt;override&gt;|&lt;option&gt;]... &lt;file&gt;
+Where:
+  -o, --output &lt;path&gt;     Path to output headerless, unsigned 8-bit PCM file.
+                          `-` for pipe.
+Header Overrides:
+  -c, --channels {1|2}    1: mono, 2: stereo.
+  -m, --mark &lt;blocks&gt;     Loop start position.
+  -n, --length &lt;frames&gt;   Length between stream start and loop end. `-1` for
+                          maximum.
+  -p, --pregap &lt;blocks&gt;   Artificial silence length.
+
+Options:
+  -i, --info              Prints the header in a friendly format.
+  -l, --loop &lt;count&gt;      Write the given count of loops. `0` to stop at the
+                          mark; no loop. `-1` for 65535. Default is `2`.
+  -t, --trail             Include samples after the loop end.
+
+Echo, fade, and gain features are not supported; get their parameters with
+the prober and apply them elsewhere. Also look there for details on units.
+
+Program Arguments:
+  -h, --help              Display this help message.
+  --                      Stop parsing options.
+</samp></pre>
+  </section>
+  <section>
+    <h4>Example</h4>
+    <pre><samp>$ <kbd>./gamdec -i -l 1 -p 0 -o rp040.raw lunar2/rp040.pcm</kbd></samp></pre>
+  </section>
+</details>
+<details>
+  <summary><h3>Encoder</h3></summary>
+  <section>
+    <pre><samp>$ <kbd>./gamenc --help
+</kbd>GAMenc u0r6 by Brendon 03/06/2024.
+——Eternal Blue PCM encoder. https://ed7n.github.io/gapcm
+
+Usage: -o &lt;path&gt; [&lt;field&gt;|&lt;option&gt;]... &lt;file&gt;
+Where:
+  -o,  --output &lt;path&gt;      Path to output game PCM file. `-` for pipe.
+
+Header Fields:
+  -c,  --channels {1|2}     1: mono (default), 2: stereo.
+  -ea, --echo-pans &lt;levels[6]&gt;
+                            Echo pans for channels 3 to 8. Low nibble: left,
+                            high nibble: right.
+  -ed, --echo-delay &lt;ticks&gt; Echo delay.
+  -el, --echo-levels &lt;levels[3]&gt;
+                            Echo levels for channel pairs 3 and 4 to 7 and 8.
+  -ep, --echo-pregap &lt;ticks&gt;
+                            First echo delay.
+  -m,  --mark &lt;blocks&gt;      Loop start position. Default follows the length for
+                            the shortest possible loop.
+  -n,  --length &lt;frames&gt;    Length between stream start and loop end. `-1` for
+                            maximum. Default is automatic.
+  -p,  --pregap &lt;blocks&gt;    Artificial silence length. Default is `0`.
+
+Options:
+  -t, --trail               Include samples after the loop end.
+
+The input file must be headerless, unsigned 8-bit PCM. Echo header fields
+default to zero which disables the feature. See the prober for details on
+units.
+
+Program Arguments:
+  -h, --help              Display this help message.
+  --                      Stop parsing options.
+</samp></pre>
+  </section>
+  <section>
+    <h4>Example</h4>
+    <pre><samp>$ <kbd>./gamenc -m 11 -n 345122 -o rp040.pcm rp040.raw</kbd></samp></pre>
+  </section>
+</details>
+<details>
+  <summary><h3>Prober</h3></summary>
+  <pre><samp>$ <kbd>./gaminfo --help
+</kbd>GAMinfo u0r6 by Brendon 03/06/2024.
+——Eternal Blue PCM header prober. https://ed7n.github.io/gapcm
+
+Usage: ([&lt;field&gt;] &lt;file&gt;) | -bf
+Header Fields:
+  -c,  --channels     1: mono, 2: stereo.
+  -ea, --echo-pans    Echo pans for channels 3 to 8. Low nibble: left, high
+                      nibble: right.
+  -ed, --echo-delay   Echo delay in ticks.
+  -el, --echo-levels  Echo levels for channel pairs 3 and 4 to 7 and 8.
+  -ep, --echo-pregap  First echo delay in ticks.
+  -m,  --mark         Loop start position in blocks.
+  -n,  --length       Length between stream start and loop end in frames.
+  -p,  --pregap       Artificial silence length in blocks.
+
+If none is given, then it prints the header in a friendly format.
+
+Build Information:
+  -bf, --build-flags  1: 16-bit extension enabled, 0: otherwise.
+
+A block spans 1024 samples, a frame spans one sample for mono, two for stereo.
+
+Program Arguments:
+  -h, --help              Display this help message.
+  --                      Stop parsing options.
+</samp></pre>
+</details>
+<details open>
+  <summary><h3>Guide</h3></summary>
+  <ul class="anchor">
+    <li>{%include li-page.html key="gapcm_usage"%}
+      <ul class="anchor">
+{%include ul-sections.html key="gapcm_usage"%}
+      </ul>
+    </li>
+  </ul>
+</details>

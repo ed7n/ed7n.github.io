@@ -1,0 +1,9 @@
+path: "netronic/license/"
+date: 2023-03-23
+head:
+  title: "License - Netronic"
+body:
+  title: "License"
+  subtitle: "Netronic is licensed under the LGPLv2.0."
+menu:
+  - key: "netronic"

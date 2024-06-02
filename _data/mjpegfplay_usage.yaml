@@ -1,0 +1,17 @@
+path: "mjpegfplay/usage/"
+date: 2023-02-17
+head:
+  title: "Using mJPEGfPlay"
+body:
+  title: "Using mJPEGfPlay"
+  subtitle: "Sequence preparation and keyboard controls."
+menu:
+  - label: "Sequence Preparation"
+    href: "#sequence-preparation"
+    title: "Sequence Preparation"
+    subtitle: "Building a sequence with FFmpeg."
+  - label: "Keyboard Controls"
+    href: "#keyboard-controls"
+    title: "Keyboard Controls"
+    subtitle: "Controlling most of mJPEGfPlay with your keyboard."
+  - key: "mjpegfplay"

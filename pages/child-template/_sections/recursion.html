@@ -1,0 +1,19 @@
+<p><i>Recursion</i> is a way to solve a problem by solving a smaller instance of
+it; divide and conquer. Observe the following procedure:</p>
+<figure>
+  <pre>#lang racket
+(define (factorial n)
+  (if (= n 0)
+      1
+      (* n (factorial (- n 1)))))
+</pre>
+  <figcaption>[<{{htmlAOut}}"https://racket-lang.org">Racket</a>] procedure that
+calculates the [<{{htmlAOut}}"https://en.wikipedia.org/wiki/Factorial"
+>factorial</a>] of <var>n</var>.</figcaption>
+</figure>
+<p><code>factorial</code> passes a smaller <var>n</var> to itself recursively,
+until <var>n</var> is 0, with which the <i>base case</i> is reached. <code
+>1</code>--the factorial for 0--is then returned to the caller, to be multiplied
+with its <var>n</var> of 1. The result is then retuned to its caller, to be
+multiplied with its <var>n</var> of 2. This continues until the original caller
+returns the final result.</p>

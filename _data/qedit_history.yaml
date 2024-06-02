@@ -1,0 +1,15 @@
+path: "qedit/history/"
+date: 2021-08-31
+head:
+  title: "History - QEdit"
+body:
+  title: "History"
+  subtitle: "From CDEx to QEdit and beyond."
+menu:
+  - label: "Background"
+    href: "#background"
+    title: "Background"
+  - label: "Developmental Releases"
+    href: "#developmental-releases"
+    title: "Developmental Releases"
+  - key: "qedit"

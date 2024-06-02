@@ -1,0 +1,19 @@
+<p>The <code>check</code> action inspects your cuesheet for adherence to the
+original specification based from GoldenHawk Technology's [<{{htmlAOut}}"https://web.archive.org/web/20070221154246/http://www.goldenhawk.com/download/cdrwin.pdf"
+>CDRWIN User's Guide</a>] but with a few significant differences:</p>
+<ul>
+  <li><span>FILE is no longer necessarily assigned to the entire cuesheet
+session.</span>
+    <ul>
+      <li>A FILE may reside anywhere to be assigned to the nearest INDEX after
+it.</li>
+      <li>Multiple FILEs may be used in a cuesheet for individual INDEXes.</li>
+      <li>An INDEX without a FILE uses that of the previous.</li>
+    </ul>
+  </li>
+  <li>PERFORMER, SONGWRITER, and TITLE arguments may span over 80
+characters.</li>
+  <li><del>The first track number must be 1 (<code>TRACK 01</code>).</del></li>
+</ul>
+<p>It also checks for missing or invalid FILEs, such as directories, though it
+does not look into their contents.</p>

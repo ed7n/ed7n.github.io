@@ -1,0 +1,9 @@
+path: "mjpegfplay/license/"
+date: 2023-05-05
+head:
+  title: "License - mJPEGfPlay"
+body:
+  title: "License"
+  subtitle: "mJPEGfPlay is licensed under the MIT."
+menu:
+  - key: "mjpegfplay"

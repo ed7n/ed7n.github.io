@@ -1,0 +1,24 @@
+path: "pages/about-us/ews/"
+date: 2023-02-17
+head:
+  title: "EDEN Workstation System"
+body:
+  title: "EDEN Workstation System"
+  subtitle: "About our software infrastructure."
+menu:
+  - label: "cfg"
+    href: "#cfg"
+    title: "cfg"
+    subtitle: "Configuration made easy."
+  - label: "Scripts"
+    href: "#scripts"
+    title: "Scripts"
+    subtitle: "Includes common and math libraries."
+  - label: "Filesystem Hierarchy"
+    href: "#filesystem-hierarchy"
+    title: "Filesystem Hierarchy"
+    subtitle: "We know where everything is."
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_about-us"

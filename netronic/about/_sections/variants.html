@@ -1,0 +1,23 @@
+<section>
+  <h3>Color Schemes</h3>
+  <p>There are dark, light, and Win9 schemes for each theme. Light is the
+default in hopes to support <i>dark mode</i> switches by appending <code
+>-dark</code> to the dark scheme name, but that never worked reliably. The Win9
+scheme produces a more classic look.</p>
+</section>
+<section>
+  <h3>DPIs</h3>
+  <p>With Xfce, changing the DPI is different from (de)magnifying web pages, as
+it affects only measurements relative to the font size. In other words, the CSS
+pixel unit (<code>px</code>) remains at the standard base of 96 dpi. Likewise,
+since the window manager themes use X PixMaps (XPMs)--a raster image
+format--they do not scale with higher DPIs. To compensate for these
+discrepancies, instead of making high-DPI variants of our GTK themes, we relate
+every metric to the font size</ins>.</p>
+  <p>In addition to MDPI (100%), {{data["netronic"].body.title}}'s window
+manager themes are available in MHDPI (125%), HDPI (150%), XHDPI (200%), and
+XXHDPI (300%). There is also a double integer scaling feature in
+<code>xfce4-appearance-settings</code> under <kbd><samp>Window Scaling</samp
+></kbd>. Still, we hope to have DPI-aware window manager themes in the
+future.</p>
+</section>

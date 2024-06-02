@@ -1,0 +1,56 @@
+<section>
+  <p>Function names are preceded by <code>PNC.</code>.</p>
+  <dl class="technical">
+    <dt><code>add&lt;type&gt; &lt;object&gt; &lt;term&gt; &lt;term&gt;</code
+></dt>
+    <dd>Sets the sum of the given two terms to the given object.</dd>
+    <dt><code>alnFlt (&lt;this&gt; &lt;that&gt;)...</code></dt>
+    <dd>Aligns <var>this</var> float to <var>that</var> float--or vice versa,
+whichever is longer--so that they have an equal count of digits.</dd>
+    <dt><code>clrObj &lt;object&gt;...</code></dt>
+    <dd>Clears the given objects.</dd>
+    <dt><code>cmp&lt;type&gt; &lt;object&gt; &lt;this&gt; &lt;that&gt;</code
+></dt>
+    <dd>Sets the comparison of <var>this</var> to <var>that</var> to the given
+object, such that it is negative if <var>this</var> is less than <var>that</var
+>.</dd>
+    <dt><code>cpyObj &lt;destination&gt;... &lt;source&gt;</code></dt>
+    <dd>Copies the given source object to the given destination objects.</dd>
+    <dt><code>div&lt;type&gt; &lt;object&gt; &lt;dividend&gt;
+&lt;divisor&gt;</code></dt>
+    <dd>Sets the quotient of the given dividend and divisor to the given
+object.</dd>
+    <dt><code>eval [&lt;word&gt;]...</code></dt><dd>Evaluates the given
+expression. See [<a href="#expressions">Expressions</a>].</dd>
+    <dt><code>mul&lt;type&gt; &lt;object&gt; &lt;factor&gt; &lt;factor&gt;</code
+></dt>
+    <dd>Sets the product of the given two factors to the given object.</dd>
+    <dt><code>shlObj &lt;object&gt; &lt;distance&gt;</code></dt>
+    <dd>Shifts the given object leftwards by the given distance.</dd>
+    <dt><code>shrObj &lt;object&gt; &lt;distance&gt;</code></dt>
+    <dd>Shifts the given object rightwards by the given distance.</dd>
+    <dt><code>sub&lt;type&gt; &lt;object&gt; &lt;minuend&gt;
+&lt;subtrahend&gt;</code></dt>
+    <dd>Sets the difference of the given minuend and subtrahend to the given
+object.</dd>
+    <dt><code>trm&lt;type&gt; &lt;item&gt;...</code></dt>
+    <dd>Trims leading and/or trailing zeroes from the given items, such that
+their representations remain equal.</dd>
+    <dt><code>tstObj &lt;object&gt;...</code></dt>
+    <dd>Tests the given objects for occupancy.</dd>
+  </dl>
+</section>
+<section>
+  <h3>Types</h3>
+  <ul class="technical">
+    <li><span
+>Flt</span><span
+>Float, with each part as its own argument.</span></li>
+    <li><span
+>Int</span><span
+>Integer.</span></li>
+    <li><span
+>Obj</span><span
+>Object, as name references to associative arrays.</span></li>
+  </ul>
+</section>

@@ -1,0 +1,5 @@
+<p>It reads a file line-by-line into a buffer, using the line feed character
+(<code>0xA</code>) as a delimiter. While the initial capacity of 640 KiB should
+suffice in most cases, PDFs with large, <code>0xA</code>-less streams can still
+reach said capacity and cause the buffer to grow by reallocation. At the extreme
+boundary case, it may crash due to excessive memory use.</p>

@@ -1,0 +1,10 @@
+---
+key: "qedit_license"
+---
+{%-include variables.html-%}
+{%-capture copyright-%}
+<p>Copyright (c) 2019 - 2023 {{siteData.authorLegal}} ({{siteData.orgName}})</p>
+{%-endcapture-%}
+<section>
+{%include licenses/mit.html copyright=copyright%}
+</section>

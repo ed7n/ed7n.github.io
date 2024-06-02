@@ -1,0 +1,9 @@
+path: "sheff/license/"
+date: 2024-06-02
+head:
+  title: "License - SheFF"
+body:
+  title: "License"
+  subtitle: "SheFF is licensed under the MIT."
+menu:
+  - key: "sheff"

@@ -1,0 +1,9 @@
+path: "calc/about/"
+date: 2023-05-15
+head:
+  title: "About Calc"
+body:
+  title: "About Calc"
+  subtitle: "Some information about this project."
+menu:
+  - key: "calc"

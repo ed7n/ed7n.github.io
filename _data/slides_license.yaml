@@ -1,0 +1,9 @@
+path: "net/slides/license/"
+date: 2021-01-10
+head:
+  title: "License - NET-Slides"
+body:
+  title: "License"
+  subtitle: "NET-Slides is licensed under the MIT."
+menu:
+  - key: "slides"

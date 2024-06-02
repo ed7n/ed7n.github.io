@@ -1,0 +1,14 @@
+<p>The <code>Document.referrer</code> property defines the URL of the page from
+which you navigated to this page. It is usually blank if you got here by
+anything but a link. Conversely, a link with the <code>rel="noreferrer"</code>
+attribute can blank this property. Throughout the {{siteClass}}, such links are
+preceded by an asterisk (*). User agents can also blank this property.</p>
+<p>To see this in effect, navigate to {{data["_media-queries"].body.title}}
+using the link just above the page footer, then navigate to this page using its
+link found at the same place.</p>
+<ul class="headered technical">
+  <li><span
+>referrer</span><span><span
+>What got you here:&nbsp;</span
+><output id="user-agent-referrer"></output></span></li>
+</ul>

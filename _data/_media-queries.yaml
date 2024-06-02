@@ -1,0 +1,18 @@
+path: "pages/media-queries/"
+date: 2023-02-17
+head:
+  title: "Media Queries"
+body:
+  title: "Media Queries"
+  subtitle: "Allows websites to know your media context."
+menu:
+  - label: "Media Type"
+    href: "#media-type"
+    title: "Media Type"
+  - label: "Media Features"
+    href: "#media-features"
+    title: "Media Features"
+  - label: "Credits"
+    href: "#credits"
+    title: "Credits"
+  - key: "_home"

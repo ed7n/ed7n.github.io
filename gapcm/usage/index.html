@@ -1,0 +1,28 @@
+---
+key: "gapcm_usage"
+---
+{%-include variables.html-%}
+<section>
+  <section>
+  <p>A consumer PCM file is headerless (<strong>raw</strong>) with <strong
+>unsigned 8-bit</strong> samples.<sup><a href="#note-1">[1]</a></sup> A game PCM
+file is formatted for the in-game PCM driver. The decoder transcodes game into
+consumer, whereas the encoder does the opposite. PCM samples should be played
+back at <strong>16276 Hz</strong>.</p>
+  <p>Of the 230 in-game PCM files, only two are stereo<sup><a href="#note-2"
+>[2]</a></sup>  with the rest being mono. The decoder will inform you on stereo
+outputs. Echo, fade, and gain features are not supported; get their parameters
+with the prober and apply them elsewhere.</p>
+  <p><i>You may want to look at the usages first back in the [{%include
+a-page.html class="up" key="gapcm" href="#usage" html="landing page"%}].</i></p>
+  </section>
+  <section>
+    <ol class="no-margin smaller">
+      <li id="note-1">Developers can switch to signed representation as
+instructed in <code>src/gapcm/gapcm.h</code>.</li>
+      <li id="note-2"><span><code>rp025.pcm</code> and <code>rp039.pcm</code
+>.</span></li>
+    </ol>
+  </section>
+</section>
+{%include sections.html-%}

@@ -1,0 +1,71 @@
+<form>
+  <section>
+    <h3>Visibility</h3>
+    <div class="field column">
+      <label for="privacy-activity">Activity:</label>
+      <div class="input fluid">
+        <select id="privacy-activity">
+          <option>Everyone</option>
+          <option selected>My Circle</option>
+          <option>Contacts</option>
+          <option>Nobody</option>
+        </select>
+      </div>
+    </div>
+    <div class="field column">
+      <label for="privacy-profile">Profile:</label>
+      <div class="input fluid">
+        <select id="privacy-profile">
+          <option selected>Everyone</option>
+          <option>My Circle</option>
+          <option>Contacts</option>
+          <option>Nobody</option>
+        </select>
+      </div>
+    </div>
+    <div class="field column">
+      <label for="privacy-my-circle">My Circle:</label>
+      <div class="input fluid">
+        <select id="privacy-my-circle">
+          <option>Everyone</option>
+          <option>My Circle</option>
+          <option>Contacts</option>
+          <option selected>Nobody</option>
+        </select>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>Read Receipts</h3>
+    <p>If it is disabled, then you will not send nor receive them. This does not
+affect groups.</p>
+    <div class="field row space-between">
+      <label for="privacy-read-receipts">Enable</label>
+      <div class="input">
+        <input id="privacy-read-receipts" type="checkbox" checked />
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>Filtering</h3>
+    <p>Names are comma-separated.</p>
+    <div class="field row space-between">
+      <label for="privacy-muted">Muted:</label>
+      <div class="input shorter">
+        <input id="privacy-muted" type="text" value="Claris, Elliot" />
+      </div>
+    </div>
+    <div class="field row space-between">
+      <label for="privacy-blocked">Blocked:</label>
+      <div class="input shorter">
+        <input id="privacy-blocked" type="text" value="Brendon, Miklo" />
+      </div>
+    </div>
+  </section>
+  <div class="field column">
+    <div class="input fluid column">
+      <button type="button">OK</button>
+      <button type="reset">Reset</button>
+    </div>
+  </div>
+</form>

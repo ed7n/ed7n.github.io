@@ -1,0 +1,27 @@
+<ul class="headered">
+  <li><button onclick="vibrate()"
+>Vibrate</button><span
+>Gives you this tingling feeling. <i>Keep tapping for a continuous sensation…</i
+></span></li>
+  <li><button onclick="locate()"
+>Locate</button><span
+>Gets your current geolocation coordinates into a modal dialog.</span></li>
+  <li><button onclick="gauge()"
+>Gauge</button><span
+>Returns a prose summary of the battery.</span></li>
+  <li><button onclick="merry()"
+>Merry</button><span
+>Runs this absolutely-needless visual trick.</span></li>
+  <li><button onclick="share()"
+>Share</button><span
+>this page to your peers, so they too can have their own.</span></li>
+</ul>
+<form>
+  <div class="field row">
+    <label for="sensation">Sensation (ms):</label>
+    <div class="input short">
+      <input id="sensation" type="number" min="0" value="5000" />
+      <button type="reset">High five</button>
+    </div>
+  </div>
+</form>

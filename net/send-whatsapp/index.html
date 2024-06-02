@@ -1,0 +1,31 @@
+---
+key: "send-whatsapp"
+---
+{%-include variables.html-%}
+<link rel="stylesheet" href="{{sitePathRes}}/styles/input.css" />
+<link rel="stylesheet" href="{{sitePathRes}}/styles/form.css" />
+<section>
+  <{{htmlFormOut}}"https://api.whatsapp.com/send">
+    <p>Android users, enter the destination phone number, then tap <kbd
+><samp>Send</samp></kbd>. [<{{htmlAOut}}"https://faq.whatsapp.com/1294841057948784"
+>International format</a>] is preferred. Requests are sent to <code>https://api.whatsapp.com/send</code
+>.</p>
+    <div class="field column">
+      <label for="phone-number">Phone number:</label>
+      <div class="input fluid">
+        <input id="phone-number" name="phone" type="tel" required />
+      </div>
+    </div>
+    <div class="field row">
+      <div class="input shorter">
+        <button type="Reset">Reset</button>
+        <button>Send</button>
+      </div>
+    </div>
+  </form>
+  <p>iOS users should go to <kbd><samp>Chats</samp>/<samp>Calls</samp>→<samp
+>(new icon)</samp></kbd>, then enter the destination phone number there. No
+access to your contacts is required.</p>
+  <p><i>Not sponsored nor endorsed by Meta, owner of the WhatsApp trademark.</i
+></p>
+</section>

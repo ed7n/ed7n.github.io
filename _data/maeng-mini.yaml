@@ -1,0 +1,13 @@
+path: "net/maeng-mini/"
+date: 2021-06-15
+head:
+  title: "Mæŋ Mini"
+body:
+  banner: "<img class=\"mono\" loading=\"lazy\" src=\"/res/media/mm.png\" alt=\"mæŋ mini\" />"
+  title: "Mæŋ Mini"
+  subtitle: "(Unavailable) Portable CD player simulator."
+menu:
+  - label: "Featured"
+    href: "#featured"
+    title: "Featured"
+  - key: "_home"

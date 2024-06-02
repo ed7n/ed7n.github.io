@@ -1,0 +1,9 @@
+path: "mlsanitizer/license/"
+date: 2023-05-05
+head:
+  title: "License - MLSanitizer"
+body:
+  title: "License"
+  subtitle: "MLSanitizer is licensed under the MIT."
+menu:
+  - key: "mlsanitizer"

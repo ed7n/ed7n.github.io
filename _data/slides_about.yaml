@@ -1,0 +1,9 @@
+path: "net/slides/about/"
+date: 2021-01-10
+head:
+  title: "About NET-Slides"
+body:
+  title: "About NET-Slides"
+  subtitle: "Some information about this application."
+menu:
+  - key: "slides"

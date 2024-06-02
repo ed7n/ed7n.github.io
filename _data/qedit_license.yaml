@@ -1,0 +1,9 @@
+path: "qedit/license/"
+date: 2023-05-05
+head:
+  title: "License - QEdit"
+body:
+  title: "License"
+  subtitle: "QEdit is licensed under the MIT."
+menu:
+  - key: "qedit"

@@ -1,0 +1,22 @@
+path: "doc-lib/"
+date: 2022-11-14
+head:
+  title: "Document Library"
+body:
+  title: "Document Library"
+  subtitle: "A collection of guides and manuals written by me."
+menu:
+  - label: "Contents"
+    href: "#contents"
+    title: "Contents"
+    subtitle: "Recentmost first."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "License"
+    href: "#license"
+    title: "License"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

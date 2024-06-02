@@ -1,0 +1,35 @@
+<p>I know a little about model-view-presenter, and use it as a way to structure
+the architecture of this application. <code>Sequence</code> (model) is the very
+first class I wrote, and then <code>SequenceWorker</code> (presenter) came
+after.</p>
+<p>I then proceeded to make a new audio engine based off the old one (that left
+the mixing to the OS), and expanded my {{siteData.orgNameShort}} configuration
+file I/O library to accommodate writing such files and introduce polymorphism to
+meet weekly requirements. I took too much time for these two alone, and before I
+knew it, I was about to introduce myself to the messiest part of this
+project.</p>
+<p>Work on the video subsystem began in late October 2018. Originally, I based
+some of it of the JavaScript version I did a while back. The first development
+release with it attached is Development G. It had infinite loops that do nothing
+until a certain Boolean changes value. Despite that, it still managed to play
+any sequence I throw at. I consulted the lecture TAs and learned about <code
+>Object.wait()</code>, <code>Object.notifyAll()</code>, and their involvement in
+concurrency. Thanks to them, Development H brought much improvements into the
+video subsystem.</p>
+<p>When I was performing some stress tests, I noticed that it only used about
+half of my CPU power, and that it struggled terribly at 1080p60 (as expected).
+So I decided to step further and thus began the messiest part:
+multi-threading.</p>
+<p>I had to split the task of reading image files into <var>n</var> number of
+threads, where <var>n</var> is a positive, non-zero integer. While that was
+taken care of rather quickly, I ran into a problem in which the threads do no
+coordination between the each other. When they are called to synchronize with
+the audio, each may respond differently--depending on what they have
+buffered--and may break the consistency of the task as a whole. The only way I
+could get over this is to have all threads clear their buffer on every call for
+A/V sync. That way, they would have equal responses to synchronize calls, but it
+caused a huge drop in performance, making it only a notch better than the
+single-threaded subsystem.</p>
+<p>After days of bug-squashing, self-learning, and TA assistance, Development I
+was the very first version to employ the multi-threaded subsystem. It is also
+the very last of the developmental versions.</p>

@@ -1,0 +1,41 @@
+---
+key: "netronic_history"
+---
+{%-include variables.html-%}
+<section>
+  <p>With the move of my [{%include a-page.html key="ews" html="infrastructure"
+%}] to Debian GNU/Linux ({{"2019-10-02" | date: formDate}}), the then-new [<{{
+htmlAOut}}"https://github.com/Jamie-Michelle/Computing-Machine"
+>Computing-Machine</a>] was chosen to be its official desktop theme. However, it
+has not been well-maintained, lacking [<{{htmlAOut}}"https://github.com/Jamie-Michelle/Computing-Machine/issues/1"
+>user interactions</a>]. With the release of [<{{htmlAOut}}"https://forty.gnome.org"
+>GNOME 40</a>] ({{"2021-03-24" | date: formDate}}), it became completely
+unusable with its applications, and clear to me that Computing-Machine is no
+longer a viable desktop theming solution.</p>
+  <p>Since then, I have already created NET--what my web projects are built
+on--and decided to use its resources to craft a desktop theme to my taste.</p>
+  <p>Starting from scratch would be difficult due to GTK 3's complexity.
+Instead, I used [<{{htmlAOut}}"https://salsa.debian.org/gnome-team/gtk3/-/tree/debian/master/gtk/theme/Adwaita"
+>Adwaita</a>]--GTK's default theme--as my starting point for its attention to
+detail. The main advantage lies on its many, many CSS selectors, allowing me to
+produce such a complex stylesheet if I wanted to, and made experimenting and
+thus studying a lot quicker than if I were to do the same from scratch. Lastly,
+its use of [<{{htmlAOut}}"https://sass-lang.com">SASS</a>] taught me a bit about
+the preprocessor language.</p>
+  <p>The GTK 3 version of Adwaita has over four thousand lines--which have since
+been splitted by section into files for the GTK 4 version--and many repeated,
+hard-coded values--resolvable with SASS variables (the CSS equivalent is not
+supported by GTK 3)--making it difficult to follow for first-timers like myself.
+As such, it took me about three working days to produce a satisfactory
+stylesheet, whose complexity is puny compared to the almighty Adwaita.</p>
+  <p>The Xfce-notifyd, Wine, and Xfwm4 themes followed respectively. Finally, I
+forwarded all my work to NET to provide a more consistent--and maybe
+boring--experience across desktop and web applications.</p>
+  <p>The project was initially labeled NET as a placeholder. Being terrible at
+names myself, it was given an interim label of NET DD--DD for Desktop
+Design--which clashes with my NET projects and is also pathetic for a theme.
+Netronic was chosen for its portmanteau of <i>net</i>, <i>tron</i>, <i>-sonic</i
+>, and <i>electronic</i>, as an homage to the 1990s, and also aligns with NET's
+heavy inspirations from personal computers of the era--or at least what I know
+about them.</p>
+</section>

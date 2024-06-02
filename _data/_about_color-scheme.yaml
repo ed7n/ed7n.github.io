@@ -1,0 +1,9 @@
+path: "pages/about/color-scheme/"
+date: 2023-02-17
+head:
+  title: "Color Scheme"
+body:
+  title: "Color Scheme"
+  subtitle: "About this setting."
+menu:
+  - key: "_about"

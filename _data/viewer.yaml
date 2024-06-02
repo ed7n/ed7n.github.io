@@ -1,0 +1,19 @@
+path: "net/viewer/"
+date: 2023-04-04
+head:
+  title: "NET-Viewer"
+body:
+  title: "NET-Viewer"
+  subtitle: "Adjustable file viewer."
+menu:
+  - label: "Launch Application"
+    href: "#launch-application"
+    title: "Launch Application"
+    subtitle: "NET Service."
+  - label: "About"
+    href: "#about"
+    title: "About"
+  - label: "Source"
+    href: "#source"
+    title: "Source"
+  - key: "_home"

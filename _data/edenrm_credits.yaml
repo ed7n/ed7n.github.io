@@ -1,0 +1,9 @@
+path: "edenrm/credits/"
+date: 2021-01-10
+head:
+  title: "Credits - EDENrm"
+body:
+  title: "Credits"
+  subtitle: "Cheers to these talented people."
+menu:
+  - key: "edenrm"

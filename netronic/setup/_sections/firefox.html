@@ -1,0 +1,14 @@
+<p>The built-in theme can not be completely disabled. See [<{{htmlAOut}}"https://bugzilla.mozilla.org/show_bug.cgi?id=1749645"
+>bug 1749645</a>] for a discussion.</p>
+<p>Otherwise, you can use your preferred GTK 3 theme colors in Firefox:</p>
+<ol>
+  <li><span>Set <code>widget.non-native-theme.enabled</code> to <code
+>false</code> to disable the built-in theme.</span></li>
+  <li>Set <code>widget.content.gtk-theme-override</code> to its name.</li>
+  <li>Restart Firefox for these to take effect.</li>
+  <li><span>Set <code>privacy.resistFingerprinting</code> to <code>false</code>.
+This may break your privacy.</span></li>
+</ol>
+<p>If the GTK colors on the scrollbar are unfit, then you can disable this by
+setting <code>widget.gtk.theme-scrollbar-colors.enabled</code> to <code
+>false</code>.</p>

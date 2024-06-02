@@ -1,0 +1,27 @@
+---
+key: "_news"
+---
+{%-include variables.html-%}
+<section>
+  <section>
+    <p><i>Ordered descendingly by date, grouped by year.</i></p>
+  </section>
+  <section>
+    <ul>
+    {%-for key in pageData.keys-%}
+      {%-assign year = data.news[key].date | date: "%Y"-%}
+      {%-if year != last%}
+    </ul>
+  </section>
+  <section>
+    <h3>{{year}}</h3>
+    <ul>
+      {%-endif%}
+      <li>{{data.news[key].date | date: formDate}}: [{%include a-page.html key=key%}]</li>
+      {%-assign last = year-%}
+    {%-endfor-%}
+    {%-assign last = nil-%}
+    {%-assign year = nil%}
+    </ul>
+  </section>
+</section>
